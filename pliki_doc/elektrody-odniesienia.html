@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Elektrody-odniesienia</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="artykul.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="elektrody-odniesienia">Elektrody odniesienia</h1>
+<p>Potencjał zdefiniowany jest względem potencjału elektrody wodorowej,
+na której mamy reakcję</p>
+<p><span class="math display">\[2H^{+} + 2e^{-} \rightleftarrows
+H_{2}\]</span></p>
+<p>Potencjał tej elektrody jest zdefiniowany jako zero. Do obliczeń
+używa się potencjałów zdefiniowanych względem tej elektrody, a więc
+wydaje się oczywistym, że aby wyznaczyć potencjał innej elektrody
+najlepiej byłoby zmierzyć potencjał tej elektrody względem standardowej
+elektrody wodorowej. Równanie Nernsta dla standardowej elektrody
+wodorowej wygląda nieciekawie:</p>
+<p><span class="math display">\[E = E^{0} +
+\frac{0.059}{2}\log\frac{\left\lbrack H^{+}
+\right\rbrack^{2}}{\frac{p_{H_{2}}}{p_{0}}}\]</span></p>
+<p><span class="math display">\[E^{0} = 0\]</span></p>
+<p>Gdyż o ile stężenie <span class="math inline">\(H^{+}\)</span> równe
+<span class="math inline">\(1\ mol*dm^{- 3}\)</span> jesteśmy w stanie
+zrobić, o tyle problem jest z utrzymywaniem stałego ciśnienia wodoru
+równego 1bar –wyobraźmy sobie pompkę akwariową, która utrzymuje
+dokładnie ciśnienie wodoru jeden bar, jest to praktycznie niemożliwe,
+gdyż taka pompka zawsze doprowadza gaz mniej lub bardziej
+nierównomiernie, do tego ciśnienie tego gazu zależy od producenta
+pompki.</p>
+<p>Więc robi się problem z elektrodą wodorową –tzn. – w praktyce nie
+jesteśmy w stanie skonstruować standardowej elektrody wodorowej.</p>
+<p>W celu ominięcia tego problemu buduje się elektrody odniesienia,
+które mają względnie stały potencjał oraz łatwo je zrobić. W praktyce
+takie elektrody odniesienia robi się dwie</p>
+<h1 id="przykłady-elektrod-odniesienia">Przykłady elektrod
+odniesienia</h1>
+<p>Chlorosrebrowa</p>
+<p><span class="math display">\[AgCl + e^{-} \rightarrow Ag +
+Cl^{-}\]</span></p>
+<p>W praktyce jest to blaszka srebrna, zanurzona w roztworze
+zawierającym jony <span class="math inline">\(Cl^{-}\)</span> w
+obecności <span class="math inline">\(AgCl\)</span>. Równanie Nernta dla
+tej elektrody ma postać:</p>
+<p><span class="math display">\[E = E_{Ag\text{/}AgCl}^{0} +
+\frac{0.059}{1}\log\frac{1}{\left\lbrack Cl^{-}
+\right\rbrack}\]</span></p>
+<p>Kalomelowa</p>
+<p><span class="math display">\[Hg_{2}Cl_{2} + 2e^{-} \rightarrow 2Hg +
+2Cl^{-}\]</span></p>
+<p>Czyli w sumie rtęć, zanurzona w roztworze z jonami <span
+class="math inline">\(Cl^{-}\)</span> w obecności <span
+class="math inline">\(Hg_{2}Cl_{2}\)</span>.</p>
+<p><span class="math display">\[E = E^{0} +
+\frac{0.059}{2}\log\frac{1}{\left\lbrack Cl^{-}
+\right\rbrack^{2}}\]</span></p>
+<p>Widzimy, iż wyrażenie na potencjał obu elektrod odniesienia zależy
+tylko i wyłącznie od stężenia jonów <span
+class="math inline">\(Cl^{-}\)</span>. Stężenie to jest bardzo łatwo
+stabilizować, używając stężony roztwór <span
+class="math inline">\(KCl\)</span> lub <span
+class="math inline">\(NaCl\)</span> nad osadem <span
+class="math inline">\(NaCl\)</span> lub <span
+class="math inline">\(KCl\)</span>, wówczas reakcja powoduje wytrącenie
+dodatkowej ilości ciężko rozpuszczalnej soli lub jej rozpuszczenie, ale
+tak, aby zachować stał stężenie tej soli, będące roztworem nasyconym.
+Znając temperaturę jesteśmy w stanie powiedzieć, jaka jest
+rozpuszczalność, a z tego jesteśmy w stanie obliczyć potencjał
+rzeczywisty elektrody.</p>
+<h1
+id="przeliczanie-uzyskanych-wynik-na-potencjał-względem-elektrody-wodorowej">Przeliczanie
+uzyskanych wynik na potencjał względem elektrody wodorowej</h1>
+<p>Przeliczanie potencjałów zmierzonych względem elektrody on
+kalomelowej czy chlorosrebrowej na potencjał względem elektrody
+wodorowej jest trywialne. Najłatwiej jest zrobić graf, na którym
+umieszczamy potencjał elektrody odniesienia, obliczony równaniem
+Nernsta, a potem nanosimy zmierzony potencjał względem elektrody
+odniesienia<img src="elektrody-odniesienia/media/image1.png"
+style="width:3.31657in;height:1.65703in" /></p>
+<p>Widać, iż potencjał elektrody szukanej względem elektrody wodorowej
+możemy uzyskać wykorzystując wzór:</p>
+<p><span class="math display">\[E_{szukanej}^{vs\ H_{2}} =
+E_{odniesienia}^{vs\ H_{2}} + E_{szukanej}^{vs\ odniesienia}\
+\]</span></p>
+<p>Oczywiście, jako elektrodę odniesienia możemy wykorzystywać dowolną
+elektrodę o ile możemy ją łatwo zbudować i ma ona stabilny
+potencjał.</p>
+<h1 id="przykład-zadania-maturalnego">Przykład zadania maturalnego</h1>
+<p>Przykładem zadania maturalnego z wykorzystaniem równania Nernsta
+jest:</p>
+<p>Przykładem elektrody halogenosrebrowej jest elektroda bromosrebrowa,
+której działanie opisano równaniem:</p>
+<p><span class="math display">\[AgBr_{(S)} \rightleftarrows Ag_{(S)} +
+Br_{aq}^{-}\]</span></p>
+<p>Potencjał tej elektrody zależy od stężenia jonów bromkowych i w
+temperaturze 298K wyraża się równaniem:</p>
+<p><span class="math display">\[E_{Ag\text{/}AgBr} =
+E_{Ag\text{/}AgBr}^{0} - 0.059\log{\lbrack Br^{-}\rbrack}\]</span></p>
+<p>Standardowy potencjał tej elektrody wynosi <span
+class="math inline">\(E_{Ag\text{/}AgBr}^{0} = 0.071V\)</span></p>
+<p>W temperaturze 298K potencjał elektrody bromosrebrowej zanurzonej w
+równacze z osadem tej soli był równy <span
+class="math inline">\(E_{Ag\text{/}AgBr}^{\ } = 0.431V\)</span>.</p>
+<p>Oblicz wartość iloczynu rozpuszczalności bromku srebra <span
+class="math inline">\(K_{So}^{AgBr}\)</span> w temperaturze 298 K.</p>
+<p>Z równania Nernsta możemy obliczyć wartość stężenia jonów
+bromkowych:</p>
+<p><span class="math display">\[E_{Ag\text{/}AgBr} =
+E_{Ag\text{/}AgBr}^{0} - 0.059\log\left\lbrack Br^{-}
+\right\rbrack\]</span></p>
+<p><span class="math display">\[0.431 = 0.071 - 0.059\log\left\lbrack
+Br^{-} \right\rbrack\]</span></p>
+<p><span class="math display">\[0.059\log\left\lbrack Br^{-}
+\right\rbrack = - 0.431 + 0.071\]</span></p>
+<p><span class="math display">\[\log\left\lbrack Br^{-} \right\rbrack =
+\frac{( - 0.431 + 0.071)}{0.059}\]</span></p>
+<p><span class="math display">\[\left\lbrack Br^{-} \right\rbrack =
+10^{\frac{- 0.431 + 0.071}{0.059}} = 7.912*10^{- 7}\]</span></p>
+<p>Stężenie jonów <span class="math inline">\(\left\lbrack Ag^{+}
+\right\rbrack\)</span> musi być równe stężeniu <span
+class="math inline">\(\lbrack Br^{-}\rbrack\)</span> z uwagi na
+stechiometrię procesu rozpuszczania:</p>
+<p><span class="math display">\[AgBr \rightleftarrows Ag^{+} +
+Br^{-}\]</span></p>
+<p><span class="math display">\[\left\lbrack Ag^{+} \right\rbrack =
+\left\lbrack Br^{-} \right\rbrack = 7.912*10^{- 7}\]</span></p>
+<p>Zapisując wyrażenie na iloczyn rozpuszczalności, <span
+class="math inline">\(K_{so}^{AgBr}\)</span> i wstawiając wartości
+stężeń dostajemy wartość tego iloczynu:</p>
+<p><span class="math display">\[K_{so} = \left\lbrack Ag^{+}
+\right\rbrack\left\lbrack Br^{-} \right\rbrack = \left( 7.912*10^{- 7}
+\right)*\left( 7.912*10^{- 7} \right) = 6.26*10^{- 13}\]</span></p>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<footer class="main-footer">
+  <style>
+  .main-footer {
+    background-color: #003366;
+    color: #eee;
+    padding: 40px 20px 15px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .footer-left {
+    padding-left: 30px;
+    text-align: left;
+  }
+
+  .footer-right {
+    padding-right: 30px;
+    text-align: right;
+  }
+
+  .footer-left h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+
+  .footer-left p,
+  .footer-right ul li a {
+    color: #ddd;
+    margin: 4px 0;
+    text-decoration: none;
+  }
+
+  .footer-left a:hover,
+  .footer-right ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+
+  .footer-right h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-right ul li {
+    margin-bottom: 8px;
+  }
+
+  .main-footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .main-footer a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid #222;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    color: #bbb;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+      padding: 0;
+      text-align: center;
+    }
+  }
+</style>
+
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>Kontakt</h3>
+      <p>ul. Przykładowa 12<br>00-123 Miasto</p>
+      <p>Email: <a href="mailto:kontakt@twojadomena.pl">kontakt@twojadomena.pl</a></p>
+      <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
+    </div>
+    <div class="footer-right">
+      <h4>Przydatne linki</h4>
+      <ul>
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="#">O mnie</a></li>
+        <li><a href="#">Oferta</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Twoja Firma. Wszelkie prawa zastrzeżone.
+  </div>
+</footer>

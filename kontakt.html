@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – CHEMCademy</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/kontakt.css" />
+
+  <!-- Font Awesome do ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+  <!-- SEKCJA KONTAKT -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Kontakt</h1>
+
+      <div class="contact-flex">
+        <!-- LEWA STRONA: MAPA -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.122412676071!2d21.012228415800055!3d52.22967597975902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669267d07d%3A0x35f64668f479f7cb!2sWarszawa!5e0!3m2!1spl!2spl!4v1712345678901"
+            width="100%"
+            height="350"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- PRAWA STRONA: DANE KONTAKTOWE -->
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:kontakt@chemcademy.edu.pl">kontakt@chemcademy.edu.pl</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Telefon</h3>
+              <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Adres</h3>
+              <p>ul. Przykładowa 12<br>00-001 Warszawa</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fab fa-discord"></i>
+            <div>
+              <h3>Discord</h3>
+              <p><a href="https://discord.gg/twoj-link">discord.gg/twoj-link</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form-section">
+  <h2>Formularz kontaktowy</h2>
+  <form action="https://formspree.io/f/moqzrzbn" method="POST" class="contact-form">
+    <label>
+      Imię i nazwisko:
+      <input type="text" name="name" required />
+    </label>
+
+    <label>
+      Adres e-mail:
+      <input type="email" name="email" required />
+    </label>
+
+    <label>
+      Wiadomość:
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <button type="submit">Wyślij wiadomość</button>
+  </form>
+</section>
+<div class="quick-contact-buttons">
+  <a href="tel:+48123456789" class="qc-btn phone">
+    <i class="fas fa-phone"></i> Zadzwoń
+  </a>
+  <a href="mailto:kontakt@chemcademy.edu.pl" class="qc-btn email">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+  <a href="https://discord.gg/twoj-link" target="_blank" class="qc-btn discord">
+    <i class="fab fa-discord"></i> Discord
+  </a>
+</div>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- HEADER + FOOTER JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    });
+  </script>
+
+</body>
+</html>

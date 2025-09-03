@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f9ff;
+}
+
+/* Sidebar */
+#spis-tresci {
+  width: 250px;
+  background: #e6f0ff;
+  border-right: 2px solid #0073e6;
+  padding: 15px;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+#spis-tresci h2 {
+  color: #004080;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+#spis-tresci ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#spis-tresci ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#spis-tresci ul li .dzial-tytul {
+  font-weight: bold;
+  color: #004080;
+  user-select: none;
+}
+
+#spis-tresci ul li ul {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+  display: none;
+}
+
+#spis-tresci ul li ul li {
+  font-weight: normal;
+  color: #003366;
+  cursor: default;
+  margin-bottom: 4px;
+}
+
+#spis-tresci ul li ul li a {
+  color: #003366;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+#spis-tresci ul li ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Reszta strony obok sidebar */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Kliknięty dział — prosty efekt */
+#spis-tresci ul li.open > ul {
+  display: block;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>kizw</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="artykul.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<p>Obliczenia dla kwasów/zasad wieloprotonowych.</p>
+<p>Klasycznym przybliżeniem, najczęściej stosowanym (chodź nie jedynym
+na wyższych poziomach) jest uwzględnianie tylko pierwszego etapu
+hydrolizy podczas obliczania początkowego stężenia jonów <span
+class="math inline">\(H^{+}\)</span> i <span
+class="math inline">\(OH^{-}\)</span>, a olewanie etapów pozostałych,
+gdyż zwykle kolejne stałe dysocjacji kwasowej i zasadowej różnią się
+znacząco wartością, są zupełnie innych rzędów. Na olimpiadzie chemicznej
+bywa różnie (chyba najbardziej uniwersalną metodą jest obliczanie tzw.
+ułamkiem molowym, ale to mnie nie interesuje.</p>
+<p>Rozpatrzmy zadanie: Oblicz pH 0.01 molowego roztworu kwasu <span
+class="math inline">\(H_{3}PO_{4}\ \)</span>. Kwas fosforowy jest kwasem
+trójprotonowym, dysocjuje on stopniowo tzn. etap po etapie</p>
+<p><span class="math display">\[H_{3}PO_{4} \rightleftarrows H^{+} +
+H_{2}PO_{4}^{-}\ \ \ \ \ \ \ \ \ K_{a1} = 6.92*10^{- 3}\]</span></p>
+<p><span class="math display">\[H_{2}PO_{4}^{-} \rightleftarrows H^{+} +
+HPO_{4}^{2 -}\ \ \ \ \ \ \ K_{a2} = 6.17*10^{- 8}\]</span></p>
+<p><span class="math display">\[HPO_{4}^{2 -} \rightleftarrows H^{+} +
+PO_{4}^{3 -}\ \ \ \ \ \ \ \ \ \ \ K_{a3} = 4.79*10^{- 13}\]</span></p>
+<p>Wartości tych stałych różnią się znacznie i zgodnie z opisanym
+przybliżeniem bierzemy pod uwagę tylko tą pierwszą, a resztą reakcji
+początkowo się nie przejmujemy. Innymi słowy traktujemy kwas
+wieloprotonowy jak kwas jednoprotonowy. Rozważamy więc tylko pierwszą
+stałą dysocjacji opisaną równaniem:</p>
+<p><span class="math display">\[H_{3}PO_{4} \rightleftarrows H^{+} +
+H_{2}PO_{4}^{-}\ \ \ \ \ \ \ \ \ \ \ K_{a1} = 6.92*10^{- 3}\]</span></p>
+<p><span class="math display">\[K_{a1} = \frac{\left\lbrack H^{+}
+\right\rbrack\left\lbrack H_{2}PO_{4}^{-} \right\rbrack}{\left\lbrack
+H_{3}PO_{4} \right\rbrack}\]</span></p>
+<p>Czy mamy jedno źródło <span class="math inline">\(H^{+}\)</span>?
+Tak, bo bierzemy tylko tą pierwszą reakcje, a resztę olaliśmy.</p>
+<p>Czy możemy stosować wzór uproszczony <span
+class="math inline">\(\frac{c_{0}}{K_{a1}} &gt; 400\)</span> Po
+wstawieniu danych otrzymujemy <span
+class="math inline">\(\frac{0.01}{6.92*10^{- 3}} &lt; 400\)</span>,
+czyli musimy stosować wzór pełny:</p>
+<p><span class="math display">\[K_{a1} = \frac{\left\lbrack H^{+}
+\right\rbrack^{2}}{c_{0} - \left\lbrack H^{+}
+\right\rbrack}\]</span></p>
+<p><span class="math display">\[6.92*10^{- 3} = \frac{\left\lbrack H^{+}
+\right\rbrack^{2}}{0.01 - \left\lbrack H^{+} \right\rbrack}\]</span></p>
+<p><span class="math display">\[\left\lbrack H^{+} \right\rbrack =
+0.00555\]</span></p>
+<p>I z tej wartości można obliczyć <span
+class="math inline">\(pH\)</span></p>
+<p><span class="math display">\[pH = - \log\left\lbrack H^{+}
+\right\rbrack\]</span></p>
+<p>Czyli po pierwszym etapie można powiedzieć, iż:</p>
+<p><span class="math display">\[\left\lbrack H^{+} \right\rbrack =
+0.00555\]</span></p>
+<p><span class="math display">\[\left\lbrack H_{2}PO_{4}^{-}
+\right\rbrack = \left\lbrack H^{+} \right\rbrack = 0.00555\]</span></p>
+<p><span class="math display">\[\left\lbrack H_{3}PO_{4} \right\rbrack =
+c_{0} - \left\lbrack H_{2}PO_{4}^{-} \right\rbrack = 0.01 - 0.00555 =
+0.00445\]</span></p>
+<p>I można teraz zaprząc dodatkowe stałe do obliczeń stężeń innych
+jonów. Użycie drugiej stałej da nam stężenie <span
+class="math inline">\(HPO_{4}^{2 -}\)</span></p>
+<p><span class="math display">\[H_{2}PO_{4}^{-} \rightleftarrows H^{+} +
+HPO_{4}^{2 -}\ \ \ \ \ \ \ K_{a2} = 6.17*10^{- 8}\]</span></p>
+<p><span class="math display">\[K_{a2} = \frac{\left\lbrack H^{+}
+\right\rbrack\left\lbrack HPO_{4}^{2 -} \right\rbrack}{\left\lbrack
+H_{2}PO_{4}^{-} \right\rbrack}\]</span></p>
+<p><span class="math display">\[6.17*10^{- 8} =
+\frac{0.00555*\left\lbrack HPO_{4}^{2 -}
+\right\rbrack}{0.00555}\]</span></p>
+<p><span class="math display">\[6.17*10^{- 8} = \left\lbrack HPO_{4}^{2
+-} \right\rbrack\]</span></p>
+<p>Czy to stężenie zmienia realnie stężenie obliczanych uprzednio jonów?
+Stężenie protonów pochodzących z drugiego etapu równe jest stężeniu
+<span class="math inline">\(HPO_{4}^{2 -}\)</span></p>
+<p><span class="math display">\[\left\lbrack H^{+} \right\rbrack_{etap2}
+= \left\lbrack HPO_{4}^{2 -} \right\rbrack\]</span></p>
+<p><span class="math display">\[\left\lbrack H^{+} \right\rbrack_{calk}
+= \left\lbrack H^{+} \right\rbrack_{etap1} + \left\lbrack H^{+}
+\right\rbrack_{etap2} = 0.00555 + 6.17*10^{- 8} \approx
+0.00555\]</span></p>
+<p>Czyli pominięcie kolejnego etapu dysocjacji było uzasadnione, bo on
+jest tak mały, że w praktyce nic nie zmienia. Olanie drugiego etapu
+dysocjacji nie prowadzi do błędu. A może kolejny, trzeci coś
+zmienia?</p>
+<p><span class="math display">\[HPO_{4}^{2 -} \rightleftarrows H^{+} +
+PO_{4}^{3 -}\]</span></p>
+<p><span class="math display">\[K_{a3} = \frac{\left\lbrack H^{+}
+\right\rbrack\left\lbrack PO_{4}^{3 -} \right\rbrack}{\left\lbrack
+HPO_{4}^{2 -} \right\rbrack}\]</span></p>
+<p><span class="math display">\[4.79*10^{- 13} =
+\frac{0.00555\left\lbrack PO_{4}^{3 -} \right\rbrack}{6.17*10^{-
+8}}\]</span></p>
+<p><span class="math display">\[5325*10^{- 21} = \left\lbrack PO_{4}^{3
+-} \right\rbrack\]</span></p>
+<p><span class="math display">\[5.325*10^{- 18} = \left\lbrack PO_{4}^{3
+-} \right\rbrack = \left\lbrack H^{+} \right\rbrack_{3}\]</span></p>
+<p>Czyli jeszcze mniej niż w drugim etapie. Świadczy o to zasadności
+przybliżenia związanego z olewaniem kolejnych etapów po za
+pierwszym.</p>
+<p>A teraz jak sobie poradzić z zasadą wieloprotonową?</p>
+<p>Np. Oblicz pH 0.01 molowego <span
+class="math inline">\(H_{3}PO_{4}\)</span></p>
+<p>W przypadku soli wpierw rozważamy proces dysocjacji czyli mówiąc po
+prostu „rozwalania na jony”</p>
+<p><span class="math display">\[Na_{3}PO_{4} \rightarrow 3Na^{+} +
+PO_{4}^{3 -}\]</span></p>
+<p>Dopiero potem rozpatrujemy następcze reakcja powstałym jonów z wodą –
+hydrolizę. <span class="math inline">\(Na^{+}\)</span> pochodzi od
+silnej zasady – <span class="math inline">\(NaOH\)</span> i nie ulega
+hydrolizie (jest niekwasem). Jon <span class="math inline">\(PO_{4}^{3
+-}\)</span> pochodzi od słabego kwasu – <span
+class="math inline">\(HPO_{4}^{2 -}\)</span> więc jest słabą zasadą:</p>
+<p><span class="math display">\[\text{ }PO_{4}^{3 -} + H_{2}O
+\rightleftarrows HPO_{4}^{2 -} + OH^{-}\]</span></p>
+<p><span class="math display">\[HPO_{4}^{2 -} + H_{2}O \rightleftarrows
+H_{2}PO_{4}^{-} + OH^{-}\]</span></p>
+<p><span class="math display">\[H_{2}PO_{4}^{-} + H_{2}O
+\rightleftarrows H_{3}PO_{4} + OH^{-}\]</span></p>
+<p>Czy rozważamy następcze etapy po za pierwszym? Raczej NIE, co wynika
+z „<strong>Klasycznym przybliżeniem jest uwzględnianie tylko pierwszego
+etapu hydrolizy, a olewanie pozostałych, gdyż zwykle stałe</strong>
+<span class="math inline">\(\mathbf{K}_{\mathbf{a}}\)</span>
+<strong>/</strong> <span
+class="math inline">\(\mathbf{K}_{\mathbf{b}}\)</span> <strong>różnią
+się znacząco.”</strong> W tym wypadku skupiamy się tylko na pierwszej
+reakcji</p>
+<p><span class="math display">\[\text{ }PO_{4}^{3 -} + H_{2}O
+\rightleftarrows HPO_{4}^{2 -} + OH^{-}\]</span></p>
+<p>Reszta zostanie olana ciepłym moczem.</p>
+<p>Widzimy, iż jest to reakcja, w której powstają jony <span
+class="math inline">\(OH^{-}.\ \)</span>Potrzebujemy stałej dysocjacji
+zasadowej. Jak to wygląda sprawa z obliczeniem stałej dysocjacji
+zasadowej <span class="math inline">\(K_{b}\)</span> tej reakcji
+powyżej? Oczywiście musimy wykorzystać wzór:</p>
+<p><span class="math display">\[K_{a}K_{b} = K_{w}\]</span></p>
+<p>Tylko w tablicach dla kwasu fosforowego (V) są trzy <span
+class="math inline">\(K_{a}\)</span> , bierzemy tą trzecią bo ona mówi o
+równowadze pomiędzy <span class="math inline">\(PO_{4}^{3 -}\)</span> i
+<span class="math inline">\(PO_{4}^{3 -}\)</span>, bo te jony występują
+w reakcji. Oba jony mnie interesują jednocześnie, więc zdecydowanie do
+dalszych obliczeń używamy <em><strong>K<sub>a3</sub></strong></em></p>
+<p><span class="math display">\[H_{3}PO_{4} \rightleftarrows H^{+} +
+H_{2}PO_{4}^{-}\ \ \ \ \ \ \ \ \ K_{a1} = 6.92*10^{- 3}\]</span></p>
+<p><span class="math display">\[H_{2}PO_{4}^{-} \rightleftarrows H^{+} +
+HPO_{4}^{2 -}\ \ \ \ \ \ \ K_{a2} = 6.17*10^{- 8}\]</span></p>
+<p><span class="math display">\[\text{ }HPO_{4}^{2 -}\  \rightleftarrows
+H^{+} + PO_{4}^{3 -}\ \ \ \ \ \ \ \ \ \ \
+\mathbf{K}_{\mathbf{a}\mathbf{3}}\mathbf{= 4.79*}\mathbf{10}^{\mathbf{-
+13}}\]</span></p>
+<p><span class="math display">\[\text{ }PO_{4}^{3 -} + H_{2}O
+\rightleftarrows HPO_{4}^{2 -} + OH^{-}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+K_{b} = ???\]</span></p>
+<p><span class="math display">\[4.79*10^{- 13}K_{b} = 10^{-
+14}\]</span></p>
+<p><span class="math display">\[K_{b} = \frac{10^{- 14}}{4.79*10^{- 13}}
+= 0.02088\]</span></p>
+<p>Dalej problem rozwiązujemy jak klasyczne zadanie z pH</p>
+<p>Czy mamy jedno zródło <span class="math inline">\(OH^{-}\)</span>?
+TAK</p>
+<p>Czy możemy stosować wzór uproszczony <span
+class="math inline">\(\frac{c_{0}}{K_{b}} &gt; 400\)</span> zdecydowanie
+NIE, gdyż <span class="math inline">\(\frac{0.01}{0.02088} = 0.4789 &lt;
+400\)</span>, czyli musimy używać pełnego wzoru</p>
+<p><span class="math display">\[K_{b} = \frac{\left\lbrack OH^{-}
+\right\rbrack^{2}}{c_{0} - \left\lbrack OH^{-}
+\right\rbrack}\]</span></p>
+<p><span class="math display">\[0.02088 = \frac{\left\lbrack OH^{-}
+\right\rbrack^{2}}{0.01 - \left\lbrack OH^{-}
+\right\rbrack}\]</span></p>
+<p><span class="math display">\[\left\lbrack OH^{-} \right\rbrack =
+0.00739\]</span></p>
+<p>Dalsze etapy dysocjacji można obliczać używając kolejnych stałych,
+ale nie prowadzi to do zmiany stężenia jonów <span
+class="math inline">\(OH^{-}\)</span>, umożliwia natomiast obliczenie
+stężeń innych jonów.</p>
+<p><span class="math display">\[pOH = - \log{0.00739} \rightarrow pH =
+11.87\]</span></p>
+<p>Układy, w których mamy jednocześnie mocny i słaby kwas w jednej
+mieszaninie lub mocną i słabą zasadę też w jednej mieszaninie robimy
+wykorzystując tabelkę. Porównajmy dwa podobne zadania:</p>
+<p>Oblicz stopień dysocjacji i <span class="math inline">\(pH\)</span>
+0.01 molowego roztworu <span class="math inline">\(HF\)</span></p>
+<p>oraz</p>
+<p>Oblicz stopień dysocjacji i <span class="math inline">\(pH\)</span>
+roztworu 0.01 molowego <span class="math inline">\(HF\)</span> i 0.001
+molowego <span class="math inline">\(HCl\)</span> (to jest roztwor razem
+sporządzony)</p>
+<p>Pierwsze zadanie to klasyczny układ, w którym mamy jedno źródło
+kwasu, zachodzi odwracalna reakcja dysocjacji:</p>
+<p><span class="math display">\[HF \rightleftarrows H^{+} +
+F^{-}\]</span></p>
+<p>Czy jedno źródło jonów <span class="math inline">\(H^{+}\)</span>?
+TAK</p>
+<p>Czy <span class="math inline">\(\frac{c_{o}}{K_{a}} &gt;
+400?\frac{0.01}{6.31*10^{- 4}} = 15.8\)</span>, Czyli nie, powinniśmy
+stosować pełny wzór:</p>
+<p><span class="math display">\[K_{a} = \frac{\left\lbrack H^{+}
+\right\rbrack^{2}}{c_{0} - \left\lbrack H^{+}
+\right\rbrack}\]</span></p>
+<p><span class="math display">\[6.31*10^{- 4} = \frac{\left\lbrack H^{+}
+\right\rbrack^{2}}{0.01 - \left\lbrack H^{+} \right\rbrack}\]</span></p>
+<p><span class="math display">\[\left\lbrack H^{+} \right\rbrack =
+0.00222\]</span></p>
+<p><span class="math display">\[pH = - \log{0.00222} = 2.65\]</span></p>
+<p><span class="math display">\[\alpha = \frac{\left\lbrack H^{+}
+\right\rbrack}{c_{0}} = \frac{0.00222}{0.01} = 0.222\]</span></p>
+<p>Drugie zadanie – roztwór : 0.01 molowy <span
+class="math inline">\(HF\)</span> i 0.001 molowy <span
+class="math inline">\(HCl\)</span> – wymaga rozwiązania tabelką.
+Klasycznym założeniem jest to, że kwas mocny dysocjuje całkowicie, a
+kwas słaby dysocjuje odwracalnie</p>
+<p><span class="math display">\[HCl \rightarrow H^{+} +
+Cl^{-}\]</span></p>
+<p><span class="math display">\[HF \rightleftarrows H^{+} +
+F^{-}\]</span></p>
+<p>Oczywiście stężenie jonów H+ pochodzących z kwasu solnego jest równe
+stężeniu tego kwasu, <span class="math inline">\(\left\lbrack H^{+}
+\right\rbrack_{HCl} = \lbrack HCl\rbrack\)</span><em>,</em> bo kwas ten
+dysocjuje całkowicie, natomiast kwas fluorowodorowy dysocjuje
+odwracalnie w myśl reakcji:</p>
+<p><span class="math display">\[HF \rightleftarrows H^{+} +
+F^{-}\]</span></p>
+<p>Czy mamy jedno źródło <span class="math inline">\(H^{+}?\)</span>
+Zdecydowanie, bo jony <span class="math inline">\(H^{+}\)</span>
+pochodzą z dwóch źródeł – <span class="math inline">\(HCl\)</span> i
+<span class="math inline">\(HF\)</span>. Musimy, więc rozwiązać zadanie
+uniwersalnie czyli zrobić tabelkę dla drugiej reakcji.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[HF\]</span></th>
+<th><span class="math display">\[H^{+}\]</span></th>
+<th><span class="math display">\[F^{-}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[c_{0}\]</span></td>
+<td><span class="math display">\[0.01\]</span></td>
+<td><span class="math display">\[0.001 = \left\lbrack H^{+}
+\right\rbrack_{HCl}\]</span></td>
+<td><span class="math display">\[0\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[dc\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[c^{k}\]</span></td>
+<td><span class="math display">\[0.01 - x\]</span></td>
+<td><span class="math display">\[0.001 + x\]</span></td>
+<td><span class="math display">\[x\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Kolejno zapisujemy wyrażenie na stałą równowagi <span
+class="math inline">\(K_{A}\)</span> i wstawiamy wartości stężeń z
+tabelki, następnie obliczając niewiadomą <span
+class="math inline">\(x\)</span></p>
+<p><span class="math display">\[K_{A} = \frac{\left\lbrack H^{+}
+\right\rbrack\left\lbrack F^{-} \right\rbrack}{\lbrack
+HF\rbrack}\]</span></p>
+<p><span class="math display">\[6.31*10^{- 4} = \frac{(0.001 + x)x}{0.01
+- x}\]</span></p>
+<p><span class="math display">\[x = 0.00183\]</span></p>
+<p>Czyli całkowite stężenie jonów <span
+class="math inline">\(H^{+}\)</span> wynosi</p>
+<p><span class="math display">\[\left\lbrack H^{+} \right\rbrack_{calk}
+= 0.001 + 0.00183 = 0.00283 \rightarrow pH = \  -
+\log{0.00283}\]</span></p>
+<p>Bez dodatku kwasu solnego <span class="math inline">\(HCl\)</span>
+było tyle <span class="math inline">\(0.00222\)</span>, więc dodatek
+<span class="math inline">\(HCl\)</span> trochę podwyższa całkowitą
+ilość jonów <span class="math inline">\(H^{+}\)</span> w
+mieszaninie.</p>
+<p>Stopień dysocjacji kwasu fluorowodorowego możemy obliczyć, jako
+stosunek kwasu, który uległ dysocjacji do całkowitego stężenia
+kwasu:</p>
+<p><span class="math display">\[\alpha_{HF} = \frac{x}{c_{0}^{HF}} =
+\frac{0.00183}{0.01} = 0.183 = 18.3\%\]</span></p>
+<p>A więc mniej niż w przypadku, w którym kwas ten występował sam.</p>
+<p>Jednocześnie nie można użyć w tym wypadku wzoru: <span
+class="math inline">\(\alpha = \frac{\left\lbrack H^{+}
+\right\rbrack}{c_{0}}\)</span> bo jony <span
+class="math inline">\(\lbrack H^{+}\rbrack\)</span> pochodzą z różnych
+źródeł.</p>
+<p>Dwa kolejne zadania tego typu:</p>
+<p><strong>I w ten sposób np oblicz pH 0. 1 molowego kwasu siarkowego.
+Załóż dwa warianty</strong></p>
+<ol type="a">
+<li><p><strong>kwas siarkowy to mocny dwuprotownowy (czyli oba etapy
+mocne)</strong></p></li>
+<li><p><strong>1 etap nieodwracalny , a drugi etap
+odwaracalny</strong></p></li>
+</ol>
+<p><strong>I</strong> drugie takie zadanie to oblicz pH roztworu <span
+class="math inline">\(CH_{3}COONa\ o\ \)</span>c=0.01<span
+class="math inline">\(\ \ \ i\ NaOH\ o\ c = 0.005\)</span></p>
+</body>
+</html>

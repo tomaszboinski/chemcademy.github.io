@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Nerst---przeksztacenia-potencjaw</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="artykul.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<p>Za pomocą równań Nernsta można uzyskać wartości standardowe
+potencjały półrównań nie podanych w treści zadania. Można t zrobić przez
+przyrównanie do siebie wyrażeń na potencjały z odpowiednich równań
+Nersta lub przez bilanse entalpii Gibbsa:</p>
+<h1 id="przyrównywanie-wyrażeń-na-potencjały">Przyrównywanie wyrażeń na
+potencjały </h1>
+<p>Rozważmy półogniwo, w którym mamy reakcje strąceniową, na
+przykład:</p>
+<p><span class="math display">\[AgCl + e^{-} \rightleftarrows Ag +
+Cl^{-}\]</span></p>
+<p>Zapisując wyrażenie na równanie Nernsta dostajemy:</p>
+<p><span class="math display">\[E_{\frac{AgCl}{Ag,\ Cl^{-}}} =
+E_{\frac{AgCl}{Ag,\ Cl^{-}}}^{0} + \frac{0.059}{1}\log\frac{\lbrack
+AgCl\rbrack}{\lbrack Ag\rbrack\left\lbrack Cl^{-}
+\right\rbrack}\]</span></p>
+<p><span class="math inline">\(AgCl\ i\ Ag\)</span> to ciała stałe,
+zamiast ich stężeń wstawiamy jeden. Wstawienie tych mądrości do równania
+Nernsta prowadzi do:</p>
+<p><span class="math display">\[E_{\frac{AgCl}{Ag,\ Cl^{-}}} =
+E_{\frac{AgCl}{Ag,\ Cl^{-}}}^{0} + \frac{0.059}{1}\log\frac{\lbrack
+AgCl\rbrack}{\lbrack Ag\rbrack\left\lbrack Cl^{-} \right\rbrack} =
+E_{\frac{AgCl}{Ag,\ Cl^{-}}}^{0} +
+\frac{0.059}{1}\log\frac{1}{1\left\lbrack Cl^{-}
+\right\rbrack}\]</span></p>
+<p>Należy podkreślić, iż potencjał półogniwa <span
+class="math inline">\(AgCl \rightleftarrows Ag + Cl^{-}\)</span>; o
+znanym stężeniu jonów chlorkowych, np. <span
+class="math inline">\(\left\lbrack Cl^{-} \right\rbrack =
+0.01\frac{mol}{dm^{3}}\)</span> można policzyć dwojako, bo albo można to
+zrobić z wyprowadzonego powyżej wzoru, co daje:</p>
+<p><span class="math display">\[E_{AgCl} = E_{\frac{AgCl}{Ag,\
+Cl^{-}}}^{0} + \frac{0.059}{1}\log\frac{1}{\left\lbrack Cl^{-}
+\right\rbrack} = E_{\frac{AgCl}{Ag,\ Cl^{-}}}^{0} +
+\frac{0.059}{1}\log\frac{1}{0.01} = 0.222 +
+\frac{0.059}{1}\log\frac{1}{0.01} = 0.34V\]</span></p>
+<p>Lub wbrew pozorom można również z potencjału półrównania <span
+class="math inline">\(Ag^{+} + e^{-} \rightarrow Ag\)</span>, postać
+równania Nernsta dla tego półogniwa to:</p>
+<p><span class="math display">\[E_{Ag} = E_{Ag}^{0} +
+\frac{0.059}{1}\log{\lbrack Ag^{+}\rbrack}\]</span></p>
+<p>tylko, że musimy powiązać stężenie jonów <span
+class="math inline">\(Ag^{+}\)</span> z jonami <span
+class="math inline">\(Cl^{-}\)</span>. Parametrem, który wiąże te
+stężenia w nasyconym roztworze jest iloczyn rozpuszczalności <span
+class="math inline">\(K_{so}\)</span>, którego postać jest
+następująca:</p>
+<p><span class="math display">\[K_{so} = \left\lbrack Ag^{+}
+\right\rbrack\left\lbrack Cl^{-} \right\rbrack\]</span></p>
+<p>Wówczas</p>
+<p><span class="math display">\[\left\lbrack Ag^{+} \right\rbrack =
+\frac{K_{so}}{\left\lbrack Cl^{-} \right\rbrack}\]</span></p>
+<p>Po wstawieniu tej zależności w równaniu Nernsta dostajemy</p>
+<p><span class="math display">\[E_{Ag} = E_{Ag}^{0} +
+\frac{0.059}{1}\log{\lbrack Ag^{+}\rbrack} = E_{Ag}^{0} +
+\frac{0.059}{1}\log\frac{K_{so}}{\left\lbrack Cl^{-} \right\rbrack} =
+0.8 + \frac{0.059}{1}\log\frac{1.77*10^{- 10}}{0.01} =
+0.34V\]</span></p>
+<p>Widzimy, iż obliczone wartości potencjałów są identyczne. Natomiast
+oczywiście musimy używać właściwych wartości potencjałów standardowych,
+analogicznych do używanej metody i równania Nernsta.</p>
+<p>W ten sam sposób możemy obliczać wartość potencjałów rzeczywistych w
+roztworach o różnych wartościach pH, niezależnie od tego czy środowisko
+jest kwasowe (nadmiar jonów <span class="math inline">\(H^{+}\)</span>)
+czy zasadowe – (nadmiar jonów <span
+class="math inline">\(OH^{-}\)</span>). Przykładem jest obliczenie
+potencjału półogniwa wodorowego w środowisku <span
+class="math inline">\(pH = 13 \rightarrow \left\lbrack H^{+}
+\right\rbrack = 10^{- 13}\ \)</span> oraz <span
+class="math inline">\(p_{H_{2}} = 1\ bar\)</span></p>
+<p>Możemy użyć półreakcji</p>
+<p><span class="math display">\[2H^{+} + 2e^{-} \rightarrow
+H_{2}\]</span></p>
+<p>Wówczas, jako potencjału standardowego używamy <span
+class="math inline">\(E_{2H^{+} + 2e^{-} \rightarrow
+H_{2}}^{0}\)</span>, oraz bierzemy odpowiednie formy utlenione i
+zredukowane wynikające z rozpatrywanego środowiska.</p>
+<p><span class="math display">\[E = E_{2H^{+} + 2e^{-} \rightarrow
+H_{2}}^{0} + \frac{0.059}{2}\log\left\lbrack H^{+} \right\rbrack^{2} =
+0.00 + \frac{0.059}{2}\log\left( 10^{- 13} \right)^{2} = - 0.767\
+V\]</span></p>
+<p>Natomiast z uwagi na to, że środowisko jest zasadowe, to poprawniej
+opisany proces przedtawia półreakcja:</p>
+<p><span class="math display">\[2H_{2}O + 2e^{-} \rightarrow H_{2} +
+2OH^{-}\]</span></p>
+<p>Obliczamy z zależności <span class="math inline">\(\left\lbrack H^{+}
+\right\rbrack\left\lbrack OH^{-} \right\rbrack = K_{w}\)</span> wartość
+stężenia jonów <span class="math inline">\(\lbrack
+OH^{-}\rbrack\)</span></p>
+<p><span class="math display">\[\left\lbrack OH^{-} \right\rbrack =
+\frac{10^{- 14}}{10^{- 13}} = 0.1\]</span></p>
+<p>Natomiast w tym wypadku używamy jako wartości potencjału
+standardowego <span class="math inline">\(E_{2H_{2}O + 2e^{-}
+\rightarrow H_{2} + 2OH^{-}}^{0}\)</span>, ora wstawiamy odpowiednie
+formy utlenione i zredukowane wynikające z półrównania <span
+class="math inline">\(2H_{2}O + 2e^{-} \rightarrow H_{2} +
+2OH^{-}\)</span></p>
+<p><span class="math display">\[E = E_{2H_{2}O + 2e^{-} \rightarrow
+H_{2} + 2OH^{-}}^{0} + \frac{0.059}{2}\log\frac{1}{\left\lbrack OH^{-}
+\right\rbrack^{2}} = - 0.828 + \frac{0.059}{2}\log\frac{1}{{0.1}^{2}} =
+- 0.767\ V\]</span></p>
+<p>Obliczone wartości potencjałów są równe sobie i jak widać nie zależą
+od zastosowanej metody obliczeń, o ile zastosowane półrównania,
+wyrażenia na równania Nernsta i potencjały standardowe są
+odpowiednie.</p>
+<p>Wykorzystując te zależności można obliczać potencjały standardowe
+innych reakcji niż znanych, wymaga to dobrej znajomości logarytmów oraz
+obliczeń związanych z <span class="math inline">\(K_{so}\)</span> i
+<span class="math inline">\(pH\)</span> i znacznie wykracza poza poziom
+matury.</p>
+<p>Rozważmy przykład: mając dany potencjał elektrod <span
+class="math inline">\(AgCl\text{/}Ag,\ Cl^{-}\)</span> i <span
+class="math inline">\(Ag^{+}\text{/}Ag\)</span> oblicz wartość <span
+class="math inline">\(K_{so}^{AgCl}\)</span></p>
+<p>Zapisując wyrażenia na oba potencjały dostajemy:</p>
+<p><span class="math display">\[Ag^{+} + e^{-} \rightleftarrows
+Ag\]</span></p>
+<p><span class="math display">\[E_{Ag} = E_{Ag}^{0} +
+\frac{0.059}{1}\log\left\lbrack Ag^{+} \right\rbrack\]</span></p>
+<p><span class="math display">\[AgCl + e^{-} \rightleftarrows Ag +
+Cl^{-}\]</span></p>
+<p><span class="math display">\[E_{AgCl} = E_{AgCl}^{0} +
+\frac{0.059}{1}\log\frac{1}{\left\lbrack Cl^{-}
+\right\rbrack}\]</span></p>
+<p>Potencjał obliczony przy użyciu jednego i drugiego równania dla
+nasyconego roztworu <span class="math inline">\(AgCl\)</span> tzn.
+takiego w którym jony <span class="math inline">\(Ag^{+}\ \)</span> są
+determinowane przez <span class="math inline">\(Cl^{-}\)</span> powinien
+być taki sam, niezależnie czy jest rozpatruje go jedną czy drugą
+półreakcją. Stężenie tych jonów związane są wyrażeniem na <span
+class="math inline">\(K_{so}\)</span></p>
+<p><span class="math display">\[AgCl \rightleftarrows Ag^{+} +
+Cl^{-}\  \rightarrow K_{So}^{AgCl} = \left\lbrack Ag^{+}
+\right\rbrack\left\lbrack Cl^{-} \right\rbrack \rightarrow \left\lbrack
+Ag^{+} \right\rbrack = \frac{K_{so}}{\left\lbrack Cl^{-}
+\right\rbrack}\]</span></p>
+<p>Wstawiając to wyrażenie do wzoru na potencjał <span
+class="math inline">\(E_{Ag}\)</span> dostajemy</p>
+<p><span class="math display">\[E_{Ag} = E_{Ag}^{0} +
+\frac{0.059}{1}\log\left\lbrack Ag^{+} \right\rbrack = E_{Ag}^{0} +
+0.059\log\frac{K_{so}}{\left\lbrack Cl^{-} \right\rbrack}\]</span></p>
+<p>Porównując je z wyrażeniem na potencjał elektrody <span
+class="math inline">\(AgCl\text{/}Ag,\ Cl^{-}\)</span></p>
+<p><span class="math display">\[E_{AgCl} = E_{AgCl}^{0} +
+\frac{0.059}{1}\log\frac{1}{\left\lbrack Cl^{-}
+\right\rbrack}\]</span></p>
+<p>Potencjały rzeczywiste uzyskane z obu wyrażeń muszą być równe, co
+prowadzi nas do</p>
+<p><span class="math display">\[E_{Ag} = E_{AgCl}\]</span></p>
+<p>Wstawiając wyrażenia dostajemy</p>
+<p><span class="math display">\[E_{Ag}^{0} +
+0.059\log\frac{K_{so}}{\left\lbrack Cl^{-} \right\rbrack} = E_{AgCl}^{0}
++ \frac{0.059}{1}\log\frac{1}{\left\lbrack Cl^{-}
+\right\rbrack}\]</span></p>
+<p>Z prawa działań na logarytmach <span class="math inline">\(\text{
+}\log{\frac{K_{so}}{\left\lbrack Cl^{-} \right\rbrack} =}\log\left(
+K_{so}*\frac{1}{\left\lbrack Cl^{-} \right\rbrack} \right) = \log K_{so}
++ \log\frac{1}{\left\lbrack Cl^{-} \right\rbrack}\)</span>, rozbijąc to
+wyrażenie w powyższym wzorze:</p>
+<p><span class="math display">\[E_{Ag}^{0} + 0.059\log K_{so} +
+0.059\log\frac{1}{\left\lbrack Cl^{-} \right\rbrack} = E_{AgCl}^{0} +
+\frac{0.059}{1}\log\frac{1}{\left\lbrack Cl^{-}
+\right\rbrack}\]</span></p>
+<p><span class="math display">\[0.059{\log K_{so}}^{AgCl} = E_{AgCl}^{0}
+- E_{Ag}^{0}\]</span></p>
+<p><span class="math display">\[K_{so} = 10^{\frac{E_{AgCl}^{0} -
+E_{Ag}^{0}}{0.059}} = 10^{\frac{0.222 - 0.8}{0.059}} = 1.59*10^{-
+10}\]</span></p>
+<p>Porównując uzyskaną wartość z wartością z tablic <span
+class="math inline">\(K_{so} = 1.77*10^{- 10}\)</span> widzimy, iż są to
+podobne wartości.</p>
+<p>Analogicznie możemy przeliczać potencjały reakcji w środowisku
+kwasowym (takim, gdzie są <span class="math inline">\(H^{+}\)</span>) na
+zasadowe (z jonami <span class="math inline">\(OH^{-}\)</span>)
+wykorzystując wyrażenie łączące stężenie obu jonów czyli <span
+class="math inline">\(K_{w} = \left\lbrack H^{+}
+\right\rbrack\left\lbrack OH^{-} \right\rbrack\)</span></p>
+<p>Np. Półreakcja redukcji tlenu w środowisku kwasowym jest dany
+wyrażeniem, której potencjał wynosi:</p>
+<p><span class="math display">\[O_{2} + 4H^{+} + 4e^{-} \rightleftarrows
+2H_{2}O\ \ \ E_{O_{2},H^{+}\text{/}\ H_{2}O}^{0} = 1.229V\]</span></p>
+<p><span class="math display">\[E_{O_{2},H^{+}\text{/}\ H_{2}O} =
+E_{O_{2},H^{+}\text{/}\ H_{2}O}^{0} +
+\frac{0.059}{4}\log\frac{\frac{p_{O_{2}}}{p_{0}}\left\lbrack H^{+}
+\right\rbrack^{4}}{1}\]</span></p>
+<p>Jaki jest potencjał redukcji tlenu w środowisku zasadowym, opisany
+równaniem:</p>
+<p><span class="math display">\[O_{2} + 2H_{2}O + 4e^{-}
+\rightleftarrows 4OH^{-}\ \ \ E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} =
+??\]</span></p>
+<p>Zapisując wyrażenie na wyrażenie Nernsta dla tej półreakcji
+dostajemy:</p>
+<p><span class="math display">\[E_{O_{2},H_{2}O\text{/}OH^{-}} =
+E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} +
+\frac{0.059}{4}\log\frac{\frac{p_{O_{2}}}{p_{0}}}{\left\lbrack OH^{-}
+\right\rbrack^{4}}\]</span></p>
+<p>Jony <span class="math inline">\(H^{+}\)</span> i<span
+class="math inline">\(\ OH^{-}\)</span> możemy połączyć przy użyciu
+wyrażenia na <span class="math inline">\(K_{W} = \left\lbrack H^{+}
+\right\rbrack\left\lbrack OH^{-} \right\rbrack\)</span>, wówczas
+widzimy, że stężenie jonów <span class="math inline">\(OH^{-}\)</span>
+jest równe:</p>
+<p><span class="math display">\[\left\lbrack OH^{-} \right\rbrack =
+\frac{K_{w}}{\left\lbrack H^{+} \right\rbrack}\]</span></p>
+<p>Wstawiając to wyrażenie zamiast jonów <span
+class="math inline">\(OH^{-}\)</span> w wyrażeniu na potencjał redukcji
+tlenu w środowisku zasadowym dotajemy:</p>
+<p><span class="math display">\[E_{O_{2},H_{2}O\text{/}OH^{-}} =
+E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} +
+\frac{0.059}{4}\log\frac{\frac{p_{O_{2}}}{p_{0}}}{\left\lbrack OH^{-}
+\right\rbrack^{4}} =\]</span></p>
+<p><span class="math display">\[  E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} +
+\frac{0.059}{4}\log\frac{\frac{p_{O_{2}}}{p_{0}}}{\left(
+\frac{K_{w}}{\left\lbrack H^{+} \right\rbrack} \right)^{4}} =
+E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} +
+\frac{0.059}{4}\log\frac{\frac{p_{O_{2}}}{p_{0}}\left\lbrack H^{+}
+\right\rbrack^{4}}{K_{w}^{4}}\]</span></p>
+<p>Potencjał rzeczywisty tej reakcji nie powinien zależeć od środowiska,
+powinien być taki sam dla środowiska kwasowego i zasadowego, szczególnie
+zważywszy na środowisko obojętne - głupotą byłoby, jeżeli potencjał dla
+środowiska obojętnego, w którym są zarówno jony <span
+class="math inline">\(H^{+}\)</span> jak i <span
+class="math inline">\(OH^{-}\)</span>byłby różny. Możemy to zapisać
+jako:</p>
+<p><span class="math display">\[E_{O_{2},H^{+}\text{/}\ H_{2}O} =
+E_{O_{2},H_{2}O\text{/}OH^{-}}\]</span></p>
+<p>Wstawiając równania Nernsta otrzymujemy:</p>
+<p><span class="math display">\[E_{O_{2},H^{+}\text{/}\ H_{2}O}^{0} +
+\frac{0.059}{4}\log\frac{\frac{p_{O_{2}}}{p_{0}}\left\lbrack H^{+}
+\right\rbrack^{4}}{1} =\]</span></p>
+<p><span class="math display">\[  E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} +
+\frac{0.059}{4}\log\frac{\frac{p_{O_{2}}}{p_{0}}\left\lbrack H^{+}
+\right\rbrack^{4}}{K_{w}^{4}}\]</span></p>
+<p>Rozbicie logarytmów w myśl prawa działań: <span
+class="math inline">\(\log\frac{\frac{p_{O_{2}}}{p_{0}}\left\lbrack
+H^{+} \right\rbrack^{4}}{1} = \log\frac{p_{O_{2}}}{p_{0}} +
+{\log\left\lbrack H^{+} \right\rbrack}^{4}\)</span> oraz <span
+class="math inline">\(\log\frac{\frac{p_{O_{2}}}{p_{0}}\left\lbrack
+H^{+} \right\rbrack^{4}}{K_{w}^{4}} = \log\frac{p_{O_{2}}}{p_{0}} +
+{\log\left\lbrack H^{+} \right\rbrack}^{4} - \log K_{w}^{4}\)</span>
+prowadzi do</p>
+<p><span class="math display">\[E_{O_{2},H^{+}\text{/}\ H_{2}O}^{0} +
+\frac{0.059}{4}\left( \log\frac{p_{O_{2}}}{p_{0}} + {\log\left\lbrack
+H^{+} \right\rbrack}^{4} \right) = E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} +
+\frac{0.059}{4}\left( \log\frac{p_{O_{2}}}{p_{0}} + {\log\left\lbrack
+H^{+} \right\rbrack}^{4} - \log K_{w}^{4} \right)\]</span></p>
+<p>Po wymnożeniu otrzymujemy</p>
+<p><span class="math display">\[E_{O_{2},H^{+}\text{/}\ H_{2}O}^{0} +
+\frac{0.059}{4}\log\frac{p_{O_{2}}}{p_{0}} +
+\frac{0.059}{4}{\log\left\lbrack H^{+} \right\rbrack}^{4} =\]</span></p>
+<p><span class="math display">\[ 
+E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} +
+\frac{0.059}{4}\log\frac{p_{O_{2}}}{p_{0}} +
+\frac{0.059}{4}{\log\left\lbrack H^{+} \right\rbrack}^{4} -
+\frac{0.059}{4}\log K_{w}^{4}\]</span></p>
+<p>Skrócenie powtarzających się członów prowadzi do</p>
+<p><span class="math display">\[E_{O_{2},H^{+}\text{/}\ H_{2}O}^{0} =
+E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} - \frac{0.059}{4}\log
+K_{w}^{4}\]</span></p>
+<p>Wstawienie wartości <span class="math inline">\(K_{w} = 10^{-
+14}\)</span>, poprawnej dla temperatury 25°C daje nam:</p>
+<p><span class="math display">\[E_{O_{2},H^{+}\text{/}\ H_{2}O}^{0} =
+E_{O_{2},H_{2}O\text{/}OH^{-}}^{0} + 0.826\]</span></p>
+<h1 id="przez-energię-gibbsa">Przez energię Gibbsa</h1>
+<p>Przedstawiona metoda przeliczania potencjałów standardowych jest mega
+niewygodna, znacznie łatwiej, na poziomie olimpiady, ale nie matury,
+przeliczać potencjały standardowe przez energię Gibbsa. Należy
+jednocześnie podkreślić, iż potencjał nie jest funkcją stanu, w
+przeciwieństwie do energii Gibbsa, a więc zaprezentowanej metody nie
+należy stosować do potencjałów standardowych.</p>
+<p>Zależność opisująca energię Gibbsa danego półukładu redoks od
+potencjału standardowego wygląda następująco:</p>
+<p><span class="math display">\[\mathrm{\Delta}G^{0} = -
+zFE^{0}\]</span></p>
+<p><span class="math display">\[\mathrm{\Delta}G^{0} \rightarrow
+energia\ Gibbsa\ półreakcji\]</span></p>
+<p><span class="math display">\[z - ilość\ przepływających\
+elektronów\]</span></p>
+<p><span class="math display">\[F - stała\ Faradaya\]</span></p>
+<p><span class="math display">\[E^{0} - potencjał\
+standardowy\]</span></p>
+<p>Drugi wzór , który jest tu używany to</p>
+<p><span class="math display">\[\mathrm{\Delta}G^{0} = - RT\ln
+K\]</span></p>
+<p>W którym:</p>
+<p><span class="math display">\[\mathrm{\Delta}G^{0} \rightarrow
+energia\ Gibbsa\ reakcji\]</span></p>
+<p><span class="math display">\[R - stała\ gazowa\ w\ jednostkach\ SI\ R
+= 8.3145\]</span></p>
+<p><span class="math display">\[T - temperatura\ w\
+Kelvinach\]</span></p>
+<p><span class="math display">\[\ln\ –logarytm\ naturalny\]</span></p>
+<p><span class="math display">\[chK - stała\ równowagi\
+reakcji\]</span></p>
+<p>Wykorzystując te zależności przdstwaone należy obliczyć energię
+Gibbsa dla każdej danej reakcji i półreakcji, a antę pnie zastosować
+metodę macierzową, taką jak przy bilansie entalpii.</p>
+<p>Np. mając potencjał półrównania <span class="math inline">\(Fe^{3 +}
++ 3e^{-} \rightarrow Fe\)</span> i <span class="math inline">\(Fe^{2 +}
++ 2e^{-} \rightarrow Fe\)</span> oblicz jaki jest potencjał <span
+class="math inline">\(Fe^{3 +} + e^{-} \rightarrow Fe^{2 +}\)</span></p>
+<p>Dla każdej półreakcji obliczamy odpowiadającej jej wartość <span
+class="math inline">\(\mathrm{\Delta}G^{0}\)</span></p>
+<p><span class="math display">\[Fe^{3 +} + 3e^{-} \rightarrow Fe\ \ \ \
+\ \ \mathrm{\Delta}G_{\frac{Fe^{3 +}}{Fe}}^{0} = \mathrm{\Delta}G^{0} =
+- zFE^{0} =\]</span></p>
+<p><span class="math display">\[  - 3FE_{\frac{Fe^{3 +}}{Fe}}^{0} = - 3*96500*( - 0.037) = 10\
+711.5 = G_{1}\]</span></p>
+<p><span class="math display">\[Fe^{2 +} + 2e^{-} \rightarrow Fe\ \ \ \
+\ \ \ \mathrm{\Delta}G_{\frac{Fe^{2 +}}{Fe}}^{0} = - zFE^{0} = -
+2FE_{\frac{Fe^{2 +}}{Fe}}^{0} =\]</span></p>
+<p><span class="math display">\[  - 2*96500*( - 0.447) = 86\ 271 =
+G_{2}\]</span></p>
+<p>Kolejno z półreakcji o znanych wartościach entalpii Gibbsa „składam”
+szukaną reakcję</p>
+<p><span class="math display">\[Fe^{3 +} + e^{-} \rightarrow Fe^{2 +}\ \
+\ \ \ \ G_{szuk}\]</span></p>
+<p><span class="math display">\[Fe^{3 +} + 3e^{-} \rightarrow Fe\ \ \ \
+\ \ \ \ \ G_{1}\]</span></p>
+<p><span class="math display">\[\ Fe^{2 +} + 2e^{-} \rightarrow Fe\ \ \
+\ \ G_{2}\ \text{*(-1)}\]</span></p>
+<p><span class="math display">\[Fe^{3 +} + 3e^{-} \rightarrow Fe\ \ \ \
+\ \ \ \ \ G_{1}\]</span></p>
+<p><span class="math display">\[Fe \rightarrow Fe^{2 +} + 2e^{-}\ \ \ \
+\  - G_{2}\]</span></p>
+<p>Wówczas wartość entalpii Gibbsa poszukiwanej reakcji jest po prostu
+różnicą znanych entalpii:</p>
+<p><span class="math display">\[Fe^{3 +} + e^{-} \rightarrow Fe^{2 +}\ \
+\ \ \ \ G_{szuk} = G_{1} - G_{2}\]</span></p>
+<p>Obliczam wartość <span class="math inline">\(G_{szuk}\)</span></p>
+<p><span class="math display">\[G_{szuk} = 10\ 711.5 - 86\ 271 = -
+75559.5\]</span></p>
+<p>Kolejno obliczoną wartość <span
+class="math inline">\(G_{Szuk}\)</span> przeliczam na wartość potencjału
+interesującej mnie półreakcji</p>
+<p><span class="math display">\[Fe^{3 +} + e^{-} \rightarrow Fe^{2
++}\]</span></p>
+<p><span class="math display">\[G = - zFE\]</span></p>
+<p><span class="math display">\[- 75559.5 = -
+1*96500*E_{szuk}\]</span></p>
+<p><span class="math display">\[E_{szuk} = 0.783V\]</span></p>
+<p>Co jest całkiem niezłą zgodnością z wartością literaturową.</p>
+<p>I w ten sam sposób można wykorzystywać entalpie Gibbsa z dowolną
+stałą <span class="math inline">\(K\)</span>, również stałą
+rozpuszczalności <span class="math inline">\(K_{so},\ \)</span>stałą
+kompleksowania <span class="math inline">\(\beta\)</span> czy z
+iloczynem jonowym wody<span class="math inline">\(K_{W}\)</span></p>
+<p>Przykładem tego jest zadanie: mając potencjał redukcji tlenu <span
+class="math inline">\(O_{2} + 4H^{+} + 4e^{-} \rightarrow
+2H_{2}O\)</span> oblicz potencjał standardowy redukcji tlenu w
+środowisku zasadowym.</p>
+<p>Oczywiście w tym zadaniu również będziemy wykorzystywać wartość <span
+class="math inline">\(K_{w}\)</span> do uzależnienia od siebie wartości
+stężeń jonów <span class="math inline">\(\left\lbrack H^{+}
+\right\rbrack\)</span> i <span class="math inline">\(\lbrack
+OH^{-}\rbrack\)</span>, kolejno przeliczamy w tej metodzie wszystkie
+dane na odpowiednie wartości entalpii Gibbsa i używamy metody
+macierzowej.</p>
+<p><span class="math display">\[O_{2} + 4H^{+} + 4e^{-} \rightarrow
+2H_{2}O\ \ \ \ \ \ \ \ \ G_{O_{2};H^{+}}^{0} = - zFE_{O_{2};H^{+}}^{0} =
+- 4*96500*1.229 = - 474\ 394 = G_{1}\]</span></p>
+<p><span class="math display">\[H_{2}O \rightarrow H^{+} + OH^{-}\ \ \ \
+\ \ \ \ \ \ G_{auto} = - RT\ln K_{w} = - 8.3145*298*\ln 10^{- 14} = 79\
+872.3 = G_{2}\]</span></p>
+<p>Zapisując wyrażenie na szukaną półreakcję</p>
+<p><span class="math display">\[O_{2} + 2H_{2}O + 4e^{-} \rightarrow
+4OH^{-}\ \ \ \ \ \ \ \ \ G_{Szuk} = ??\]</span></p>
+<p>Widzimy, iż możemy ją uzyskać z reakcji danych w zadaniu:</p>
+<p><span class="math display">\[O_{2} + 4H^{+} + 4e^{-} \rightarrow
+2H_{2}O\ \ \ G_{1}\]</span></p>
+<p><span class="math display">\[H_{2}O \rightarrow H^{+} + OH^{-}\ \ \ \
+\ G_{2}\ \text{/*4}\]</span></p>
+<p>Po zsumowaniu otrzymujemy wartość entalpii Gibbsa interesującej nas
+reakcji:</p>
+<p><span class="math display">\[O_{2} + 2H_{2}O + 4e^{-} \rightarrow
+4OH^{-}\ \ \ \ \ \ \ \ \ G_{Szuk} = G_{1} + 4G_{2} = - 474\ 394 + 4*(79\
+872.3) = - 164\ 584.4\]</span></p>
+<p>I przeliczamy na potencjał</p>
+<p><span class="math display">\[O_{2} + 2H_{2}O + 4e^{-} \rightarrow
+4OH^{-}\]</span></p>
+<p><span class="math display">\[G = - zFE\]</span></p>
+<p><span class="math display">\[- 164\ 584.4 = -
+4*96500*E_{szuk}\]</span></p>
+<p><span class="math display">\[E_{szuk} = 0.426V\]</span></p>
+<p>Uzyskaną wartość możemy porównać z wartością z tablic równą <span
+class="math inline">\(0.401V\)</span></p>
+<p>Możemy w analogiczny sposób używać do obliczeń również wartości
+innych stałych.</p>
+</body>
+</html>

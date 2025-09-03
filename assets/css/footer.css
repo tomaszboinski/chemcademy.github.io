@@ -1,0 +1,84 @@
+.main-footer {
+  background-color: #003366; /* ciemniejszy granat */
+  color: #eee;
+  padding: 40px 20px 15px; /* trochę większy padding na górze */
+  font-size: 0.9rem;
+  text-align: center; /* domyślnie tekst wyśrodkowany */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: left; /* dla dzieci wyrównanie do lewej */
+}
+
+.footer-left h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.footer-left p,
+.footer-right ul li a {
+  color: #ddd;
+  margin: 4px 0;
+  text-decoration: none;
+}
+
+.footer-left a:hover,
+.footer-right ul li a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.footer-right h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 8px;
+}
+
+/* Linki ogólne w stopce */
+.main-footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.main-footer a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 15px;
+  border-top: 1px solid #222;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-right {
+    text-align: center;
+  }
+}

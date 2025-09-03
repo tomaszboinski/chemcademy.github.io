@@ -1,0 +1,150 @@
+.main-header {
+  background-color: #003366;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.container {
+  max-width: none;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* zmienione na flex-start */
+  gap: 20px; /* odstęp między elementami */
+}
+
+.logo img {
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  flex-grow: 1;          /* zajmuje maksymalną szerokość */
+  display: flex;
+  justify-content: flex-end; /* linki wypchnięte do prawej */
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: right;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger ustawiamy po prawej */
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  margin-right: auto; /* odsuwa go maksymalnie na prawo */
+  order: 99; /* żeby być na końcu */
+}
+
+.nav-toggle .hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  position: relative;
+}
+
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav-toggle .hamburger::before {
+  top: -8px;
+}
+
+.nav-toggle .hamburger::after {
+  top: 8px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  /* Pokaż hamburger na mobilce */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Ukryj linki poziome i pokaż je w menu wysuwanym */
+  
+  /* Po kliknięciu hamburgera pokaż menu */
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links li a {
+    text-align: right;
+  }
+}
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;      /* od góry pod headerem */
+    right: 0;       /* przyklejone do prawej */
+    background-color: rgba(0, 51, 102, 0.85);
+    flex-direction: column;
+    width: max-content;    /* szerokość dopasowana do zawartości */
+    min-width: 160px;      /* minimalna szerokość, żeby nie było za wąsko */
+    max-width: 200px;      /* max szerokość dla kontroli */
+    height: auto;          /* wysokość zależna od ilości linków */
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    z-index: 999;
+    flex-grow: 0;
+    gap: 10px
+    align-items flex-end; /* przyklejenie zawartości do prawej */
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin-bottom: 15px;
+    width: 100%;           /* linki na pełną szerokość menu */
+  }
+
+  .nav-links li:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-links li a {
+    text-align: right;
+    font-size: 18px;
+    display: block;
+    color: white;
+  }
+}

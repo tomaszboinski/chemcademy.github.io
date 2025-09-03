@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+ 
+  color: #003366;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+   background: 
+    linear-gradient(to bottom, rgba(255,255,255,0) 60%, #ffffff 100%),
+    url("tlo.png") no-repeat center top / cover;
+  background-attachment: fixed;
+  
+   
+ 
+  padding: 0;
+}
+
+
+
+/* HEADER/FOOTER placeholders */
+#header-placeholder,
+#footer-placeholder {
+  
+  width: 100%;
+  background: #003366;
+
+  
+}
+
+/* Hamburger (tylko mobilnie) */
+#hamburger {
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  background: #003366;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  padding: 8px 12px;
+  z-index: 1001;
+  border-radius: 4px;
+}
+
+/* Layout: aside + main */
+#toc-layout {
+  display: flex;
+  flex-grow: 1;
+   height: 100%;
+   width: 100%;
+ 
+}
+
+/* SPIS TREŚCI */
+#toc-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #f0f8ff;
+  border-right: 2px solid #003366;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+.toc-hidden {
+  transform: translateX(-110%);
+}
+
+#toc-container h2 {
+  margin-top: 0;
+}
+
+/* Działy */
+.toc-header {
+  margin-top: 1.5em;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+  border-bottom: 1px solid #003366;
+  user-select: none;
+}
+.toc-header::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  transition: transform 0.2s ease;
+}
+.toc-header.collapsed::after {
+  transform: rotate(-90deg);
+}
+
+/* Artykuły */
+#toc-container ul {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding-left: 15px;
+}
+#toc-container ul.collapsed {
+  display: none;
+}
+#toc-container li {
+  margin-bottom: 6px;
+}
+#toc-container a {
+  text-decoration: none;
+  color: #003366;
+  font-style: italic;
+}
+#toc-container a:hover {
+  color: #ffcc00;
+}
+
+/* VIEWER */
+#article-viewer {
+  margin-left: 250px;
+  padding: 2em;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+  #toc-container {
+    width: 80%;
+    max-width: 300px;
+  }
+  #article-viewer {
+    margin-left: 0;
+    padding: 1em;
+  }
+  #toc-layout {
+    flex-direction: column;
+  }
+}
+/* Styl klikalnego tytułu TOC */
+.clickable-title {
+  color: #003366;
+  text-decoration: underline;
+  cursor: pointer;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clickable-title:hover {
+  color: #ffcc00;
+}.clickable-title {
+  text-decoration: underline;
+  color: #003366;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.clickable-title:hover {
+  color: #ffcc00;
+}
+#article-viewer {
+  padding: 2em;
+  box-sizing: border-box;
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+  margin-left: 0px; /* domyślnie, gdy TOC widoczny */
+}
+
+/* Gdy spis treści jest schowany, article-viewer dosuwa się do lewej */
+body.toc-hidden-body #article-viewer {
+  margin-left: 250;
+}

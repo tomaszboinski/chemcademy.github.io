@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kinetyka---cakowane-rwnania-kinetyczne</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="artykul.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="scałkowane-równania-kinetyczne">Scałkowane równania
+kinetyczne</h1>
+<p>Scałkowane równania kinetyczne to zależności stężenia substratów od
+czasu, są one różne dla reakcji różnych rzędów, innymi słowy zależy to
+od rzędu reakcji. Typowo omawia się rzędy 0, 1, 2. Scałkowane wzory będą
+ewentualnie podane zostanąw info wstępnej, jeżeli będą one potrzebne w
+zadaniu. O dziwo na potrzeby starej matury (2015) należy rozumieć i znać
+przedstawione dalej wykresy, wynikające z scałkowanych równań
+kinetycznych.</p>
+<h1 id="rzędu">0 rzędu</h1>
+<p>Kinetykę reakcji zerowego rzędu można opisać równaniem:</p>
+<p><span class="math display">\[\mathbf{v} = - \frac{d\lbrack
+A\rbrack}{d\lbrack t\rbrack} = \mathbf{k}\left\lbrack \mathbf{A}
+\right\rbrack^{\mathbf{0}} = k\]</span></p>
+<p>Podsumowując:</p>
+<p><span class="math display">\[- \frac{d\lbrack A\rbrack}{dt} =
+k\]</span></p>
+<p>Czego rozwiązaniem jest (co oczywiście powinni podać nam w informacji
+wstępnej)</p>
+<p><span class="math display">\[\left\lbrack A(t) \right\rbrack =
+\left\lbrack A_{0} \right\rbrack - kt\]</span></p>
+<p>W przedstawionym wzorze <span class="math inline">\(\left\lbrack A(t
+\right)\rbrack\)</span> oznacza stężenie reagenta A po czasie
+interesującym nas czasie. <span class="math inline">\(\lbrack
+A_{0}\rbrack\)</span> to stężenie początkowe. <span
+class="math inline">\(k\)</span> to stała szybkości reakcji, a <span
+class="math inline">\(t\)</span> to czas</p>
+<p><span class="math display">\[\left\lbrack A(t) \right\rbrack =
+\left\lbrack A_{0} \right\rbrack - kt\]</span></p>
+<p>Umieszczając na wykresie<span class="math inline">\(\left\lbrack A(t)
+\right\rbrack\)</span> w zależności od czasu powinniśmy uzyskać linię
+prostą, jednocześnie możemy stwierdzić, iż jeżeli wykres <span
+class="math inline">\(\lbrack A(t)\rbrack\)</span> od czasu jest linią
+prostą to reakcja jest zerowego rzędu.</p>
+<p>Czas połowicznego rozpadu <span
+class="math inline">\(t_{\frac{1}{2}}\)</span> <span
+class="math inline">\(= t_{połowicznego\ zaniku}\)</span> to czas, po,
+jakim przereaguje połowa substratu. Jednocześnie, jeżeli przereaguje
+połowa substratu to również połowa zostanie nieprzereagowana, w związku,
+z czym stężenie reagenta A po tym czasie połowicznego zaniku musi być
+równe <span class="math inline">\(\left\lbrack A\left( t_{\frac{1}{2}}
+\right) \right\rbrack = \frac{1}{2}\left\lbrack A_{0}
+\right\rbrack\)</span>. Wstawiając te zależności do wyrażenia na
+scałkowane równanie kinetyczne otrzymujemy:</p>
+<p><span class="math display">\[\frac{1}{2}\left\lbrack A_{0}
+\right\rbrack = \left\lbrack A_{0} \right\rbrack -
+kt_{\frac{1}{2}}\]</span></p>
+<p><span class="math display">\[t_{\frac{1}{2}} =
+\frac{1}{2}\frac{\left\lbrack A_{0} \right\rbrack}{k}\]</span></p>
+<p>Wyprowadzone równanie dla reakcji zerowego rzędu zależy od stężenia
+początkowego reagenta, więc czas połowicznego zaniku nie jest wartością
+stałą dla reakcji zerowego rzędu.</p>
+<h1 id="rząd">1 rząd</h1>
+<p>Kinetykę pierwszego rzędu można opisać równaniem:</p>
+<p><span class="math display">\[v = k\lbrack A\rbrack^{1}\]</span></p>
+<p><span class="math display">\[- \frac{d\lbrack A\rbrack}{dt} =
+k\lbrack A\rbrack\]</span></p>
+<p>Po scałkowaniu otrzymujemy równanie kinetyczne dla reakcji pierwszego
+rzędu:</p>
+<p><span class="math display">\[\ln\left\lbrack A(t) \right\rbrack =
+\ln\left\lbrack A_{0} \right\rbrack - kt\]</span></p>
+<p>W którym występuje symbol <span class="math inline">\(\ln{(\
+)}\)</span>.Oznacza on logarytm o podstawie liczby Eulera <span
+class="math inline">\(e\)</span> - liczby niewymiernej, a więc z gatunku
+takich jak <span class="math inline">\(\pi\)</span>, w tym wypadku jest
+to wartość <span class="math inline">\(e\)</span> równa <span
+class="math inline">\(2.78\ldots\ \)</span>. Można oznaczyć ten symbol
+również jako <span class="math inline">\({\log_{e}()}\ \)</span>.
+Odwrotnością logarytmu naturalnego jest liczba Eulera podniesiona do
+odpowiedniej potęgi, co można zapisać jako <span
+class="math inline">\(\ln x = a\overset{\ }{\Leftrightarrow}x =
+e^{a}\)</span>. W praktyce dla nas oba wyrażenia znaczą tyle, co symbol
+na kalkulatorze. W równaniu występuje jeszcze <span
+class="math inline">\(\lbrack A(t)\rbrack\)</span> oraz <span
+class="math inline">\(\lbrack A_{0}\rbrack\)</span> – stężenie molowe
+substratu odpowiednia po określonym czasie oraz na początku reakcji,
+<span class="math inline">\(k\)</span> - stała szybkości reakcji, <span
+class="math inline">\(t\)</span> – czas prowadzenia reakcji.
+Równanie<br />
+<span class="math display">\[\ln\left\lbrack A(t) \right\rbrack =
+\ln\left\lbrack A_{0} \right\rbrack - kt\]</span></p>
+<p>możemy przekształcić do postaci</p>
+<p><span class="math display">\[\ln\frac{\left\lbrack A(t)
+\right\rbrack}{\left\lbrack A_{0} \right\rbrack} = - kt\]</span></p>
+<p>Co wykorzystując prawa działań na logarytmach prowadzi na do
+równania:</p>
+<p><span class="math display">\[\frac{\left\lbrack A(t)
+\right\rbrack}{\left\lbrack A_{0} \right\rbrack} = e^{- kt} \rightarrow
+\left\lbrack A(t) \right\rbrack = \lbrack A_{0}\rbrack e^{- kt}\ \ \ \ e
+= 2.78\ldots.\]</span></p>
+<p>Który to wzór umożliwia obliczenie stężenia reagenta <span
+class="math inline">\(\lbrack A(t)\rbrack\)</span> po czasie</p>
+<p>Równanie:</p>
+<p><span class="math display">\[\ln\left\lbrack A(t) \right\rbrack =
+\ln\left\lbrack A_{0} \right\rbrack - kt\]</span></p>
+<p>Mogę również przekształcić do postaci z logarytmem dziesiętnym,
+wykorzystując wzór na zamianę logarytmów: <span
+class="math inline">\(\ln{\left\lbrack A(t) \right\rbrack = \ln
+10{*log}_{10}{\lbrack A(t)\rbrack}}\)</span></p>
+<p><span class="math display">\[\ln\left\lbrack A(t) \right\rbrack =
+\ln\left\lbrack A_{0} \right\rbrack - kt\]</span></p>
+<p><span class="math display">\[\ln 10{*log}_{10}{\lbrack A(t)\rbrack} =
+\ln 10{*log}_{10}{\lbrack A_{0}\rbrack} - kt\]</span></p>
+<p><span class="math display">\[\log_{10}{\lbrack A(t)\rbrack}{=
+log}_{10}{\lbrack A_{0}\rbrack} - \frac{kt}{\ln 10}\]</span></p>
+<p><span class="math display">\[\log_{10}\left\lbrack A(t)
+\right\rbrack{= log}_{10}\left\lbrack A_{0} \right\rbrack -
+0.4343kt\]</span></p>
+<p>Analizując wyprowadzony uprzednio wzór widzimy,</p>
+<p><span class="math display">\[\ln\left\lbrack A(t) \right\rbrack =
+\ln\left\lbrack A_{0} \right\rbrack - kt\]</span></p>
+<p>że wykres przedstawiający zależność logarytmu naturalnego stężenia
+reagenta od czasu <span class="math inline">\(\ln\left\lbrack A(t)
+\right\rbrack = f(t)\)</span> musi być linią prostą</p>
+<p><img src="kinetyka---cakowane-rwnania-kinetyczne/media/image1.png"
+style="width:2.57361in;height:1.05208in" /></p>
+<p>Dla którego można powiedzieć, że wyraz wolny <span
+class="math inline">\(b\)</span> - wartość przecięcia się z osią OY
+równy jest <span class="math inline">\(\ln\left\lbrack A_{0}
+\right\rbrack,\)</span> natomiast współczynnik kierunkowy wynosi <span
+class="math inline">\(a = - k\)</span>.</p>
+<p>Również bazując na zmodyfikowanym wyrażeniu, w którym występują
+logarytmy dziesiętne, widzimy, że wykres logarytmu dziesiętnego ze
+stężenia substratu <span class="math inline">\(\log_{10}{\lbrack
+A(t)\rbrack}\)</span> od czasu <span
+class="math inline">\(t\)</span>,</p>
+<p><span class="math display">\[\log_{10}\left\lbrack A(t)
+\right\rbrack{= log}_{10}\left\lbrack A_{0} \right\rbrack -
+0.4343kt\]</span></p>
+<p>Powinien być linią prostą, dla której wyraz wolny <span
+class="math inline">\(b = \log_{10}{\lbrack A_{0}\rbrack}\)</span>,
+natomiast współczynnik kierunkowy prostej <span class="math inline">\(a
+= - 0.4343k\)</span>. Podsumowując, jeżeli wykres logarytmu dowolnego
+stężenia od czasu będzie linią prostą wówczas wiemy, że reakcja jest
+pierwszego rzędu.</p>
+<p>Czas połowicznego zaniku a więc czas po jakim stężenie substratu
+będzie równie połowie stężenia początkowego; <span
+class="math inline">\(A(t) = \frac{\left\lbrack A_{0}
+\right\rbrack}{2}\)</span> możemy wyprowadzić ze scałkowanego równania
+kinetycznego dla reakcji pierwszego rzędu:</p>
+<p><span class="math display">\[\ln\left\lbrack A(t) \right\rbrack =
+\ln\left\lbrack A_{0} \right\rbrack - kt\]</span></p>
+<p>Wstawiając, że dla czasu równego połowicznemu zanikowi <span
+class="math inline">\(t = t_{\frac{1}{2}}\)</span> powinniśmy uzyskać
+stężenie reagenta po czasie równe połowie początkowego: <span
+class="math inline">\(\frac{\left\lbrack A_{0}
+\right\rbrack}{2}\)</span></p>
+<p><span class="math display">\[\ln\frac{\left\lbrack A_{0}
+\right\rbrack}{2} = \ln\left\lbrack A_{0} \right\rbrack -
+kt_{\frac{1}{2}}\]</span></p>
+<p><span class="math display">\[\ln\frac{\left\lbrack A_{0}
+\right\rbrack}{2} - \ln\left\lbrack A_{0} \right\rbrack = -
+kt_{\frac{1}{2}}\]</span></p>
+<p>Wykorzystując prawo działań na logarytmach:</p>
+<p><span class="math display">\[\ln a - \ln b = \ln\left( \frac{a}{b}
+\right)\]</span></p>
+<p>Dostajemy:</p>
+<p><span class="math display">\[\ln\frac{\frac{\left\lbrack A_{0}
+\right\rbrack}{2}}{\left\lbrack A_{0} \right\rbrack} = -
+kt_{\frac{1}{2}}\]</span></p>
+<p><span class="math display">\[\ln\frac{1}{2} = -
+kt_{\frac{1}{2}}\]</span></p>
+<p>Wykorzystując kolejne prawo działań logarytmach:</p>
+<p><span class="math display">\[\ln\frac{1}{a} = \ln a^{- 1} = - \ln
+a\]</span></p>
+<p><span class="math display">\[\text{ }\ln\frac{1}{2} = - \ln 2 = -
+kt_{\frac{1}{2}}\]</span></p>
+<p>Co mogę zapisać jako:</p>
+<p><span class="math display">\[t_{\frac{1}{2}} = \frac{\ln 2}{k} =
+\frac{\log 2}{\log{2.78}*k} = \frac{0.6931}{k}\]</span></p>
+<p>Przedstawiony wzór mówi, że czas połowicznego zaniku dla reakcji
+pierwszego rzędu nie zależy od stężenia substratu, gdyż podczas
+wyprowadzania nastąpiło jego skrócenie i <strong>jest typowe dla reakcji
+1. Rzedu</strong>. Dodatkowo możemy powiedzieć, że wszystkie rozpady
+promieniotwórcze zachodzą z kinetyką pierwszego rzędu. Jednocześnie z
+wyprowadzonego wzoru <span class="math inline">\(t_{\frac{1}{2}} =
+\frac{\ln 2}{k}\)</span> jasno widzimy, że dla kinetyki pierwszego rzędu
+wartość stałej szybkości reakcji definiuje nam czas połowicznego zaniku
+i wice wersa.</p>
+<h1 id="drugi-rząd">Drugi rząd</h1>
+<p>Wyrażenie na szybkość reakcji dla drugiego rzędu ma postać:</p>
+<p><span class="math display">\[v = k\lbrack A\rbrack^{2}\]</span></p>
+<p><span class="math display">\[- \frac{d\lbrack A\rbrack}{dt} =
+k\lbrack A\rbrack^{2}\]</span></p>
+<p>Po scałkowaniu otrzymujemy:</p>
+<p><span class="math display">\[\frac{1}{\left\lbrack A(t)
+\right\rbrack} = \frac{1}{\left\lbrack A_{0} \right\rbrack} +
+kt\]</span></p>
+<p>W przypadku tego równania, widzimy że wykres odwrotności stężenia od
+czasu będzie linią prostą.</p>
+<p><img src="kinetyka---cakowane-rwnania-kinetyczne/media/image2.png"
+style="width:3.13766in;height:2.11677in" /></p>
+<p>Dla tak wyznaczonej prostej wyraz wolny to <span
+class="math inline">\(\frac{1}{\left\lbrack A_{0}
+\right\rbrack}\)</span>, natomiast współczynnik kierunkowy równy jest
+stałej szybkości reakcji. Oczywiście również możemy powiedzieć, że
+jeżeli wykres odwrotności stężenia substratu od czasu będzie linią
+prostą wówczas reakcja jest drugiego rzędu.</p>
+<p>Z przedstawionej zależności można wyprowadzić wzór łączący czas
+połowicznego zaniku – czas, po jakim przereaguje połowa substratu, stałą
+szybkości reakcji i stężenie początkowe substratu. Oczywiście można
+zapisać, że jeżeli <span class="math inline">\(t = t_{\frac{1}{2}}
+\rightarrow \lbrack A(t)\rbrack = \frac{1}{2}\lbrack
+A_{0}\rbrack\)</span>. Wstawiając te zależności do scałkowanego równania
+kinetycznego dostajemy:</p>
+<p><span class="math display">\[\frac{1}{\frac{\left\lbrack A_{0}
+\right\rbrack}{2}} = \frac{1}{\left\lbrack A_{0} \right\rbrack} +
+kt_{\frac{1}{2}}\]</span></p>
+<p>Co po przekształceniach daje:</p>
+<p><span class="math display">\[\frac{1}{\left\lbrack A_{0}
+\right\rbrack k} = t_{\frac{1}{2}}\]</span></p>
+<p>Możemy więc powiedzieć, że dla reakcji drugiego rzędu czas
+połowicznego zaniku również zależy od stałej szybkości i stężenia
+początkowego substratu.</p>
+<p><span
+class="math display">\[{\mathbf{3}\mathbf{t}}_{\frac{\mathbf{1}}{\mathbf{2}}}\]</span></p>
+<p>Wyprowadzone zależności można przedstawić w tabelce</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 23%" />
+<col style="width: 26%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>Szybkość reakcji</th>
+<th>Scałkowane równanie kinetyczn</th>
+<th>Czas połowicznego zaniku</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[0\ rząd\]</span></td>
+<td><span class="math display">\[v = - \frac{d\lbrack A\rbrack}{dt} =
+k\]</span></td>
+<td><span class="math display">\[\left\lbrack A(t) \right\rbrack =
+\left\lbrack A_{0} \right\rbrack - kt\]</span></td>
+<td><span class="math display">\[t_{\frac{1}{2}} =
+\frac{1}{2\left\lbrack A_{0} \right\rbrack k}\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[1\ rząd\]</span></td>
+<td><span class="math display">\[v = - \frac{d\lbrack A\rbrack}{dt} =
+k\lbrack A\rbrack\]</span></td>
+<td><span class="math display">\[\ln\left\lbrack A(t) \right\rbrack =
+\ln\left\lbrack A_{0} \right\rbrack - kt\]</span></td>
+<td><span class="math display">\[t_{\frac{1}{2}} = \frac{\ln
+2}{k}\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[2\ rząd\]</span></td>
+<td><span class="math display">\[v = - \frac{d\lbrack A\rbrack}{dt} =
+k\lbrack A\rbrack^{2}\]</span></td>
+<td><span class="math display">\[\frac{1}{\left\lbrack A(t)
+\right\rbrack} = \frac{1}{\left\lbrack A_{0} \right\rbrack} +
+kt\]</span></td>
+<td><span class="math display">\[t_{\frac{1}{2}} = \frac{1}{\left\lbrack
+A_{0} \right\rbrack k}\]</span></td>
+</tr>
+</tbody>
+</table>
+<p><img src="kinetyka---cakowane-rwnania-kinetyczne/media/image3.png"
+style="width:3.61495in;height:2.14063in" /></p>
+<p><img src="kinetyka---cakowane-rwnania-kinetyczne/media/image4.png"
+style="width:5.02431in;height:3.12778in" /></p>
+<p><img src="kinetyka---cakowane-rwnania-kinetyczne/media/image5.png"
+style="width:5.02815in;height:3.05234in" /></p>
+<h1 id="zastosowanie-scałkowanych-równań-kinetycznych">Zastosowanie
+scałkowanych równań kinetycznych:</h1>
+<h1
+id="obliczanie-stężenia-reagentów-przed-po-reakcji-znając-czas-obliczanie-czasu-połowicznego-zaniku">Obliczanie
+stężenia reagentów przed po reakcji znając czas, obliczanie czasu
+połowicznego zaniku</h1>
+<p>W wyniku biegu pewnej reakcji pierwszego rzędu stężenie substratu
+zmalało z <span class="math inline">\(8.0\ mmol*dm^{- 3}\)</span> do
+<span class="math inline">\(1\ mmol*dm^{- 3}\)</span> w ciągu 85.2
+minut. Jaki jest czas półtrwania substratu?</p>
+<p>Kinetyka reakcji pierwszego rzędu opisana jest równaniem:</p>
+<p><span class="math display">\[\ln{\left( A(t) \right) =
+\ln\left\lbrack A_{0} \right\rbrack - kt}\]</span></p>
+<p>Wstawiając dane dostajemy:</p>
+<p><span class="math display">\[\ln{0.001} = \ln{0.008} -
+k*85.2\]</span></p>
+<p><span class="math display">\[k = \frac{\ln{0.008} - \ln{0.001}}{85.2}
+= 0.02441\frac{1}{\text{min}}\]</span></p>
+<p>Dla reakcji I rzędu można powiedzieć, że czas połowicznego zaniku
+jest związany z stałą szybkości równaniem</p>
+<p><span class="math display">\[t_{\frac{1}{2}} = \frac{\ln 2}{k} =
+\frac{\ln 2}{0.02441} = \frac{0.6931}{0.02441} = 28.4\min\ \]</span></p>
+<p>Znając czasy półtrwania dla różnych warunków tej samej reakcji możemy
+wyznaczyć jej rząd, obliczając stałe dla różnych doświadczeń. Oczywiście
+wartości tych stałych muszą mieć stałe wartości, bo dalej mówimy o
+jednej i tej samej reakcji.</p>
+<h1 id="ustalanie-rzędów-przez-analizę-danych">Ustalanie rzędów przez
+analizę danych</h1>
+<p>Reakcję rozkładu podtlenku azotu w fazie gazowej <span
+class="math inline">\(2N_{2}O \rightarrow 2N_{2} + O_{2}\)</span> badano
+w warunkach <span class="math inline">\(T,V = const\)</span>.
+Stwierdzono, że w temperaturze 1033K czas półtrwania substratu jest
+równy <span class="math inline">\(255s\)</span> dla ciśnienia
+początkowego <span class="math inline">\(p_{0} = 290\ Tr\)</span> oraz
+<span class="math inline">\(212\ s\)</span> dla ciśnienia początkowego
+<span class="math inline">\(p_{02} = 360\ Tr\)</span>. Wyznaczyć czas
+półtrwania dla ciśnienia początkowego <span class="math inline">\(p_{03}
+= 760\ Tr\)</span>.</p>
+<p>W obliczeniach związanych z kinetyką dla gazów często zamiennie używa
+się ciśnień zamiast stężeń. Jest to związane z proporcjonalnością przy
+stałej temperaturze tych dwóch wielkości, co wynika z równania
+Clapeyrona:</p>
+<p><span class="math display">\[pV = nRT\]</span></p>
+<p><span class="math display">\[p = \frac{n}{V}RT\]</span></p>
+<p><span class="math display">\[p = cRT\]</span></p>
+<p>W przypadku tego zadania widzimy, że okres półtrwania zmienia się nam
+podczas prowadzenia procesu, nie może być to w takim razie rząd pierwszy
+reakcji, bo w tym wypadku jest to wartość stała. Zgodnie z warunkami
+zadania może to być rząd zerowy, albo rząd drugi.</p>
+<p>Rozważając dla zerowego rzędu otrzymujemy:</p>
+<p><span class="math display">\[t_{\frac{1}{2}} =
+\frac{1}{2}\frac{\left\lbrack A_{0} \right\rbrack}{k}\]</span></p>
+<p><span class="math display">\[k = \frac{\left\lbrack A_{0}
+\right\rbrack}{2*t_{\frac{1}{2}}};\]</span></p>
+<p>Wstawiając czasów półtrwania dostajemy wartości stałych:</p>
+<p><span class="math display">\[k_{I} = \frac{255}{2*290} =
+0.4396\frac{Tr}{s}\]</span></p>
+<p><span class="math display">\[k_{II} = \frac{360}{2*212} =
+0.8491\frac{Tr}{s}\]</span></p>
+<p>Widzimy, że wartości te rozjeżdżają się, a wartość stałej powinna być
+stała.</p>
+<p>Dla reakcji drugiego rzędu wyrażenie na okres półtrwania ma
+postać:<br />
+<span class="math display">\[\frac{1}{\left\lbrack A_{0} \right\rbrack
+k} = t_{\frac{1}{2}}\]</span></p>
+<p>Co po przekształceniu daje nam</p>
+<p><span class="math display">\[k = \frac{1}{\left\lbrack A_{0}
+\right\rbrack t_{\frac{1}{2}}\ }\]</span></p>
+<p>Wstawiając wartości otrzymujemy:</p>
+<p><span class="math display">\[k_{I} = \frac{1}{255*290} = 1.352*10^{-
+5}\frac{1}{Tr*s}\]</span></p>
+<p><span class="math display">\[k_{II} = \frac{1}{360*212} = 1.310*10^{-
+5}\frac{1}{Tr*s}\]</span></p>
+<p>W tym wypadku widzimy, że obie uzyskane wartości stałych szybkości są
+zbliżone, więc uśredniamy je w celu obliczenia dokładniej wartości:</p>
+<p><span class="math display">\[k_{srednia} = \frac{1.352*10^{- 5} +
+1.310*10^{- 5}}{2} = 1.331*10^{- 5}\frac{1}{Tr*s}\]</span></p>
+<p>Więc teraz mam k to mogę obliczyć nowe <span
+class="math inline">\(t_{\frac{1}{2}}\)</span> dla podanego ciśnienia
+<span class="math inline">\(p = 760Tr\)</span></p>
+<p><span class="math display">\[t_{\frac{1}{2}} = \frac{1}{\left\lbrack
+A_{0} \right\rbrack*k} = \frac{1}{1.331*10^{- 5}*760} =
+98.85s\]</span></p>
+<h1 id="ustalanie-rzędów-reakcji-przez-linearyzacje">Ustalanie rzędów
+reakcji przez linearyzacje</h1>
+<p>Trzecim rodzajem zadań jest tzw. metoda graficzno – całkowa
+wyznaczania rzędu reakcji. Polega ona na narysowaniu trzech wykresów dla
+typowych rzędów reakcji – odpowiednio dla zerowego rzędu rysujemy wykres
+zależności stężenia od czasu. Dla reakcji pierwszego rzędu rysujemy
+wykres zależności logarytmu (najlepiej naturalnego, <span
+class="math inline">\(\ln\)</span>) od czasu; natomiast dla drugiego
+rzędu wykres zależności odwrotności stężenia od czasu. Możemy rozpoznać,
+którego rzędu jest reakcja po tym, który wykres jest linią prostą.
+Podsumowując:</p>
+<p><span class="math display">\[\left\lbrack A(t) \right\rbrack = f(t)
+\rightarrow 0\ rzedu\]</span></p>
+<p><span class="math display">\[\ln\left\lbrack A(t) \right\rbrack =
+f(t) \rightarrow I\ rzedu\]</span></p>
+<p><span class="math display">\[\frac{1}{\left\lbrack A(t)
+\right\rbrack} = f(t) \rightarrow II\ rzędu\]</span></p>
+<p>Z uzyskanych wykresów można kolejno odczytać wartości <span
+class="math inline">\(\left( A_{0}\ lub\ln\left\lbrack A_{0}
+\right\rbrack\ lub\ \frac{1}{\left\lbrack A_{0} \right\rbrack}
+\right)\)</span> jako wyraz wolny uzyskanej linii prostej oraz co
+ważniejsze współczynnik kierunkowy jest równy wartości stałej szybkości
+reakcji <span class="math inline">\(k\)</span> lub jej z znakiem ujemnym
+<span class="math inline">\(–k\)</span>. Przykłady zadań omówione są w
+linearyzacji</p>
+</body>
+</html>
