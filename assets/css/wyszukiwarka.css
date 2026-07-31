@@ -1,8 +1,6 @@
-
 /* ========================= */
 /* FILTRY + WYNIKI */
 /* ========================= */
-
 
 .layout {
     display: grid;
@@ -14,12 +12,17 @@
 }
 
 
+/* ========================= */
 /* LEWA STRONA */
+/* ========================= */
 
 .filters {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
+    position: sticky;
+    top: 20px;
+    align-self: start;
 }
 
 
@@ -29,42 +32,41 @@
     padding: 20px;
 
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-
     backdrop-filter: blur(5px);
 }
 
 
 .filter-card h2 {
+    text-align:center;
 
-    font-size: 1.8rem;
-    font-style: italic;
-    color: #003366;
+    font-size:1.8rem;
+    font-style:italic;
 
-    margin-bottom: 20px;
-}
+    color:#003366;
 
-.filter-card h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    font-style: italic;
-    color: #003366;
-    margin-bottom: 20px;
+    margin-bottom:20px;
 }
 
 
 /* ========================= */
-/* EDYCJE - 2 KOLUMNY */
+/* EDYCJE */
 /* ========================= */
 
 #editions {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:10px;
+
 }
 
 
 #editions label {
-    white-space: nowrap;
+
+    white-space:nowrap;
+
 }
 
 
@@ -73,17 +75,30 @@
 /* TEMATY */
 /* ========================= */
 
+
 #topics {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
 }
 
 
 #topics label {
-    white-space: nowrap;}
 
+    white-space:nowrap;
+
+}
+
+
+
+/* ========================= */
 /* ETAPY */
+/* ========================= */
+
 
 .stages-card {
 
@@ -95,60 +110,40 @@
 .stages-card .checkbox-grid {
 
     display:flex;
+
     flex-wrap:wrap;
+
     gap:12px;
 
 }
 
 
 
+/* ========================= */
 /* EDYCJE + TEMATY */
+/* ========================= */
+
 
 .bottom-filters {
 
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:20px;
 
 }
 
 
-
-/* TEMATY */
-
-.topics-card .filter-header {
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-}
-
-
-.topics-card .checkbox-grid {
-
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-
-}
-
-
-.topics-card label {
-
-    white-space:nowrap;
-    color:#444;
-
-}
-
-
-
+/* ========================= */
 /* CHECKBOXY */
+/* ========================= */
 
 
 .checkbox-grid label {
 
     cursor:pointer;
+
     font-size:1rem;
 
 }
@@ -161,23 +156,32 @@
 }
 
 
-
+/* ========================= */
 /* TRYB AND */
+/* ========================= */
+
 
 .mode {
 
     display:flex;
+
     align-items:center;
+
+    justify-content:center;
+
     gap:8px;
 
     color:#003366;
+
     font-weight:bold;
 
 }
 
 
 
+/* ========================= */
 /* PRAWA STRONA */
+/* ========================= */
 
 
 .results-section {
@@ -203,9 +207,11 @@
 }
 
 
+
 .counter {
 
     font-size:1.2rem;
+
     color:#444;
 
 }
@@ -214,146 +220,16 @@
 .counter strong {
 
     color:#003366;
+
     font-size:1.5rem;
 
 }
 
+/* ========================= */
+/* LISTA WYNIKÓW */
+/* ========================= */
 
 
-.results {
-
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-
-}
-
-
-
-/* RESPONSYWNOŚĆ */
-
-@media(max-width:1000px){
-
-    .layout {
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .bottom-filters {
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-.tytulwyszukiwarka {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 20px 30px;
-    text-align: center;
-}
-
-
-.tytulwyszukiwarka h1 {
-    margin: 0 0 15px;
-
-    font-family: Arial, sans-serif;
-    font-size: 2.5rem;
-    font-style: italic;
-    font-weight: bold;
-
-    color: #003366;
-}
-
-
-.tytulwyszukiwarka p {
-    margin: 0;
-
-    font-family: Arial, sans-serif;
-    font-size: 1.2rem;
-    font-style: italic;
-
-    color: #555;
-
-    line-height: 1.6;
-}
-.topics-card .filter-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-
-.topics-card .filter-header h2 {
-    margin: 0;
-}
-
-
-.topics-card .mode {
-    justify-content: center;
-}
-.results {
-    max-height: 700px;
-    overflow-y: auto;
-}
-
-.filters {
-    position: sticky;
-    top: 20px;
-    align-self: start;
-}
-results a {
-    display: block;
-
-    background: rgba(255,255,255,0.75);
-
-    border-radius: 10px;
-
-    padding: 15px 20px;
-
-    color: #003366;
-
-    text-decoration: none;
-
-    font-size: 1.05rem;
-    font-weight: bold;
-
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-
-    transition: all 0.25s ease;
-
-    border-left: 4px solid #003366;
-}
-
-
-.results a:hover {
-
-    transform: translateY(-3px);
-
-    background: white;
-
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-
-    color: #001f3f;
-}
-
-
-/* dodatkowe informacje w zadaniu */
-
-.results .task-info {
-
-    color:#555;
-
-    font-size:0.9rem;
-
-    font-weight:normal;
-
-    margin-top:5px;
-
-}
 .results {
 
     display:flex;
@@ -400,8 +276,6 @@ results a {
         0 6px 14px rgba(0,0,0,0.1);
 
 }
-
-
 
 
 
@@ -454,10 +328,8 @@ results a {
 
 
 
-
-
 /* ========================= */
-/* TYTUŁ */
+/* TYTUŁ ZADANIA */
 /* ========================= */
 
 
@@ -486,8 +358,6 @@ results a {
     color:#001f3f;
 
 }
-
-
 
 
 
@@ -536,8 +406,6 @@ results a {
 
 
 
-
-
 /* ========================= */
 /* UWAGI */
 /* ========================= */
@@ -549,10 +417,7 @@ results a {
 
     padding-top:10px;
 
-    border-top:
-
-        1px solid rgba(0,0,0,0.1);
-
+    border-top:1px solid rgba(0,0,0,0.1);
 
     color:#555;
 
@@ -574,8 +439,6 @@ results a {
 
 
 
-
-
 /* ========================= */
 /* BRAK WYNIKÓW */
 /* ========================= */
@@ -594,8 +457,416 @@ results a {
     color:#555;
 
 }
-.filters {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+
+
+/* ========================= */
+/* TYTUŁ WYSZUKIWARKI */
+/* ========================= */
+
+
+.tytulwyszukiwarka {
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:50px 20px 30px;
+
+    text-align:center;
+
+}
+
+
+
+.tytulwyszukiwarka h1 {
+
+    margin:0 0 15px;
+
+    font-family:Arial,sans-serif;
+
+    font-size:2.5rem;
+
+    font-style:italic;
+
+    font-weight:bold;
+
+    color:#003366;
+
+}
+
+
+
+.tytulwyszukiwarka p {
+
+    margin:0;
+
+    font-family:Arial,sans-serif;
+
+    font-size:1.2rem;
+
+    font-style:italic;
+
+    color:#555;
+
+    line-height:1.6;
+
+}
+
+
+
+/* ========================= */
+/* NAGŁÓWEK TEMATÓW */
+/* ========================= */
+
+
+.topics-card .filter-header {
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+.topics-card .filter-header h2 {
+
+    margin:0;
+
+}
+
+
+
+/* ========================= */
+/* LINKI WYNIKÓW */
+/* ========================= */
+
+
+.results a {
+
+    display:block;
+
+    background:rgba(255,255,255,0.75);
+
+    border-radius:10px;
+
+    padding:15px 20px;
+
+    color:#003366;
+
+    text-decoration:none;
+
+    font-size:1.05rem;
+
+    font-weight:bold;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+
+    transition:all 0.25s ease;
+
+    border-left:4px solid #003366;
+
+}
+
+
+
+.results a:hover {
+
+    transform:translateY(-3px);
+
+    background:white;
+
+    box-shadow:0 8px 18px rgba(0,0,0,0.12);
+
+    color:#001f3f;
+
+}
+
+
+/* ========================= */
+/* RESPONSYWNOŚĆ */
+/* ========================= */
+
+
+/* TABLETY */
+
+@media(max-width:1000px){
+
+
+    .layout {
+
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+        padding:40px 20px;
+
+    }
+
+
+
+    /* wyłączamy przyklejanie filtrów */
+
+    .filters {
+
+        position:static;
+
+        width:100%;
+
+    }
+
+
+
+    .results-section {
+
+        width:100%;
+
+    }
+
+
+
+    /* wyniki nie blokują filtrów */
+
+    .results {
+
+        max-height:none;
+
+        overflow:visible;
+
+    }
+
+
+
+    .bottom-filters {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+
+
+
+/* TELEFONY */
+
+@media(max-width:600px){
+
+
+    .layout {
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:25px 15px;
+
+    }
+
+
+
+    /* kolejność elementów */
+
+    .filters {
+
+        order:1;
+
+        position:static;
+
+        width:100%;
+
+    }
+
+
+
+    .results-section {
+
+        order:2;
+
+        width:100%;
+
+        padding:15px;
+
+    }
+
+
+
+    .filter-card {
+
+        padding:15px;
+
+    }
+
+
+
+    .filter-card h2 {
+
+        font-size:1.4rem;
+
+    }
+
+
+
+    /* edycje */
+
+    #editions {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    #editions label {
+
+        white-space:normal;
+
+    }
+
+
+
+    /* tematy */
+
+    #topics {
+
+        gap:10px;
+
+    }
+
+
+
+    #topics label {
+
+        white-space:normal;
+
+    }
+
+
+
+    /* etapy */
+
+    .stages-card .checkbox-grid {
+
+        flex-direction:column;
+
+        gap:8px;
+
+    }
+
+
+
+    /* nagłówek */
+
+    .tytulwyszukiwarka {
+
+        padding:30px 15px 20px;
+
+    }
+
+
+
+    .tytulwyszukiwarka h1 {
+
+        font-size:2rem;
+
+    }
+
+
+
+    .tytulwyszukiwarka p {
+
+        font-size:1rem;
+
+    }
+
+
+
+    /* karty wyników */
+
+    .task-card {
+
+        padding:14px;
+
+    }
+
+
+
+    .task-header {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:5px;
+
+    }
+
+
+
+    .task-link {
+
+        font-size:1rem;
+
+    }
+
+
+
+    .tag {
+
+        font-size:0.75rem;
+
+        padding:4px 8px;
+
+    }
+
+
+}
+
+
+/* BARDZO MAŁE TELEFONY */
+
+@media(max-width:400px){
+
+
+    .layout {
+
+        padding:20px 10px;
+
+    }
+
+
+
+    .results-section {
+
+        padding:10px;
+
+    }
+
+
+
+    .filter-card {
+
+        padding:12px;
+
+    }
+
+
+
+    .tytulwyszukiwarka h1 {
+
+        font-size:1.7rem;
+
+    }
+
+
+}
 }

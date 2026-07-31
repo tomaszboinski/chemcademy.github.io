@@ -299,3 +299,27 @@ body {
     }
 
 }
+#toc-container a,
+.clickable-title {
+
+    color: #003366;
+
+    text-decoration: none; /* usuwa podkreślenie */
+
+    font-style: italic;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+
+#toc-container a:hover,
+.clickable-title:hover {
+
+    color: #ffcc00; /* żółty po najechaniu */}
+
+    #toc-container a:visited {
+    color: #003366;
+    text-decoration: none;
+}
