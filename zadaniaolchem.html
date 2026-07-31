@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyszukiwarka zadań OCh</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<link rel="stylesheet" href="assets/css/wyszukiwarka.css">
+<!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+   
+<div class="tytulwyszukiwarka">
+        <h1>Wyszukiwarka zadań Olimpiady Chemicznej</h1>
+        <p>Filtruj zadania według tematów, etapów oraz edycji.</p>
+    </div>
+
+    <!-- ========================= -->
+    <!-- FILTRY -->
+    <!-- ========================= -->
+<section class="layout">
+
+    <!-- LEWA STRONA FILTRÓW -->
+    <aside class="filters">
+
+        <!-- ETAPY -->
+        <div class="filter-card stages-card">
+
+            <h2>Etapy</h2>
+
+            <div
+                id="stages"
+                class="checkbox-grid"
+            ></div>
+
+        </div>
+
+
+        <!-- EDYCJE + TEMATY -->
+        <div class="bottom-filters">
+
+            <div class="filter-card">
+
+                <h2>Edycje</h2>
+
+                <div
+                    id="editions"
+                    class="checkbox-grid"
+                ></div>
+
+            </div>
+
+
+            <div class="filter-card topics-card">
+
+                <div class="filter-header">
+
+                    <h2>Tematy</h2>
+
+                    <label class="mode">
+
+                        <input
+                            type="checkbox"
+                            id="topicMode"
+                        >
+
+                        <span>AND</span>
+
+                    </label>
+
+                </div>
+
+
+                <div
+                    id="topics"
+                    class="checkbox-grid"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- PRAWA STRONA WYNIKÓW -->
+    <main class="results-section">
+
+        <div class="results-bar">
+
+            <div class="counter">
+
+                Znaleziono
+                <strong id="resultsCount">0</strong>
+                zadań
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="results"
+            class="results"
+        ></div>
+
+    </main>
+
+</section>
+
+
+   
+</div>
+<div id="footer-placeholder"></div>
+<script src="assets/js/wyszukiwarka.js"></script>
+
+ <script src="assets/js/header.js"></script>
+
+
+</body>
+</html>

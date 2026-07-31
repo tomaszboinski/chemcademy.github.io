@@ -42,7 +42,7 @@
             <i class="fas fa-envelope"></i>
             <div>
               <h3>Email</h3>
-              <p><a href="mailto:kontakt@chemcademy.edu.pl">kontakt@chemcademy.edu.pl</a></p>
+              <p><a href="mailto:kontakt@chemcademy.edu.pl">tomasz.boinski@yahoo.com</a></p>
             </div>
           </div>
 
@@ -50,7 +50,7 @@
             <i class="fas fa-phone"></i>
             <div>
               <h3>Telefon</h3>
-              <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+              <p><a href="tel:+48123456789">731 026 396</a></p>
             </div>
           </div>
 
@@ -58,7 +58,7 @@
             <i class="fas fa-map-marker-alt"></i>
             <div>
               <h3>Adres</h3>
-              <p>ul. Przykładowa 12<br>00-001 Warszawa</p>
+              <p>Ostrów Kania 22A<br>05 - 311 Dębe Wielkie</p>
             </div>
           </div>
 
@@ -66,7 +66,7 @@
             <i class="fab fa-discord"></i>
             <div>
               <h3>Discord</h3>
-              <p><a href="https://discord.gg/twoj-link">discord.gg/twoj-link</a></p>
+              <p><a href="https://discord.gg/twoj-link">boinek12</a></p>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@
   <a href="tel:+48123456789" class="qc-btn phone">
     <i class="fas fa-phone"></i> Zadzwoń
   </a>
-  <a href="mailto:kontakt@chemcademy.edu.pl" class="qc-btn email">
+  <a href="mailto:tomasz.boinski@yahoo.com" class="qc-btn email">
     <i class="fas fa-envelope"></i> Email
   </a>
   <a href="https://discord.gg/twoj-link" target="_blank" class="qc-btn discord">
@@ -110,21 +110,8 @@
   <div id="footer-placeholder"></div>
 
   <!-- HEADER + FOOTER JS -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      fetch("header.html")
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
+ <script src="assets/js/header.js"></script>
 
-      fetch("footer.html")
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    });
-  </script>
 
 </body>
 </html>

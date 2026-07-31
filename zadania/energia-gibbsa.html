@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>energia gibbsa</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="artykul.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<p><strong>Entropia</strong> <span class="math inline">\(S\)</span> jest
+funkcją stanu opisującą stopień nieuporządkowania układu. Standardowa
+zmiana entropii reakcji jest równa różnicy sum entropii molowych
+produktów i substratów, z uwzględnieniem współczynników
+stechiometrycznych:</p>
+<p><span class="math display">\[\Delta S{^\circ}\  = \ \sum_{}^{}{\nu
+S{^\circ}_{produkty}}\  - \ \sum_{}^{}{\nu
+S{^\circ}_{substraty}}\]</span></p>
+<p>Gdzie <span class="math inline">\(\sum_{}^{}\ \)</span> oznacza
+sumę</p>
+<p><span class="math inline">\(\nu\)</span>- współczynnik
+stechiometryczny</p>
+<p><span class="math inline">\(S^{0}\)</span> entlalpię standardową</p>
+<p>Standardową energię swobodną Gibbsa reakcji oblicza się ze
+wzoru:<br />
+<span class="math display">\[\Delta G{^\circ}\  = \ \Delta H{^\circ}\  -
+\ T\Delta S{^\circ}\]</span></p>
+<p>gdzie <span class="math inline">\(\Delta G{^\circ}\)</span> –
+standardowa energia swobodna Gibbsa [kJ·mol⁻¹], <span
+class="math inline">\(\Delta H{^\circ}\)</span> – standardowa entalpia
+reakcji <span class="math inline">\(\lbrack kJ ·
+mol⁻¹\rbrack\)</span>, <span class="math inline">\(\Delta
+S{^\circ}\)</span> – standardowa zmiana entropii reakcji <span
+class="math inline">\(\lbrack J · mol⁻¹ · K⁻¹\rbrack\)</span>
+lub <span class="math inline">\(\lbrack kJ · mol⁻¹ ·
+K⁻¹\rbrack\)</span> (z zachowaniem zgodności jednostek), <span
+class="math inline">\(T\ \)</span>– temperatura <span
+class="math inline">\(\lbrack K\rbrack\)</span>.</p>
+<p>Między standardową energią swobodną Gibbsa a stałą równowagi zachodzi
+zależność:<br />
+<span class="math display">\[\Delta G{^\circ}\  = \  - RT\ ln\
+K\]</span></p>
+<p>Gdzie</p>
+<p><span class="math inline">\(\Delta G{^\circ}\ \)</span> - entalpia
+standardowa<br />
+<span class="math inline">\(R\ \)</span> - stała gazowa <span
+class="math inline">\(= \ 8,314\ J · mol⁻¹ · K⁻¹.\)</span></p>
+<p><span class="math inline">\(T\ \)</span>– temperatura <span
+class="math inline">\(\lbrack K\rbrack\)</span>.</p>
+<p><span class="math inline">\(\ln\)</span> – logarytm o podstawie
+równej liczbie Eulera, wynoszącej e ≈ 2,7183, podlega takim samym
+regułom działań jak pozostałe logarytmy o innych podstawach należących
+do zbioru liczb rzeczywistych</p>
+<p><span class="math inline">\(K\)</span> - stała równowagi reakcji</p>
+<p>Wartości entropii reagentów reakcji <span
+class="math inline">\(CO^{g} + H_{2}O^{g} \rightleftarrows CO_{2}^{g} +
+H_{2}^{g}\)</span> zamieszono w tablicy</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Substancja</th>
+<th>S° [J·mol⁻¹·K⁻¹]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CO(g)</td>
+<td>197,7</td>
+</tr>
+<tr>
+<td>H₂O(g)</td>
+<td>188,8</td>
+</tr>
+<tr>
+<td>CO₂(g)</td>
+<td>213,8</td>
+</tr>
+<tr>
+<td>H₂(g)</td>
+<td>130,7</td>
+</tr>
+</tbody>
+</table>
+<p>Przyjmując, że standardowa entalpia reakcji <span
+class="math inline">\(\Delta H{^\circ}\)</span> oraz standardowa zmiana
+entropii <span class="math inline">\(\Delta S{^\circ}\)</span> nie
+zależą od temperatury, oblicz standardową energię swobodną Gibbsa oraz
+stałą równowagi reakcji w temperaturze 590°C. Następnie oblicz
+równowagowy stopień przemiany CO, jeżeli do reaktora wprowadzono 0,30
+mola CO, 0,10 mola H₂O oraz 0,10 mola CO₂.</p>
+<details>
+    <summary><strong>Pokaż rozwiązanie</strong></summary>
+
+<p>Zadanie rozpoczynamy od obliczenia standardowych funkcji
+termodynamicznych dla badanej reakcji – entalpii i entropii</p>
+<p>Dla analizowanej reakcji:</p>
+<p><span class="math display">\[CO^{g} + H_{2}O^{g} \rightleftarrows
+CO_{2}^{g} + H_{2}^{g}\]</span></p>
+<p>Korzystamy ze wzoru:</p>
+<p><span class="math display">\[\Delta S{^\circ}\  = \ \sum_{}^{}{\nu
+S{^\circ}_{produkty}}\  - \ \sum_{}^{}{\nu
+S{^\circ}_{substraty}}\]</span></p>
+<p><span class="math display">\[\Delta S{^\circ}\  = \ (213.8 + 130.7) -
+(197.7 + 188.8)\]</span></p>
+<p><span class="math display">\[\Delta S{^\circ} = -
+0.0420\frac{kJ}{molK}\]</span></p>
+<p>Entalpię reakcji obliczamy ze wzoru dla entalpii tworzenia, używając
+entalpii z tablic CKE:</p>
+<p><span class="math display">\[\Delta H{^\circ}\  = \ \sum_{}^{}{\nu
+H{^\circ}_{produkty}}\  - \ \sum_{}^{}{\nu
+H{^\circ}_{substraty}}\]</span></p>
+<p><span class="math display">\[\Delta H{^\circ}\  = \ \Delta
+H_{CO_{2}}^{0} + \Delta H_{H_{2}}^{0} - \left( \Delta H_{CO}^{0} +
+\Delta H_{H_{2}O}^{0} \right)\]</span></p>
+<p><span class="math display">\[\Delta H{^\circ}\  = ( - 393.5 + 0) -
+\left( ( - 110.5) + ( - 241.8) \right) = \ \]</span></p>
+<p><span class="math display">\[- 41.2\frac{kJ}{mol}\]</span></p>
+<p>Następnie obliczamy energię Gibbsa korzystając ze wzoru i
+przeliczając ją na jednostki SI</p>
+<p><span class="math display">\[\Delta G = \Delta H - T\Delta
+S\]</span></p>
+<p><span class="math display">\[\Delta G = - 41.2 - 863·( -
+0.0420)\]</span></p>
+<p><span class="math display">\[\Delta G = - 4.95\frac{kJ}{mol} =
+4950\frac{kJ}{mol}\]</span></p>
+<p>Znając entalpię obliczamy wartość stałej równowagi:</p>
+<p><span class="math display">\[\Delta G = - RTln\ K\]</span></p>
+<p><span class="math display">\[\ln K = - \frac{\Delta
+G}{RT}\]</span></p>
+<p><span class="math display">\[\ln K = \  - \frac{- \
+4950}{8.3145·863}\]</span></p>
+<p><span class="math display">\[\ln K = 0.690\]</span></p>
+<p><span class="math display">\[K = e^{0.690} = 2\]</span></p>
+<p>Następnie wykonujemy tabelkę reakcyjną dla badanej reakcji</p>
+<p><span class="math display">\[CO + H_{2}O \rightleftarrows CO_{2} +
+H_{2}\]</span></p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[CO\]</span></th>
+<th><span class="math display">\[H_{2}O\]</span></th>
+<th><span class="math display">\[CO_{2}\]</span></th>
+<th><span class="math display">\[H_{2}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[n^{0}\]</span></td>
+<td><span class="math display">\[0.3\]</span></td>
+<td><span class="math display">\[0.1\]</span></td>
+<td><span class="math display">\[0.1\]</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta n\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[n^{k}\]</span></td>
+<td><span class="math display">\[0.3 - x\]</span></td>
+<td><span class="math display">\[0.1 - x\]</span></td>
+<td><span class="math display">\[0.1 + x\]</span></td>
+<td><span class="math display">\[x\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Wyrażenie na stałą równowagi ma postać:</p>
+<p><span class="math display">\[K = \frac{\left\lbrack CO_{2}
+\right\rbrack\left\lbrack H_{2} \right\rbrack}{\lbrack
+CO\rbrack\left\lbrack H_{2}O \right\rbrack}\]</span></p>
+<p><span class="math display">\[K =
+\frac{\frac{n_{CO_{2}}}{V}\frac{n_{H_{2}}}{V}}{\frac{n_{CO}}{V}\frac{n_{H_{2}O}}{V}}
+= \frac{n_{CO_{2}}n_{H_{2}}}{n_{CO}n_{H_{2}O}}\]</span></p>
+<p>Po wstawieniu danych znajdujemy wartość współrzędnej reakcji:</p>
+<p><span class="math display">\[2 = \frac{(0.1 + x)x}{(0.3 - x)(0.1 -
+x)}\]</span></p>
+<p><span class="math display">\[x^{2} - 0.9x + 0.06 = 0\]</span></p>
+<p><span class="math display">\[x_{1} = 0.828\]</span></p>
+<p><span class="math display">\[x_{2} = 0.072\]</span></p>
+<p>Jak widać pierwsza wartość <span class="math inline">\(x_{1}\)</span>
+nie spełnia warunków zadania – końcowa obliczona ilość moli jest ujemna,
+współrzędną tą odrzucamy. Druga współrzędna jest ok. – daje dodatnie
+wartości moli końcowych:</p>
+<p>Stopień przemiany <span class="math inline">\(CO\)</span> obliczamy
+dzieląc mole przereagowane <span class="math inline">\(CO\)</span> przez
+wartość początkową moli:</p>
+<p><span class="math display">\[\alpha = \frac{\Delta
+n_{CO}}{n_{CO}^{0}} = \frac{x}{0.3} = \frac{0.072}{0.3} = 0.24 =
+24\%\]</span></p>
+</details>
+<details>
+    <summary><strong>Pokaż punktację</strong></summary>
+<p><strong>4 pkt</strong> – zastosowanie poprawnej metody, tj. poprawne
+obliczenie standardowej zmiany entropii i standardowej entalpii reakcji,
+poprawne obliczenie standardowej energii swobodnej Gibbsa oraz stałej
+równowagi reakcji, sporządzenie tabeli zmian liczby moli reagentów,
+poprawne wyznaczenie współrzędnej reakcji i obliczenie równowagowego
+stopnia przemiany CO.</p>
+<p><strong>3 pkt</strong> – zastosowanie poprawnej metody, tj. poprawne
+obliczenie standardowej zmiany entropii i standardowej entalpii reakcji,
+poprawne obliczenie standardowej energii swobodnej Gibbsa oraz stałej
+równowagi reakcji, sporządzenie tabeli zmian liczby moli reagentów i
+poprawne wyznaczenie współrzędnej reakcji, ale brak obliczenia stopnia
+przemiany CO</p>
+<p><strong>ALBO</strong></p>
+<p>– zastosowanie poprawnej metody, tj. poprawne obliczenie standardowej
+zmiany entropii i standardowej entalpii reakcji, poprawne obliczenie
+standardowej energii swobodnej Gibbsa oraz stałej równowagi reakcji,
+sporządzenie tabeli zmian liczby moli reagentów, wyznaczenie
+współrzędnej reakcji oraz obliczenie stopnia przemiany CO, ale
+popełnienie błędu rachunkowego.</p>
+<hr />
+<p><strong>2 pkt</strong> – zastosowanie poprawnej metody, tj. poprawne
+obliczenie standardowej zmiany entropii i standardowej entalpii reakcji
+oraz poprawne obliczenie standardowej energii swobodnej Gibbsa i stałej
+równowagi reakcji</p>
+<p><strong>ALBO</strong></p>
+<p>– zastosowanie poprawnej metody, tj. poprawne sporządzenie tabeli
+zmian liczby moli reagentów oraz zapisanie wyrażenia na stałą równowagi
+i wyznaczenie współrzędnej reakcji, ale popełnienie błędu
+rachunkowego.</p>
+<hr />
+<p><strong>1 pkt</strong> – zastosowanie poprawnej metody, tj. poprawne
+obliczenie standardowej zmiany entropii reakcji lub standardowej
+entalpii reakcji</p>
+<p><strong>ALBO</strong></p>
+<p>– poprawne sporządzenie tabeli zmian liczby moli reagentów oraz
+zapisanie wyrażenia na stałą równowagi.</p>
+<hr />
+<p><strong>0 pkt</strong> – rozwiązanie niespełniające powyższych
+kryteriów albo brak rozwiązania.</p>
+</details>
+</body>
+</html>

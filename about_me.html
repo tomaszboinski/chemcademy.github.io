@@ -30,7 +30,7 @@
         </p>
       </div>
       <div class="about-right">
-        <img src="https://via.placeholder.com/400x300" alt="Tomasz Boiński – nauczyciel chemii">
+        <img src="assets/images/boin1.jpg" alt="Tomasz Boiński – nauczyciel chemii">
       </div>
     </div>
   </section>
@@ -86,29 +86,35 @@
         </p>
       </div>
       <div class="about-right">
-        <img src="https://via.placeholder.com/400x300" alt="Tomasz Boiński prywatnie">
+        <img src="assets/images/boin2.jpg" alt="Tomasz Boiński prywatnie">
       </div>
     </div>
   </section>
 
-  <!-- SEKCJA O AI -->
-  <section class="about-me">
-    <div class="about-container">
-      <div class="about-left">
-        <h2>O sztucznej inteligencji</h2>
-        <h3>Wirtualny korepetytor i chatbot</h3>
-        <p>
-          Wprowadzam nowoczesne technologie do nauki chemii. Dzięki inteligentnemu chatbotowi i wirtualnej tablicy, uczniowie mogą powtarzać materiał, rozwiązywać zadania i otrzymywać wsparcie w czasie rzeczywistym – nawet poza lekcją. 
-        </p>
-        <p>
-          Ten wirtualny korepetytor dopasowuje lekcje do Twoich potrzeb, odpowiada na pytania i pomaga lepiej zrozumieć trudne zagadnienia. W praktyce to jak mieć mnie pod ręką 24/7, tylko w wersji cyfrowej.
-        </p>
-      </div>
-      <div class="about-right">
-        <img src="assets/images/ai-chatbot.png" alt="Sztuczna inteligencja i edukacja">
-      </div>
+  <!-- SEKCJA O NOWOCZESNYCH NARZĘDZIACH -->
+<section class="about-me">
+  <div class="about-container">
+    <div class="about-left">
+      <h2>Nowoczesne podejście do nauki chemii</h2>
+      <h3>Technologia jako wsparcie w edukacji</h3>
+      <p>
+        Wprowadzam nowoczesne rozwiązania, które pomagają uczniom skuteczniej
+        przyswajać wiedzę z chemii. Interaktywne materiały, dodatkowe ćwiczenia
+        i cyfrowe narzędzia pozwalają powtarzać zagadnienia, utrwalać informacje
+        i lepiej przygotowywać się do sprawdzianów oraz egzaminów.
+      </p>
+      <p>
+        Każdy uczeń może korzystać ze wsparcia dopasowanego do swoich potrzeb –
+        od wyjaśniania trudniejszych tematów, przez rozwiązywanie zadań,
+        aż po samodzielne utrwalanie materiału. Nauka staje się bardziej
+        dostępna, wygodna i dopasowana do indywidualnego tempa.
+      </p>
     </div>
-  </section>
+    <div class="about-right">
+      <img src="assets/images/ai-chatbot.png" alt="Nowoczesna edukacja i technologia">
+    </div>
+  </div>
+</section>
 
   <!-- SEKCJA O FREJI -->
   <section class="about-me reverse">
@@ -133,33 +139,7 @@
   <div id="footer-placeholder"></div>
 
   <!-- HEADER + FOOTER JS -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Header
-      fetch("header.html")
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById("header-placeholder").innerHTML = data;
+<script src="assets/js/header.js"></script>
 
-          setTimeout(() => {
-            const navToggle = document.querySelector(".nav-toggle");
-            const navLinks = document.querySelector(".nav-links");
-
-            if (navToggle && navLinks) {
-              navToggle.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
-              });
-            }
-          }, 100);
-        });
-
-      // Footer
-      fetch("footer.html")
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    });
-  </script>
 </body>
 </html>

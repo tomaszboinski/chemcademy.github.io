@@ -1,0 +1,601 @@
+
+/* ========================= */
+/* FILTRY + WYNIKI */
+/* ========================= */
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+
+/* LEWA STRONA */
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.filter-card {
+    background: rgba(255,255,255,0.75);
+    border-radius: 10px;
+    padding: 20px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+    backdrop-filter: blur(5px);
+}
+
+
+.filter-card h2 {
+
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #003366;
+
+    margin-bottom: 20px;
+}
+
+.filter-card h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+
+/* ========================= */
+/* EDYCJE - 2 KOLUMNY */
+/* ========================= */
+
+#editions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+
+#editions label {
+    white-space: nowrap;
+}
+
+
+
+/* ========================= */
+/* TEMATY */
+/* ========================= */
+
+#topics {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+#topics label {
+    white-space: nowrap;}
+
+/* ETAPY */
+
+.stages-card {
+
+    width:100%;
+
+}
+
+
+.stages-card .checkbox-grid {
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+}
+
+
+
+/* EDYCJE + TEMATY */
+
+.bottom-filters {
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+
+}
+
+
+
+/* TEMATY */
+
+.topics-card .filter-header {
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+.topics-card .checkbox-grid {
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+}
+
+
+.topics-card label {
+
+    white-space:nowrap;
+    color:#444;
+
+}
+
+
+
+/* CHECKBOXY */
+
+
+.checkbox-grid label {
+
+    cursor:pointer;
+    font-size:1rem;
+
+}
+
+
+.checkbox-grid input {
+
+    accent-color:#003366;
+
+}
+
+
+
+/* TRYB AND */
+
+.mode {
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#003366;
+    font-weight:bold;
+
+}
+
+
+
+/* PRAWA STRONA */
+
+
+.results-section {
+
+    background:rgba(255,255,255,0.75);
+
+    border-radius:10px;
+
+    padding:25px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+
+    backdrop-filter:blur(5px);
+
+}
+
+
+
+.results-bar {
+
+    margin-bottom:25px;
+
+}
+
+
+.counter {
+
+    font-size:1.2rem;
+    color:#444;
+
+}
+
+
+.counter strong {
+
+    color:#003366;
+    font-size:1.5rem;
+
+}
+
+
+
+.results {
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+
+
+/* RESPONSYWNOŚĆ */
+
+@media(max-width:1000px){
+
+    .layout {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .bottom-filters {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+.tytulwyszukiwarka {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 30px;
+    text-align: center;
+}
+
+
+.tytulwyszukiwarka h1 {
+    margin: 0 0 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+
+    color: #003366;
+}
+
+
+.tytulwyszukiwarka p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+.topics-card .filter-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.topics-card .filter-header h2 {
+    margin: 0;
+}
+
+
+.topics-card .mode {
+    justify-content: center;
+}
+.results {
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.filters {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+}
+results a {
+    display: block;
+
+    background: rgba(255,255,255,0.75);
+
+    border-radius: 10px;
+
+    padding: 15px 20px;
+
+    color: #003366;
+
+    text-decoration: none;
+
+    font-size: 1.05rem;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+    transition: all 0.25s ease;
+
+    border-left: 4px solid #003366;
+}
+
+
+.results a:hover {
+
+    transform: translateY(-3px);
+
+    background: white;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+
+    color: #001f3f;
+}
+
+
+/* dodatkowe informacje w zadaniu */
+
+.results .task-info {
+
+    color:#555;
+
+    font-size:0.9rem;
+
+    font-weight:normal;
+
+    margin-top:5px;
+
+}
+.results {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+
+/* ========================= */
+/* POJEDYNCZA KARTA */
+/* ========================= */
+
+
+.task-card {
+
+    background:rgba(255,255,255,0.75);
+
+    border-radius:10px;
+
+    padding:16px;
+
+    border-left:4px solid #003366;
+
+    box-shadow:
+        0 3px 8px rgba(0,0,0,0.05);
+
+    transition:0.2s;
+
+}
+
+
+
+.task-card:hover {
+
+    background:white;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 6px 14px rgba(0,0,0,0.1);
+
+}
+
+
+
+
+
+/* ========================= */
+/* GÓRNY WIERSZ */
+/* ========================= */
+
+
+.task-header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.task-number {
+
+    color:#003366;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+}
+
+
+
+.task-meta {
+
+    color:#666;
+
+    font-size:0.85rem;
+
+}
+
+
+
+.separator {
+
+    margin:0 5px;
+
+}
+
+
+
+
+
+/* ========================= */
+/* TYTUŁ */
+/* ========================= */
+
+
+.task-link {
+
+    display:block;
+
+    color:#003366;
+
+    text-decoration:none;
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    line-height:1.35;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.task-link:hover {
+
+    color:#001f3f;
+
+}
+
+
+
+
+
+/* ========================= */
+/* TAGI TEMATÓW */
+/* ========================= */
+
+
+.task-topics {
+
+    margin-top:5px;
+
+}
+
+
+
+.tags {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:6px;
+
+}
+
+
+
+.tag {
+
+    display:inline-block;
+
+    background:#003366;
+
+    color:white;
+
+    padding:4px 9px;
+
+    border-radius:12px;
+
+    font-size:0.8rem;
+
+    line-height:1.2;
+
+}
+
+
+
+
+
+/* ========================= */
+/* UWAGI */
+/* ========================= */
+
+
+.task-comment {
+
+    margin-top:12px;
+
+    padding-top:10px;
+
+    border-top:
+
+        1px solid rgba(0,0,0,0.1);
+
+
+    color:#555;
+
+    font-size:0.85rem;
+
+    font-style:italic;
+
+}
+
+
+
+.task-comment strong {
+
+    color:#003366;
+
+    font-style:normal;
+
+}
+
+
+
+
+
+/* ========================= */
+/* BRAK WYNIKÓW */
+/* ========================= */
+
+
+.no-results {
+
+    background:rgba(255,255,255,0.75);
+
+    padding:16px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    color:#555;
+
+}
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

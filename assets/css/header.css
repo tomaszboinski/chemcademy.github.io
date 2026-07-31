@@ -24,8 +24,8 @@
 .nav-links {
   flex-grow: 1;          /* zajmuje maksymalną szerokość */
   display: flex;
-  justify-content: flex-end; /* linki wypchnięte do prawej */
-  gap: 20px;
+  justify-content: flex-end!; /* linki wypchnięte do prawej */
+  gap: 10px;
   margin: 0;
   padding: 0;
   font-style: italic;

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>reakcja przerwana</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="artykul.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<p>Drugim typem zadań, w których powszechnie można używać tabelki jest
+zadanie z reakcją zatrzymaną – jest to taka reakcja, w której substraty
+nieprzereagowały z dowolnym powodów (zatrzymanie ogrzewania,
+ograniczenie czasowe reakcji) do końca.</p>
+<p>Modelem takiego zadania jest zadanie:</p>
+<p>Na imprezie było 25 dziewczyn i 11 chłopaków. Podczas imprezy
+zachodzi reakcja, którą możemy opisać jako dwie dziewczyny reagują z
+jednym facetem dając trójkącik, schematycznie zapiszemy to jako:</p>
+<p><span class="math display">\[2D + F \rightarrow T\]</span></p>
+<p>Wiadomo, że po imprezie nieprzereagowanych dziewczyn pozostało
+<mark>11</mark> sztuk. Ile trójkącików sie zrobiło?</p>
+<p>Dla takiego układu również możemy zrobić tabelkę, którą wykorzystamy
+do bilansu ilości przereagowanych dziewczyn i facetów, analogiczną jak w
+przypadku reakcji nadmiar – niedomiar:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[D\]</span></th>
+<th><span class="math display">\[F\]</span></th>
+<th><span class="math display">\[T\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N^{0}\]</span></td>
+<td><span class="math display">\[25\]</span></td>
+<td><span class="math display">\[11\]</span></td>
+<td><span class="math display">\[0\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta N\]</span></td>
+<td><span class="math display">\[- 2x\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[N^{K}\]</span></td>
+<td><span class="math display">\[25 - 2x\]</span></td>
+<td><span class="math display">\[11 - x\]</span></td>
+<td><span class="math display">\[x\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>W tym wypadku żaden z reagentów nie przereagowuje do końca, czyli nie
+spada do zera. W przypadku tegoż układu po prostu reagenty nie chcą lub
+nie zdążyły przereagować całkowicie. Z warunków zadania wiemy, że ilość
+dziewczyn na końcu wynosi 11, co możemy przyrównać do ilości dziewczyn
+na końcu:</p>
+<p><span class="math display">\[\text{ }25 - 2x = 11\]</span></p>
+<p>Po rozwiązaniu tegoż równania otrzymujemy wartość współczynnika
+reakcji:</p>
+<p><span class="math display">\[x = 7\ \]</span></p>
+<p>Co umożliwia dalsze obliczenie końcowej ilości reagentów:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[D\]</span></th>
+<th><span class="math display">\[F\]</span></th>
+<th><span class="math display">\[T\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[N^{0}\]</span></td>
+<td><span class="math display">\[25\]</span></td>
+<td><span class="math display">\[11\]</span></td>
+<td><span class="math display">\[0\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta N\]</span></td>
+<td><span class="math display">\[- 2x\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[N^{K}\]</span></td>
+<td><span class="math display">\[25 - 2x = 25 - 2·7 = 11\]</span></td>
+<td><span class="math display">\[11 - 7 = 4\]</span></td>
+<td><span class="math display">\[7\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Czyli w aktach reakcyjnych utworzyło się 7 trójkącików i oraz
+pozostało <span class="math inline">\(11 - 7\  = 4\)</span> smutnych
+panów.</p>
+<p>Zadania tego typu dość często występują na maturze, przykładem
+jest:</p>
+<p>W wysokiej temperaturze ( 900 - 1000°C) węglan wapnia ulega
+rozkładowi, którego przebieg opisuje równanie:</p>
+<p><span class="math display">\[CaCO_{3} -^{ogrzewanie} \rightarrow CaO
++ CO_{2}\]</span></p>
+<p>Próbkę węglanu wapnia o masie 10.00 gramów prażono przez pewien czas
+w otwartym naczyniu. Po przerwaniu ogrzewania stwierdzono, że w naczyniu
+znajdowało się 6.04 grama substancji stałych. Oblicz jako procent
+początkowej masy węglanu wapnia nie uległ rozkładowi.</p>
+<p>Zadanie rozpoczynam od obliczenia początkowej ilości moli <span
+class="math inline">\(CaCO_{3}\)</span>:</p>
+<p><span class="math display">\[n_{CaCO_{3}}^{0} =
+\frac{m_{CaCO_{3}}^{0}}{M_{CaCO_{3}}} = \frac{10}{100} =
+0.1\]</span></p>
+<p>Następnie robię tabelkę reakcyjną dla opisanej reakcji, oczywiście
+węglan wapnia nie uległ całkowitemu rozkładowi – mam mieszaninę
+substancji stałych, a więc potrzebuje minimum dwóch stałych substancji.
+W przypadku całkowitego rozkładu miałbym tylko <span
+class="math inline">\(CaO\)</span> jako substancję stałą.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[CaCO_{3}\]</span></th>
+<th><span class="math display">\[CaO\]</span></th>
+<th><span class="math display">\[CO_{2}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[n^{0}\]</span></td>
+<td><span class="math display">\[0.1\]</span></td>
+<td><span class="math display">\[0\]</span></td>
+<td><span class="math display">\[0\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta n\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[n^{K}\]</span></td>
+<td><span class="math display">\[0.1 - x\]</span></td>
+<td><span class="math display">\[x\]</span></td>
+<td><span class="math display">\[x\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Z warunków zadania wiem, ze masa końcowa substancji stałych – a więc
+<span class="math inline">\(CaCO_{3}\)</span> i <span
+class="math inline">\(CaO\)</span> wynosi <span
+class="math inline">\(6.04\)</span> co mogę zapisać w postaci:</p>
+<p><span class="math display">\[m^{k} = 6.04 = m_{CaCO_{3}}^{k} +
+m_{CaO}^{K}\]</span></p>
+<p>Analogicznie do poprzednich zadań posługując się wzorami</p>
+<p><span class="math display">\[m = nM;V = nV_{mol};N =
+nN_{A}\]</span></p>
+<p>Wyrażam masy końcowe reagentów jako iloczyny ilości moli i mas
+molowych, wartości moli końcowych przepisuje z tabelki, a mas molowych z
+układu okresowego:</p>
+<p><span class="math display">\[m_{CaCO_{3}}^{k} =
+n_{CaCO_{3}}^{k}M_{CaCO_{3}} = (0.1 - x)·100\]</span></p>
+<p><span class="math display">\[m_{CaO}^{k} = n_{CaO}^{k}M_{CaO} =
+x·56\]</span></p>
+<p>Wyrażenia te wstawiam do równania:</p>
+<p><span class="math display">\[m^{k} = 6.04 = m_{CaCO_{3}}^{k} +
+m_{CaO}^{K}\]</span></p>
+<p><span class="math display">\[m^{k} = 6.04 =
+n_{CaCO_{3}}^{k}M_{CaCO_{3}} + n_{CaO}^{K}M_{CaO}\]</span></p>
+<p><span class="math display">\[6.04 = (0.1 - x)·100 + x·56\]</span></p>
+<p>Rozwiązując to równanie obliczam wartość <span
+class="math inline">\(x\)</span> - współczynnika reakcji</p>
+<p><span class="math display">\[6.04 = 10 - 100x + 56x\]</span></p>
+<p><span class="math display">\[6.04 = 10 - 44x\]</span></p>
+<p><span class="math display">\[x = \frac{3.96}{44} =
+0.09moli\]</span></p>
+<p>Z tabelki wynika, że ilość moli <span
+class="math inline">\(CaCO_{3}\)</span> rozłożonego (przereagowanego)
+równa jest <span class="math inline">\(x\)</span>, a więc masa
+rozłożonego wynosi:</p>
+<p><span class="math display">\[m_{CaCO_{3}}^{rozlozona} =
+x·M_{CaCO_{3}} = 9g\]</span></p>
+<p>Natomiast masa końcowa <span class="math inline">\(CaCO_{3}\)</span>
+to:</p>
+<p><span class="math display">\[m_{CaCO_{3}}^{k} = (0.1 -
+x)·M_{CaCO_{3}} = 1g\]</span></p>
+<p>Innym zadaniem tego typu również związanym z rozkładem termicznym
+węglanu jest zdanie</p>
+<p>W laboratorium tlenek wapnia można otrzymać ze szczawianu wapnia o
+wzorze <span class="math inline">\(CaC_{2}O_{4}\)</span>. Szczawian
+wapnia ulega termicznemu rozkładowi, który przebiega zgodnie z poniższym
+równaniem:</p>
+<p><span class="math display">\[CaC_{2}O_{4} \rightarrow CaCO_{3} +
+CO\]</span></p>
+<p>Dalsze ogrzewanie, w wyższej temperaturze, prowadzi do rozkładu
+węglanu wapnia:</p>
+<p><span class="math display">\[CaCO_{3} \rightarrow CaO +
+CO_{2}\]</span></p>
+<p>Próbkę szczawianu wapnia o masie <span
+class="math inline">\(12.8\)</span> grama umieszczono w tyglu pod
+wyciągiem i poddano prażeniu. Po pewnym czasie proces przerwano, a
+następnie ostudzono tygiel, zwiażono jego zawartość i zbadano skłąd
+mieszaniny poreakcyjnej stwierdzono, że masa zawartości tygla zmalała o
+<span class="math inline">\(6.32\)</span> grama i że otrzymana
+mieszanina nie zawierała szczawianu wapnia.</p>
+<p>Oblicz w procentach masowych zawartość tlenku wapnia w mieszaninie
+otrzymanej po przewaniu prażenia.</p>
+<p>Zadanie rozpoczynamy od obliczenia ilości moli początkowych <span
+class="math inline">\(CaC_{2}O_{4}\)</span></p>
+<p><span class="math display">\[n_{CaC_{2}O_{4}}^{0} =
+\frac{m_{CaC_{2}O_{4}}^{0}}{M_{CaC_{2}O_{4}}} = \frac{12.8}{128} =
+0.1\]</span></p>
+<p>Oczywiście masa produktów stałych po reakcji to różnica masy
+początkowej i końcowej:</p>
+<p><span class="math display">\[m_{stalych}^{k} = 12.8 - 6.32 =
+6.48\]</span></p>
+<p>W zadaniu mamy napisane dwie reakcje, a więc powinniśmy zrobić dwie
+tabelki. Pierwsza reakcja zgodnie z warunkami zadania „Mieszanina nie
+zawierała <span class="math inline">\(CaC_{2}O_{4}\)</span>” musiała
+zajść z całkowitym rozkładem <span
+class="math inline">\(CaC_{2}O_{4}\)</span>, a więc końcowa ilość moli
+tego związku była równa zera</p>
+<p><span class="math display">\[CaC_{2}O_{4} \rightarrow CaCO_{3} +
+CO\]</span></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[CaC_{2}O_{4}\]</span></th>
+<th><span class="math display">\[CaCO_{3}\]</span></th>
+<th><span class="math display">\[CO\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[n^{0}\]</span></td>
+<td><span class="math display">\[0.1\]</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta n\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[n^{k}\]</span></td>
+<td><span class="math display">\[0.1 - x = 0\]</span></td>
+<td><span class="math display">\[x = 0.1\]</span></td>
+<td><span class="math display">\[x = 0.1\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Z warunku, że <span class="math inline">\(CaC_{2}O_{4}\)</span> uległ
+całkowitemu rozkładowi obliczam <span class="math inline">\(x\)</span>
+dla tej reakcji <span class="math inline">\(0.1 - x = 0 \rightarrow x =
+0.1\)</span>, a następnie wszystkie końcowe mole reagentów</p>
+<p>Po rozważeniu całkowitego rozkładu w pierwszej reakcji, przechodzę do
+rozważenia drugiej reakcji. Za początkowe ilości moli w drugiej reakcji
+stosuję końcowe ilości moli z pierwszej reakcji – tzn. drugą rozważam po
+rozpatrzeniu pierwszej reakcji</p>
+<p><span class="math display">\[CaCO_{3} \rightarrow CaO +
+CO_{2}\]</span></p>
+<p>Oczywiście ilość początkowa <span
+class="math inline">\(CaCO_{3}\)</span> wynosi tyle, co powstało po
+pierwszej reakcji, a więc <span class="math inline">\(0.1\
+mol\)</span>:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[CaCO_{3}\]</span></th>
+<th><span class="math display">\[CaO\ \]</span></th>
+<th><span class="math display">\[CO_{2}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[n^{0}\]</span></td>
+<td><span class="math display">\[0.1\]</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta n\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+<td><span class="math display">\[+ x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[n^{k}\]</span></td>
+<td><span class="math display">\[0.1 - x\]</span></td>
+<td><span class="math display">\[x\]</span></td>
+<td><span class="math display">\[x\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Po zrobieniu bilansu moli za pomocą tabelki przechodzimy do
+rozwiązania problemu. Niewykorzystana dana to ta, gdzie wiadomo, że masa
+próbki zmniejszyła się o <span class="math inline">\(6.32\)</span>
+grama. Masa ta stanowi masę gazów, które uciekły podczas ogrzewania
+próbki, a więc stanowi sumę mas <span
+class="math inline">\(CO_{2}\)</span> i <span
+class="math inline">\(CO\)</span>.</p>
+<p><span class="math display">\[6.32 = m_{CO} + m_{CO_{2}}\]</span></p>
+<p>Oczywiście danego gazu to iloczyn ilości moli oraz masy molowej tego
+gazu.</p>
+<p><span class="math display">\[m_{CO} = n_{CO}M_{CO}\]</span></p>
+<p><span class="math display">\[m_{CO_{2}} =
+n_{CO_{2}}M_{CO_{2}}\]</span></p>
+<p>Wstawiając do wyrażenia na masę dostajemy</p>
+<p><span class="math display">\[6.32 = n_{CO}M_{CO} +
+n_{CO_{2}}M_{CO_{2}}\]</span></p>
+<p>Wstawiając z pierwszej tabelki za <span class="math inline">\(n_{CO}
+= 0.1\)</span> mol, a z drugiej tabelki za <span
+class="math inline">\(n_{CO_{2}} = x\)</span> oraz masy molowe <span
+class="math inline">\(CO\ \)</span>i<span class="math inline">\(\
+CO_{2}\)</span> dostajemy równanie:</p>
+<p><span class="math display">\[6.32 = 0.1·28 + x·44\]</span></p>
+<p>Które po rozwiązaniu daje nam wartość postępu reakcji:</p>
+<p><span class="math display">\[x = 0.08\]</span></p>
+<p>Alternatywnie można powiedzieć, że po reakcji pozostają w tyglu ciała
+stałe, których masa wynosi:</p>
+<p><span class="math display">\[m_{stalych}^{k} = 12.8 - 6.32 =
+6.48\]</span></p>
+<p>Ciałami stałymi są <span class="math inline">\(CaCO_{3}\)</span> oraz
+<span class="math inline">\(CaO\)</span>, a więc masa ta jest sumą mas
+tych dwóch reagenta po zakończeniu obu reakcji, oczywiście otrzymana
+mieszanina nie zawiera już szczawianu, zgodnie z warunkami zadania:</p>
+<p><span class="math display">\[m_{stalych}^{k} = 6.48 = m_{CaCO_{3}} +
+m_{CaO}\]</span></p>
+<p>Wstawiając za masę <span class="math inline">\(CaCO_{3}\)</span> oraz
+<span class="math inline">\(CaO\)</span> iloczyn ilości moli i masy
+molowej dostajemy:</p>
+<p><span class="math display">\[m_{CaCO_{3}} = n_{CaCO_{3}}M_{CaCO_{3}}
+= (0.1 - x)·100\]</span></p>
+<p><span class="math display">\[m_{CaO} = n_{CaO}M_{CaO} =
+x·56\]</span></p>
+<p><span class="math display">\[6.48 = n_{CaCO_{3}}M_{CaCO_{3}} +
+n_{CaO}M_{CaO}\]</span></p>
+<p><span class="math display">\[6.48 = 100(0.1 - x) + 56x\]</span></p>
+<p>Rozwiązanie tego równania prowadzi do tej samej wartości <span
+class="math inline">\(x\)</span></p>
+<p><span class="math display">\[x = 0.08\]</span></p>
+<p>Wstawiając dowolnie obliczonego <span
+class="math inline">\(x\)</span> do tabelki uzyskujemy końcowe wartości
+moli wszystkich reagentów stałych</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[CaCO_{3}\]</span></th>
+<th><span class="math display">\[CaO\ \]</span></th>
+<th><span class="math display">\[CO_{2}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[n^{k}\]</span></td>
+<td><span class="math display">\[0.1 - 0.08 = 0.02\]</span></td>
+<td><span class="math display">\[x = 0.08\]</span></td>
+<td><span class="math display">\[x = 0.08\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Znając wartości moli możemy obliczyć masę końcową tych reagentów:</p>
+<p><span class="math display">\[m_{CaO}^{k} = 0.08·56 =
+4.48\]</span></p>
+<p><span class="math display">\[m_{CaCO_{3}}^{k} = 0.02·100 =
+2\]</span></p>
+<p>A następnie obliczyć wartość zawartości procentowej <span
+class="math inline">\(CaO\)</span> w mieszaninie poreakcyjnej:</p>
+<p><span class="math display">\[\%_{mas}^{CaO} = \frac{2}{2 + 4.48} =
+30.8\%\]</span></p>
+</body>
+</html>

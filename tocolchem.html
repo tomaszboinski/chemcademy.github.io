@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spis treści – Artykuły chemiczne</title>
+   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/toc.css" />
+  <style>
+    /* Dodatkowy CSS dla klikniętego tytułu */
+    .clickable-title {
+      text-decoration: underline;
+      color: #003366;
+      cursor: pointer;
+      font-style: italic;
+    }
+    .clickable-title:hover {
+      color: #ffcc00;
+    }
+  </style>
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+  <!-- Hamburger (tylko na mobilkach) -->
+  <button id="hamburger" aria-label="Otwórz/zamknij menu spisu treści">☰</button>
+
+  <!-- SPIS TREŚCI -->
+  <aside id="toc-container" class="toc-hidden">
+    <h2><a href="#" id="toc-title" class="clickable-title">Spis treści</a></h2>
+    <!-- TOC wygenerowany przez JS -->
+  </aside>
+
+  <!-- Główna zawartość (ładowane artykuły) -->
+  <main id="article-viewer">
+    <!-- Tu będzie ładowany artykuł -->
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Skrypt TOC -->
+  <script src="assets/js/toc.js"></script>
+
+<script src="assets/js/header.js"></script>
+
+   
+ 
+</body>
+</html>

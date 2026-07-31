@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>zadanie H_2 I_2 HI</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="srtykul.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<p>Do cylindrycznego reaktora z ruchomym tłokiem wprowadzono 2,00 g
+wodoru oraz 50,8 g jodu stałego, po czym usunięto całe powietrze.
+Reaktor ogrzano do temperatury 100°C. W układzie utrzymywano stałe
+ciśnienie 1013 hPa, natomiast objętość mieszaniny gazów mogła się
+zmieniać. W kolbie zachodziła reakcja:<br />
+<span class="math display">\[H_{2}^{g}\  + \
+I_{2}^{st}\  \rightleftarrows \ 2HI^{g}
+\]</span><br />
+W chwili t ustaliła się równowaga. Gęstość równowagowej mieszaniny gazów
+wynosiła d = 0,194 g·dm⁻³. Oblicz wartość stężeniowej stałej równowagi
+<span class="math inline">\(K_{c}\)</span> oraz równowagową masę
+jodu.<br />
+Przyjmij:<br />
+R = 83,14 hPa·dm³·mol⁻¹·K⁻¹<br />
+M(H₂)=2,0 g·mol⁻¹<br />
+M(HI)=128,0 g·mol⁻¹<br />
+M(I₂)=253,8 g·mol⁻¹<br />
+<details>
+    <summary><strong>Pokaż rozwiązanie</strong></summary>
+
+<p>Obliczenie moli:</p>
+<p><span class="math display">\[n_{H_{2}} = \frac{2}{2} = 1\
+mol\]</span></p>
+<p><span class="math display">\[n_{I_{2}} = \frac{50.8}{253.8} =
+0.2\]</span></p>
+<p>Tabelka:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[I_{2}\]</span></th>
+<th><span class="math display">\[H_{2}^{g}\]</span></th>
+<th><span class="math display">\[2HI^{g}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[n^{0}\]</span></td>
+<td><span class="math display">\[0.2\]</span></td>
+<td><span class="math display">\[1\]</span></td>
+<td><span class="math display">\[0\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta n\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ 2x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[n^{k}\]</span></td>
+<td><span class="math display">\[0.2 - x\]</span></td>
+<td><span class="math display">\[1 - x\]</span></td>
+<td><span class="math display">\[2x\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Suma moli gazowych</p>
+<p><span class="math display">\[n_{sum}^{gaz} = n_{H_{2}} + n_{HI} = 1 -
+x + 2x = 1 + x\]</span></p>
+<p>Wyrażenie na równanie Clapeyrona:</p>
+<p><span class="math display">\[pV = nRT\]</span></p>
+<p><span class="math display">\[V = \frac{nRT}{p} = \frac{(1 +
+x)·83.145·(100 + 273)}{1013} = 30.615·(1 + x)\]</span></p>
+<p>Zapisanie wyrażenia na gęstość gazu – pomijamy masę <span
+class="math inline">\(I_{2}\)</span>,bo to ciało stałe</p>
+<p><span class="math display">\[d = \frac{m}{V}\]</span></p>
+<p><span class="math display">\[0.194 = \frac{m_{H_{2}} + m_{HI}}{V}
+=\]</span></p>
+<p>Masę wstawiamy z tabelki molowej <span class="math inline">\(m =
+nM\)</span>, a objętość z równania Clapeyrona, otrzymując jedno równanie
+z jedną niewiadomą:</p>
+<p><span class="math display">\[0.194 = \frac{(1 - x)·2 +
+2x·253.8}{30.615·(1 + x)} =\]</span></p>
+<p><span class="math display">\[x = 0.0159\]</span></p>
+<p>Znając <span class="math inline">\(x\)</span> mogę obliczyć mole
+końcowe jak i objętość końcową:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[I_{2}\]</span></th>
+<th><span class="math display">\[H_{2}^{g}\]</span></th>
+<th><span class="math display">\[2HI^{g}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[n^{0}\]</span></td>
+<td><span class="math display">\[0.2\]</span></td>
+<td><span class="math display">\[1\]</span></td>
+<td><span class="math display">\[0\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta n\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ 2x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[n^{k}\]</span></td>
+<td><span class="math display">\[0.2 - 0.0159 = 0.1841\]</span></td>
+<td><span class="math display">\[1 - x = 0.9741\]</span></td>
+<td><span class="math display">\[2x = 0.0318\]</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[V_{Koncowa} = 30.615·(1 + x) = 30.615·(1
++ 0.0159) = 31.16dm^{3}\]</span></p>
+<p>Stężenia końcowe gazów</p>
+<p><span class="math display">\[\left\lbrack H_{2} \right\rbrack =
+\frac{n_{H_{2}}}{V} = \frac{0.9741}{31.16} = 0.03158\]</span></p>
+<p><span class="math display">\[\lbrack HI\rbrack = \frac{n_{HI}}{V} =
+\frac{0.0318}{31.16} = 0.00102\]</span></p>
+<p>Wyrażenie na stałą <span class="math inline">\(K\)</span></p>
+<p><span class="math display">\[K = \frac{\lbrack
+HI\rbrack^{2}}{\left\lbrack H_{2} \right\rbrack} =
+\frac{{0.00102}^{2}}{0.03158} = 3.3·10^{- 5}\]</span></p>
+<p>Obliczenie masy <span class="math inline">\(I_{2}\)</span> po
+reakcji:</p>
+<p><span class="math display">\[m_{I_{2}} = n_{I_{2}}M_{I_{2}} =
+0.1841·253.8 = 46.72g\]</span></p>
+<b>Rozwiązanie drugie</b>
+przez średnią masę molową
+
+id="średnia-masa-molowa-mathbfm-fracmathbfdrtmathbfpmathbf-fracmathbf0194-cdot-8314-cdot-373mathbf1013mathbf-595fracmathbfgmathbfmomathbflmathbf-2.-bilans-moli">1.
+Średnia masa molowa:<br />
+<span
+class="math display">\[\mathbf{M\  =}\frac{\mathbf{dRT}}{\mathbf{p}}\mathbf{\  =}\frac{\mathbf{0,194
+· 83,14 · 373}}{\mathbf{1013}}\mathbf{\  = \
+5,95}\frac{\mathbf{g}}{\mathbf{mo}\mathbf{l}}\mathbf{
+}\]</span><br />
+2. Bilans moli:<br />
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[I_{2}\]</span></th>
+<th><span class="math display">\[H_{2}^{g}\]</span></th>
+<th><span class="math display">\[2HI^{g}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[n^{0}\]</span></td>
+<td><span class="math display">\[0.2\]</span></td>
+<td><span class="math display">\[1\]</span></td>
+<td><span class="math display">\[0\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta n\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ 2x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[n^{k}\]</span></td>
+<td><span class="math display">\[0.2 - x =\]</span></td>
+<td><span class="math display">\[1 - x\]</span></td>
+<td><span class="math display">\[2x =\]</span></td>
+</tr>
+</tbody>
+</table>
+Suma moli reagentów
+gazowych po reakcji:</h2>
+
+id="mathbfn_mathbfgazmathbfsummathbfmathbfn_mathbfh_mathbf2mathbfkmathbfmathbfn_mathbfhimathbfkmathbf-1---x-2x-1-x"><span
+class="math display">\[\mathbf{n}_{\mathbf{gaz}}^{\mathbf{sum}}\mathbf{=}\mathbf{n}_{\mathbf{H}_{\mathbf{2}}}^{\mathbf{k}}\mathbf{+}\mathbf{n}_{\mathbf{HI}}^{\mathbf{k}}\mathbf{=
+1 - x + 2x = 1 + x}\]</span>
+Średnia masa molowa:
+class="math display">\[\overline{\mathbf{M}}\mathbf{=}\frac{\mathbf{m}_{\mathbf{gazów}}^{\mathbf{sum}}}{\mathbf{n}_{\mathbf{gazow}}^{\mathbf{sum}}}\mathbf{=}\frac{\mathbf{m}_{\mathbf{H}_{\mathbf{2}}}^{\mathbf{k}}\mathbf{+}\mathbf{m}_{\mathbf{HI}}^{\mathbf{k}}}{\mathbf{n}_{\mathbf{H}_{\mathbf{2}}}^{\mathbf{k}}\mathbf{+}\mathbf{n}_{\mathbf{I}_{\mathbf{2}}}^{\mathbf{k}}}\mathbf{=}\frac{\mathbf{n}_{\mathbf{H}_{\mathbf{2}}}^{\mathbf{k}}\mathbf{M}_{\mathbf{H}_{\mathbf{2}}}\mathbf{+}\mathbf{n}_{\mathbf{HI}}^{\mathbf{k}}\mathbf{M}_{\mathbf{HI}}}{\mathbf{n}_{\mathbf{H}_{\mathbf{2}}}^{\mathbf{k}}\mathbf{+}\mathbf{n}_{\mathbf{I}_{\mathbf{2}}}^{\mathbf{k}}}\mathbf{=}\frac{\left(
+\left( \mathbf{1 - x} \right)\mathbf{·2 + 2x·128} \right)}{\mathbf{1 +
+x}}\mathbf{= 5.95}\]</span>
+<span
+class="math display">\[\mathbf{x\  = \ 0,0159\ mol}\mathbf{
+}\]</span><br />
+Uzupełnienie tabelki, stężenia I objętość:
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><span class="math display">\[I_{2}\]</span></th>
+<th><span class="math display">\[H_{2}^{g}\]</span></th>
+<th><span class="math display">\[2HI^{g}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math display">\[n^{0}\]</span></td>
+<td><span class="math display">\[0.2\]</span></td>
+<td><span class="math display">\[1\]</span></td>
+<td><span class="math display">\[0\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[\Delta n\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[- x\]</span></td>
+<td><span class="math display">\[+ 2x\]</span></td>
+</tr>
+<tr>
+<td><span class="math display">\[n^{k}\]</span></td>
+<td><span class="math display">\[0.2 - 0.0159 = 0.1841\]</span></td>
+<td><span class="math display">\[1 - x = 0.9741\]</span></td>
+<td><span class="math display">\[2x = 0.0318\]</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[V_{Koncowa} = 30.615·(1 + x) = 30.615·(1
++ 0.0159) = 31.16dm^{3}\]</span></p>
+<p>Stężenia końcowe gazów</p>
+<p><span class="math display">\[\left\lbrack H_{2} \right\rbrack =
+\frac{n_{H_{2}}}{V} = \frac{0.9741}{31.16} = 0.03158\]</span></p>
+<p><span class="math display">\[\lbrack HI\rbrack = \frac{n_{HI}}{V} =
+\frac{0.0318}{31.16} = 0.00102\]</span></p>
+<p>Wyrażenie na stałą <span class="math inline">\(K\)</span></p>
+<p><span class="math display">\[K = \frac{\lbrack
+HI\rbrack^{2}}{\left\lbrack H_{2} \right\rbrack} =
+\frac{{0.00102}^{2}}{0.03158} = 3.3·10^{- 5}\]</span></p>
+<p>Obliczenie masy <span class="math inline">\(I_{2}\)</span> po
+reakcji:</p>
+<p><span class="math display">\[m_{I_{2}} = n_{I_{2}}M_{I_{2}} =
+0.1841·253.8 = 46.72g\]</span></p>
+</details>
+<details>
+    <summary><strong>Pokaż punktację</strong></summary>
+<p><strong>4 pkt</strong> – zastosowanie poprawnej metody, tj.
+wykorzystanie zależności między gęstością mieszaniny gazów a jej średnią
+masą molową do wyznaczenia składu równowagowej mieszaniny gazów,
+poprawne wykonanie obliczeń, ustalenie objętości reaktora i liczby moli
+gazów w stanie równowagi, poprawne obliczenie równowagowych stężeń
+reagentów oraz poprawne obliczenie wartości stężeniowej stałej równowagi
+reakcji.</p>
+<p><strong>3 pkt</strong> –</p>
+<p>zastosowanie poprawnej metody, tj. wykorzystanie zależności między
+gęstością mieszaniny gazów a jej średnią masą molową do wyznaczenia
+składu równowagowej mieszaniny gazów, poprawne wykonanie obliczeń,
+ustalenie objętości reaktora i liczby moli gazów w stanie równowagi oraz
+poprawne obliczenie równowagowych stężeń reagentów,</p>
+<p><strong>ALBO</strong></p>
+<ul>
+<li><p>zastosowanie poprawnej metody, tj. wykorzystanie zależności
+między gęstością mieszaniny gazów a jej średnią masą molową do
+wyznaczenia składu równowagowej mieszaniny gazów, wykonanie obliczeń,
+ustalenie objętości reaktora i liczby moli gazów w stanie równowagi,
+poprawne obliczenie równowagowych stężeń reagentów oraz obliczenie
+wartości stałej równowagi, ale popełnienie błędu rachunkowego,</p></li>
+</ul>
+<p><strong>ALBO</strong></p>
+<ul>
+<li><p>zastosowanie poprawnej metody, tj. wykorzystanie zależności
+między gęstością mieszaniny gazów a jej średnią masą molową do
+wyznaczenia składu równowagowej mieszaniny gazów, poprawne wykonanie
+obliczeń, ustalenie objętości reaktora i liczby moli gazów w stanie
+równowagi, poprawne obliczenie równowagowych stężeń reagentów, ale
+błędne obliczenie wartości stężeniowej stałej równowagi.</p></li>
+</ul>
+<p><strong>2 pkt</strong> –</p>
+<ul>
+<li><p>zastosowanie poprawnej metody, tj. wykorzystanie zależności
+między gęstością mieszaniny gazów a jej średnią masą molową do
+wyznaczenia składu równowagowej mieszaniny gazów, poprawne wykonanie
+obliczeń, ustalenie objętości reaktora i liczby moli gazów w stanie
+równowagi,</p></li>
+</ul>
+<p><strong>ALBO</strong></p>
+<ul>
+<li><p>zastosowanie poprawnej metody, tj. wykorzystanie zależności
+między gęstością mieszaniny gazów a jej średnią masą molową do
+wyznaczenia składu równowagowej mieszaniny gazów, wykonanie obliczeń,
+ustalenie objętości reaktora i liczby moli gazów w stanie równowagi oraz
+obliczenie równowagowych stężeń reagentów, ale popełnienie błędu
+rachunkowego,</p></li>
+</ul>
+<p><strong>ALBO</strong></p>
+<ul>
+<li><p>zastosowanie poprawnej metody, tj. wykorzystanie zależności
+między gęstością mieszaniny gazów a jej średnią masą molową do
+wyznaczenia składu równowagowej mieszaniny gazów, poprawne wykonanie
+obliczeń, ustalenie objętości reaktora i liczby moli gazów w stanie
+równowagi oraz błędne obliczenie równowagowych stężeń
+reagentów.</p></li>
+</ul>
+<p><strong>1 pkt</strong> –</p>
+<ul>
+<li><p>zastosowanie poprawnej metody, tj. wykorzystanie równania gazu
+doskonałego do poprawnego wyznaczenia objętości reaktora,</p></li>
+</ul>
+<p><strong>ALBO</strong></p>
+<ul>
+<li><p>zastosowanie poprawnej metody, tj. wykorzystanie zależności
+między gęstością mieszaniny gazów a jej średnią masą molową do
+wyznaczenia składu równowagowej mieszaniny gazów, wykonanie obliczeń,
+ustalenie objętości reaktora i liczby moli gazów w stanie równowagi, ale
+popełnienie błędu rachunkowego,</p></li>
+</ul>
+<p><strong>ALBO</strong></p>
+<ul>
+<li><p>zastosowanie poprawnej metody, tj. wykorzystanie zależności
+między gęstością mieszaniny gazów a jej średnią masą molową do
+wyznaczenia składu równowagowej mieszaniny gazów, poprawne wykonanie
+obliczeń i ustalenie objętości reaktora, ale błędne wyznaczenie liczby
+moli gazów w stanie równowagi.</p></li>
+</ul>
+<p><strong>0 pkt</strong> – rozwiązanie niespełniające powyższych
+kryteriów albo brak rozwiązania.</p>
+</details>
+</body>
+</html>
