@@ -594,7 +594,7 @@
 
 /* TABLETY */
 
-@media(max-width:1000px){
+@media(max-width:600px){
 
 
     .layout {
@@ -869,4 +869,117 @@
 
 
 }
+}
+@media(max-width:600px){
+
+    .layout {
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        padding:25px 15px;
+    }
+
+
+    /* kolejność elementów */
+    .filters {
+        order:1;
+        position:static;
+        width:100%;
+    }
+
+
+    .results-section {
+        order:2;
+        width:100%;
+        padding:15px;
+    }
+
+
+    .filter-card {
+        padding:15px;
+    }
+
+
+    .filter-card h2 {
+        font-size:1.4rem;
+    }
+
+
+    /* EDYCJE + TEMATY OBOK SIEBIE */
+    .bottom-filters {
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+    }
+
+
+    /* EDYCJE - dwie kolumny */
+    #editions {
+        grid-template-columns:repeat(2,1fr);
+        gap:8px;
+    }
+
+
+    #editions label {
+        white-space:normal;
+        font-size:0.9rem;
+    }
+
+
+    /* TEMATY */
+    #topics {
+        gap:8px;
+    }
+
+
+    #topics label {
+        white-space:normal;
+        font-size:0.9rem;
+    }
+
+
+    /* etapy */
+    .stages-card .checkbox-grid {
+        flex-direction:column;
+        gap:8px;
+    }
+
+
+    /* nagłówek */
+    .tytulwyszukiwarka {
+        padding:30px 15px 20px;
+    }
+
+
+    .tytulwyszukiwarka h1 {
+        font-size:2rem;
+    }
+
+
+    .tytulwyszukiwarka p {
+        font-size:1rem;
+    }
+
+
+    /* karty wyników */
+    .task-card {
+        padding:14px;
+    }
+
+
+    .task-header {
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+    }
+
+
+    .task-link {
+        font-size:1rem;
+    }
+
+
+    .tag {
+        font-size:0.75rem;
+        padding:4px 8px;
+    }
 }
