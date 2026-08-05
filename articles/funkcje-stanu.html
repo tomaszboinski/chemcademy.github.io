@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Funkcje-stanu</title>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="pandoc" name="generator"/>
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+  <title>
+   Funkcje stanu - chemia teoria i obliczenia | Chemcademy
+  </title>
   <style>
-    code{white-space: pre-wrap;}
+   code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -21,876 +23,2130 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="artykul.css" />
-  <script
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
-  type="text/javascript"></script>
-</head>
-<body>
-<h1 id="funkcje-stanu-efekt-termiczny-reakcji">Funkcje stanu, efekt
-termiczny reakcji</h1>
-<p>Funkcja stanu jest to parametr układu, który niezależny jest od drogi
+  <link href="artykul.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript">
+  </script>
+  <meta content="Funkcje stanu, efekt
+termiczny reakcji - Funkcja stanu jest to parametr układu, który niezależny jest od drogi
 przemiany, a zależny tylko od stanu początkowego i końcowego. Zmiana
 tego parametru to jest różnica między punktem końcowym i początkowym.
 Możemy przytoczyć jako przykład różnicę wysokości nad poziomem
-morza:</p>
-<p><img src="funkcje-stanu/media/image1.png"
-style="width:2.26944in;height:1.59097in" /></p>
-<p>Różnica wysokości nad poziomem morza zależna jest tylko od punktu, w
+morza:" name="description"/>
+  <link href="https://chemcademy.edu.pl/articles/funkcje-stanu.html" rel="canonical"/>
+  <meta content="Funkcje stanu - chemia teoria i obliczenia | Chemcademy" property="og:title"/>
+  <meta content="Funkcje stanu, efekt
+termiczny reakcji - Funkcja stanu jest to parametr układu, który niezależny jest od drogi
+przemiany, a zależny tylko od stanu początkowego i końcowego. Zmiana
+tego parametru to jest różnica między punktem końcowym i początkowym.
+Możemy przytoczyć jako przykład różnicę wysokości nad poziomem
+morza:" property="og:description"/>
+  <meta content="article" property="og:type"/>
+  <meta content="https://chemcademy.edu.pl/articles/funkcje-stanu.html" property="og:url"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="Funkcje stanu - chemia teoria i obliczenia | Chemcademy" name="twitter:title"/>
+  <meta content="Funkcje stanu, efekt
+termiczny reakcji - Funkcja stanu jest to parametr układu, który niezależny jest od drogi
+przemiany, a zależny tylko od stanu początkowego i końcowego. Zmiana
+tego parametru to jest różnica między punktem końcowym i początkowym.
+Możemy przytoczyć jako przykład różnicę wysokości nad poziomem
+morza:" name="twitter:description"/>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Funkcje stanu - chemia teoria i obliczenia | Chemcademy",
+  "description": "Funkcje stanu, efekt\ntermiczny reakcji - Funkcja stanu jest to parametr układu, który niezależny jest od drogi\nprzemiany, a zależny tylko od stanu początkowego i końcowego. Zmiana\ntego parametru to jest różnica między punktem końcowym i początkowym.\nMożemy przytoczyć jako przykład różnicę wysokości nad poziomem\nmorza:",
+  "dateModified": "2026-08-05",
+  "author": {
+    "@type": "Organization",
+    "name": "Chemcademy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chemcademy"
+  },
+  "mainEntityOfPage": "https://chemcademy.edu.pl/articles/funkcje-stanu.html"
+}
+  </script>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Chemcademy",
+      "item": "https://chemcademy.edu.pl"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artykuły chemiczne"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Funkcje stanu - chemia teoria i obliczenia | Chemcademy",
+      "item": "https://chemcademy.edu.pl/articles/funkcje-stanu.html"
+    }
+  ]
+}
+  </script>
+ </head>
+ <body>
+  <h1 id="funkcje-stanu-efekt-termiczny-reakcji">
+   Funkcje stanu, efekt
+termiczny reakcji
+  </h1>
+  <p>
+   Funkcja stanu jest to parametr układu, który niezależny jest od drogi
+przemiany, a zależny tylko od stanu początkowego i końcowego. Zmiana
+tego parametru to jest różnica między punktem końcowym i początkowym.
+Możemy przytoczyć jako przykład różnicę wysokości nad poziomem
+morza:
+  </p>
+  <p>
+   <img src="funkcje-stanu/media/image1.png" style="width:2.26944in;height:1.59097in"/>
+  </p>
+  <p>
+   Różnica wysokości nad poziomem morza zależna jest tylko od punktu, w
 którym rozpoczynam wycieczkę i ją kończę, a niezależna od tego, jaką
 trasę wybrałem poszedłem. Oczywiście nie wszystkie parametry są
 funkcjami stanu – przemierzony dystans wyprawy bądź suma wysokości
-podejść zależy od wybranej trasy.</p>
-<p>I chemii są trzy ważne parametry będące funkcją stanu:</p>
-<p><strong>Entalpia -</strong> <span class="math inline">\(\Delta
-H\)</span><strong>– zmiana energii wiązań w trakcie procesu (przy stałym
-ciśnieniu)</strong></p>
-<p><span class="math inline">\(\Delta H\ \  &gt; 0\)</span>: entalpia
+podejść zależy od wybranej trasy.
+  </p>
+  <p>
+   I chemii są trzy ważne parametry będące funkcją stanu:
+  </p>
+  <p>
+   <strong>
+    Entalpia -
+   </strong>
+   <span class="math inline">
+    \(\Delta
+H\)
+   </span>
+   <strong>
+    – zmiana energii wiązań w trakcie procesu (przy stałym
+ciśnieniu)
+   </strong>
+  </p>
+  <p>
+   <span class="math inline">
+    \(\Delta H\ \  &gt; 0\)
+   </span>
+   : entalpia
 większa od zera znaczy, że energia się wydziela ;tzn. substraty mają
 więcej energii wiązań niż produkty – więc gdzieś ta energia musiała
 pójść, a poszła najpewniej na ogrzanie układu, układ się ogrzewa,
-reakcja egzotermiczna lub egzoenergetyczna</p>
-<p><span class="math inline">\(\Delta H\ \  &lt; 0\)</span>: entalpia
+reakcja egzotermiczna lub egzoenergetyczna
+  </p>
+  <p>
+   <span class="math inline">
+    \(\Delta H\ \  &lt; 0\)
+   </span>
+   : entalpia
 mniejsza od zera znaczy, że energia się wydziela ;tzn. substraty mają
 mniejs energii wiązań niż produkty, podczas reakcji pobierana jest
 energia, układ się ochładza, reakcja endotermiczna lub
-endoenergetyczna</p>
-<p><strong>Entropia</strong> <span class="math inline">\(\mathbf{\Delta
-S\ }\)</span><strong>jest miarą nieuporządkowania układu inaczej miarą
-nieporządku</strong></p>
-<p><span class="math inline">\(\Delta S\  &gt; 0\)</span> układ robi się
+endoenergetyczna
+  </p>
+  <p>
+   <strong>
+    Entropia
+   </strong>
+   <span class="math inline">
+    \(\mathbf{\Delta
+S\ }\)
+   </span>
+   <strong>
+    jest miarą nieuporządkowania układu inaczej miarą
+nieporządku
+   </strong>
+  </p>
+  <p>
+   <span class="math inline">
+    \(\Delta S\  &gt; 0\)
+   </span>
+   układ robi się
 coraz bardziej nieuporządkowany, wzrasta bałagan, wymieszanie reagentów.
 Np. wywalenie skarpet z szafki, porozrzucanie ich po podłodze, brudnych,
 czystych, kolorowych, czarnych razem jest przykładem procesu gdzie
-entropia rośnie.</p>
-<p><span class="math inline">\(\Delta S\  &gt; 0\)</span> porządkujemy
+entropia rośnie.
+  </p>
+  <p>
+   <span class="math inline">
+    \(\Delta S\  &gt; 0\)
+   </span>
+   porządkujemy
 układ, maleje bałagan, reagentów są bardziej rozdzielone. Przykładem
 jest porządkowanie skarpetek.W chemii klasycznym procesem, w którym
 entropia rośnie jest proces mieszania gazów. Proces wytrącania soli jest
-z kolei typowym procesem, w którym maleje entropia.</p>
-<p><strong>Energia Gibbsa (entalpia swobodna)</strong> <span
-class="math inline">\(\mathbf{\Delta G\ }\)</span><strong>mówi o
-samorzutności procesu</strong></p>
-<p><span class="math inline">\(\Delta G\  &lt; \ 0\)</span> mówi o tym,
+z kolei typowym procesem, w którym maleje entropia.
+  </p>
+  <p>
+   <strong>
+    Energia Gibbsa (entalpia swobodna)
+   </strong>
+   <span class="math inline">
+    \(\mathbf{\Delta G\ }\)
+   </span>
+   <strong>
+    mówi o
+samorzutności procesu
+   </strong>
+  </p>
+  <p>
+   <span class="math inline">
+    \(\Delta G\  &lt; \ 0\)
+   </span>
+   mówi o tym,
 że dany proces jest samorzutny (dozwolony), preferowane produkty
 bardziej niż substraty, reakcja może zachodzić, jednak czy zachodzi
 zależne jest również od kinetyki reakcji i przekroczenia energii
-aktywacji.</p>
-<p><span class="math inline">\(\Delta G\ \mathbf{&gt;}\ 0\)</span> to
+aktywacji.
+  </p>
+  <p>
+   <span class="math inline">
+    \(\Delta G\ \mathbf{&gt;}\ 0\)
+   </span>
+   to
 proces niesamorzutny, preferowane są substraty, reakcja nie może
-zachodzić– w przewadze zawsze będą substraty, dla wysokich <span
-class="math inline">\(\Delta G\)</span> reakcja w ogóle nie może
-zachodzić.</p>
-<p><span class="math display">\[\Delta G\  = \Delta H\ –\ T\Delta
-S\]</span></p>
-<p>Gdzie <span class="math inline">\(\Delta H\)</span> entalpia reakcji,
-<span class="math inline">\(\Delta S\)</span> entropia reakcji,
-natomiast <span class="math inline">\(T\)</span> oznacza temperaturę w
-Kelvinach.</p>
-<p>Żeby <span class="math inline">\(\Delta G\)</span> było jak
-najmniejsze (proces jak najbardziej preferowany) to <span
-class="math inline">\(\Delta H\)</span> musi być jak najmniejsza,
-natomiast <span class="math inline">\(\Delta S\)</span> jak największa.
+zachodzić– w przewadze zawsze będą substraty, dla wysokich
+   <span class="math inline">
+    \(\Delta G\)
+   </span>
+   reakcja w ogóle nie może
+zachodzić.
+  </p>
+  <p>
+   <span class="math display">
+    \[\Delta G\  = \Delta H\ –\ T\Delta
+S\]
+   </span>
+  </p>
+  <p>
+   Gdzie
+   <span class="math inline">
+    \(\Delta H\)
+   </span>
+   entalpia reakcji,
+   <span class="math inline">
+    \(\Delta S\)
+   </span>
+   entropia reakcji,
+natomiast
+   <span class="math inline">
+    \(T\)
+   </span>
+   oznacza temperaturę w
+Kelvinach.
+  </p>
+  <p>
+   Żeby
+   <span class="math inline">
+    \(\Delta G\)
+   </span>
+   było jak
+najmniejsze (proces jak najbardziej preferowany) to
+   <span class="math inline">
+    \(\Delta H\)
+   </span>
+   musi być jak najmniejsza,
+natomiast
+   <span class="math inline">
+    \(\Delta S\)
+   </span>
+   jak największa.
 Każdy układ dąży do minimum energii i maksimum entropii (maksymalnego
 nieporządku), a jak nie wierzymy to wystarczy spojrzeć, co się dzieje po
-imprezie.</p>
-<p>Stała równowagi w ujęciu termodynamicznym zdegionowana jest jaka</p>
-<p><span class="math display">\[\Delta G\  = - RT\ ln\ K\]</span></p>
-<p>Więc stała równowagi jest równa</p>
-<p><span class="math display">\[K = e^{- \frac{G}{RT}}\]</span></p>
-<p>Gdzie <span class="math inline">\(\Delta G\)</span> - Gibbs, <span
-class="math inline">\(R\)</span>- stała gazowa, <span
-class="math inline">\(T\)</span> <em>-</em> temperatura w Kelvinach
-<span class="math inline">\(\ln\)</span> –logarytm naturalny, <span
-class="math inline">\(K\ \)</span>– stała równowagi reakcji.</p>
-<h1 id="entalpia-tworzenia-entalpia-spalania--definicje">Entalpia
-tworzenia, entalpia spalania -definicje</h1>
-<p>W tablicach maturalnych zostały stablicowane następujące
-entalpie:</p>
-<p><strong>Entalpia tworzenia</strong> – to entalpia (hipotetycznej)
-reakcji utworzenia <strong><mark>1 MOLA</mark></strong> zadanego
+imprezie.
+  </p>
+  <p>
+   Stała równowagi w ujęciu termodynamicznym zdegionowana jest jaka
+  </p>
+  <p>
+   <span class="math display">
+    \[\Delta G\  = - RT\ ln\ K\]
+   </span>
+  </p>
+  <p>
+   Więc stała równowagi jest równa
+  </p>
+  <p>
+   <span class="math display">
+    \[K = e^{- \frac{G}{RT}}\]
+   </span>
+  </p>
+  <p>
+   Gdzie
+   <span class="math inline">
+    \(\Delta G\)
+   </span>
+   - Gibbs,
+   <span class="math inline">
+    \(R\)
+   </span>
+   - stała gazowa,
+   <span class="math inline">
+    \(T\)
+   </span>
+   <em>
+    -
+   </em>
+   temperatura w Kelvinach
+   <span class="math inline">
+    \(\ln\)
+   </span>
+   –logarytm naturalny,
+   <span class="math inline">
+    \(K\ \)
+   </span>
+   – stała równowagi reakcji.
+  </p>
+  <h1 id="entalpia-tworzenia-entalpia-spalania--definicje">
+   Entalpia
+tworzenia, entalpia spalania -definicje
+  </h1>
+  <p>
+   W tablicach maturalnych zostały stablicowane następujące
+entalpie:
+  </p>
+  <p>
+   <strong>
+    Entalpia tworzenia
+   </strong>
+   – to entalpia (hipotetycznej)
+reakcji utworzenia
+   <strong>
+    <mark>
+     1 MOLA
+    </mark>
+   </strong>
+   zadanego
 produktu, z substancji w stanie podstawowym (czyli
-<mark>pierwiastków</mark> w takim stanie skupienia i formie alotropowej
-w jakim występują w danej temperaturze w przyrodzie np.<span
-class="math inline">\(H_{2}^{g},\ \ I_{2}^{g}\ \ \
-C_{grafit}^{st}\)</span>). W równaniu mówiącym o entalpii tworzenia
+   <mark>
+    pierwiastków
+   </mark>
+   w takim stanie skupienia i formie alotropowej
+w jakim występują w danej temperaturze w przyrodzie np.
+   <span class="math inline">
+    \(H_{2}^{g},\ \ I_{2}^{g}\ \ \
+C_{grafit}^{st}\)
+   </span>
+   ). W równaniu mówiącym o entalpii tworzenia
 musimy mieć jeden mol substratu, narzuca to inne współczynniki
 stechiometryczne, nawet jeżeli będą niecałkowite. Np. reakcje tworzenia
-<span class="math inline">\(HI\)</span> i <span
-class="math inline">\(HBr\)</span> wyglądają następująco, współczynniki
+   <span class="math inline">
+    \(HI\)
+   </span>
+   i
+   <span class="math inline">
+    \(HBr\)
+   </span>
+   wyglądają następująco, współczynniki
 mogą być niecałkowite, ważne aby współczynnik przed reagentem, który
-otrzymujemy był jeden:</p>
-<p><span class="math display">\[\frac{1}{2}H_{2}^{g} +
+otrzymujemy był jeden:
+  </p>
+  <p>
+   <span class="math display">
+    \[\frac{1}{2}H_{2}^{g} +
 \frac{1}{2}I_{2}^{st} \rightarrow 1HI\ \ \mathrm{\Delta}H_{HI}^{tw}
-=\]</span></p>
-<p><span class="math display">\[\frac{1}{2}H_{2}^{g} +
+=\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\frac{1}{2}H_{2}^{g} +
 \frac{1}{2}{Br}_{2}^{ciekly} \rightarrow 1HBr\ \
-\mathrm{\Delta}H_{HBr}^{tw} =\]</span></p>
-<p>Różnica wynika z różnych stanów skupienia w warunkach standardowych
-bromu i jodu.</p>
-<p>Analogicznie reakcja tworzenia <span
-class="math inline">\(Ca(OH)_{2}\)</span></p>
-<p><span class="math display">\[Ca^{st} + O_{2}^{g} + H_{2}^{g}
+\mathrm{\Delta}H_{HBr}^{tw} =\]
+   </span>
+  </p>
+  <p>
+   Różnica wynika z różnych stanów skupienia w warunkach standardowych
+bromu i jodu.
+  </p>
+  <p>
+   Analogicznie reakcja tworzenia
+   <span class="math inline">
+    \(Ca(OH)_{2}\)
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[Ca^{st} + O_{2}^{g} + H_{2}^{g}
 \rightarrow 1Ca(OH)_{2}\ \ \mathrm{\Delta}H_{Ca(OH)_{2}}^{tw}
-=\]</span></p>
-<p>Należy podkreślić, iż zawsze wychodzimy ze związków
-jednopierwiastkowych, woda nie jest pierwiastkiem wbrew szkole TVP</p>
-<p>Entalpia tworzenia substancji w stanie podstawowym jest równa zero z
-definicji, w takiej przemianie nie ma żadnej zmiany.</p>
-<p><span class="math display">\[O_{2}^{g} \rightarrow O_{2}^{g}\ \ \
+=\]
+   </span>
+  </p>
+  <p>
+   Należy podkreślić, iż zawsze wychodzimy ze związków
+jednopierwiastkowych, woda nie jest pierwiastkiem wbrew szkole TVP
+  </p>
+  <p>
+   Entalpia tworzenia substancji w stanie podstawowym jest równa zero z
+definicji, w takiej przemianie nie ma żadnej zmiany.
+  </p>
+  <p>
+   <span class="math display">
+    \[O_{2}^{g} \rightarrow O_{2}^{g}\ \ \
 \mathrm{\Delta}H_{tw}^{O_{2}} = 0\ bo\ się\ nic\ nie\
-zmienia.\]</span></p>
-<p>Oczywiście entalpia tworzenia formy alotropowej, która nie jest
+zmienia.\]
+   </span>
+  </p>
+  <p>
+   Oczywiście entalpia tworzenia formy alotropowej, która nie jest
 podstawową dla danego pierwiastka formą alotropową już będzie miała
-niezerową wartość entalpii tworzenia.</p>
-<p><span class="math display">\[\frac{3}{2}O_{2}^{g} \rightarrow
-O_{3}^{g}\ \ \ \ H_{tw}^{O_{3}} \neq 0\]</span></p>
-<p>Podstawową formą alotropową podstawową jest grafit ,a nie
-diament.</p>
-<p>Uwaga na fazy, bo jak dobrze wiemy faza się musi zgadzać np. woda
+niezerową wartość entalpii tworzenia.
+  </p>
+  <p>
+   <span class="math display">
+    \[\frac{3}{2}O_{2}^{g} \rightarrow
+O_{3}^{g}\ \ \ \ H_{tw}^{O_{3}} \neq 0\]
+   </span>
+  </p>
+  <p>
+   Podstawową formą alotropową podstawową jest grafit ,a nie
+diament.
+  </p>
+  <p>
+   Uwaga na fazy, bo jak dobrze wiemy faza się musi zgadzać np. woda
 ciekła i woda gazowa to są dwie różne wody, dwie różne substancje z
 punktu widzenia termochemii. Mamy dla nich dwie różne entalpie
-tworzenia.</p>
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr>
-<th><span class="math display">\[H_{2}O^{c}\]</span></th>
-<th><span class="math display">\[- 285.8\]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[H_{2}O^{g}\]</span></td>
-<td><span class="math display">\[- 241.8\]</span></td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[H_{2} + \frac{1}{2}O_{2} \rightarrow
+tworzenia.
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 50%"/>
+    <col style="width: 50%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+      <span class="math display">
+       \[H_{2}O^{c}\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[- 285.8\]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[H_{2}O^{g}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 241.8\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   <span class="math display">
+    \[H_{2} + \frac{1}{2}O_{2} \rightarrow
 H_{2}O^{g}\ \ \ \ H_{tw}^{H_{2}O^{g}} = -
-241.8\frac{kJ}{mol}\]</span></p>
-<p><span class="math display">\[H_{2} + \frac{1}{2}O_{2} \rightarrow
+241.8\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2} + \frac{1}{2}O_{2} \rightarrow
 H_{2}O^{c}\ \ \ \ H_{tw}^{{H_{2}O}^{c}} = -
-285.8\frac{kJ}{mol}\]</span></p>
-<p><strong>Entalpia spalania</strong> – entalpia spalenia
-<strong><mark>1 MOLA</mark></strong> zadanego substratu konkretnie do
-<span class="math inline">\(CO_{2}^{g}\ i\)</span> <span
-class="math inline">\(H_{2}O^{c}\)</span> Faza ma znaczenie, dwutlenek
+285.8\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   <strong>
+    Entalpia spalania
+   </strong>
+   – entalpia spalenia
+   <strong>
+    <mark>
+     1 MOLA
+    </mark>
+   </strong>
+   zadanego substratu konkretnie do
+   <span class="math inline">
+    \(CO_{2}^{g}\ i\)
+   </span>
+   <span class="math inline">
+    \(H_{2}O^{c}\)
+   </span>
+   Faza ma znaczenie, dwutlenek
 węgla ma być gazowy, a woda ciekła. Współczynnik stechiometryczny przed
 spalanym reagentem musi być równy jeden, nawet jeżeli inne współczynniki
-są niecałkowite</p>
-<p><span class="math display">\[\ \text{ }1C_{2}H_{2}^{g} + 2.5O_{2}^{g}
+są niecałkowite
+  </p>
+  <p>
+   <span class="math display">
+    \[\ \text{ }1C_{2}H_{2}^{g} + 2.5O_{2}^{g}
 \rightarrow 2CO_{2}^{g} + H_{2}O^{c}\ \ \
-\mathrm{\Delta}H_{spal}^{C_{2}H_{2}} =\]</span></p>
-<p>Na podstawie znajmości entalpii tworzenie i spalania możemy obliczyć
-wartości innych poszukiwanych entalpii.</p>
-<h1 id="obliczenia-przy-użyciu-entalpii-wzory">Obliczenia przy użyciu
-entalpii-wzory</h1>
-<p><strong>Dwa ważne wzory, które umożliwiają szybkie liczenie entalpii,
+\mathrm{\Delta}H_{spal}^{C_{2}H_{2}} =\]
+   </span>
+  </p>
+  <p>
+   Na podstawie znajmości entalpii tworzenie i spalania możemy obliczyć
+wartości innych poszukiwanych entalpii.
+  </p>
+  <h1 id="obliczenia-przy-użyciu-entalpii-wzory">
+   Obliczenia przy użyciu
+entalpii-wzory
+  </h1>
+  <p>
+   <strong>
+    Dwa ważne wzory, które umożliwiają szybkie liczenie entalpii,
 ale jednocześnie one się bardzo łatwo mylą i w sumie są mocno
 ograniczone, ale nauczyciele też są więc je lubią. Nauczyciele też
-często są ograniczeni.</strong></p>
-<p>Jeżeli WYKORZYSTUJESZ tylko entalpię tworzenia do obliczania entalpii
+często są ograniczeni.
+   </strong>
+  </p>
+  <p>
+   Jeżeli WYKORZYSTUJESZ tylko entalpię tworzenia do obliczania entalpii
 poszukiwanej reakcji (nie jest ważne, jaka to reakcja może być to np.
-entalpia reakcji spalania) entalpia ta może być wyliczona ze wzoru:</p>
-<p><span class="math display">\[{\mathrm{\Delta}H}_{reakcji} =
+entalpia reakcji spalania) entalpia ta może być wyliczona ze wzoru:
+  </p>
+  <p>
+   <span class="math display">
+    \[{\mathrm{\Delta}H}_{reakcji} =
 \sum_{}^{}{\mathrm{\Delta}H_{prod}^{tw}} -
-\sum_{}^{}{\mathrm{\Delta}H_{subst}^{tw}}\]</span></p>
-<p>Odpowiednie entalpie tworzenia reagentów mnożymy razy współczynniki
-stechiometryczne reakcji.</p>
-<p>Np. Chcąc obliczyć entalpie reakcji</p>
-<p><span class="math display">\[\text{ }3FeO + 2Al \rightarrow
-Al_{2}O_{3} + 3Fe\]</span></p>
-<p>Możemy napisać, że entalpia tej reakcji</p>
-<p><span class="math display">\[{\mathrm{\Delta}H}_{reakcji} =
+\sum_{}^{}{\mathrm{\Delta}H_{subst}^{tw}}\]
+   </span>
+  </p>
+  <p>
+   Odpowiednie entalpie tworzenia reagentów mnożymy razy współczynniki
+stechiometryczne reakcji.
+  </p>
+  <p>
+   Np. Chcąc obliczyć entalpie reakcji
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }3FeO + 2Al \rightarrow
+Al_{2}O_{3} + 3Fe\]
+   </span>
+  </p>
+  <p>
+   Możemy napisać, że entalpia tej reakcji
+  </p>
+  <p>
+   <span class="math display">
+    \[{\mathrm{\Delta}H}_{reakcji} =
 \sum_{}^{}{\mathrm{\Delta}H_{prod}^{tw}} -
 \sum_{}^{}{\mathrm{\Delta}H}_{subst}^{tw} = \left(
 {\mathrm{\Delta}H}_{Al_{2}O_{3}}^{tw} + 3\mathrm{\Delta}H_{Fe}^{tw}
-\right) - \left( 3H_{FeO}^{tw} + 2H_{Al}^{tw} \right) =\]</span></p>
-<p>I teraz patrzę czy któreś z tych substancji nie są substancjami w
+\right) - \left( 3H_{FeO}^{tw} + 2H_{Al}^{tw} \right) =\]
+   </span>
+  </p>
+  <p>
+   I teraz patrzę czy któreś z tych substancji nie są substancjami w
 stanie podstawowym, w tym wypadku to żelazo i glin. Entalpie ich
 tworzenia muszą być, więc równe zero i resztę entalpii tworzenia
-odnajduję w tablicach maturalnych. Wstawiając dane otrzymujemy:</p>
-<p><span class="math display">\[{\mathrm{\Delta}H}_{reakcji} = (‒1675.7
-+ 3·0) - (3·(‒272.0) + 2·0) = - 858.2\frac{kJ}{mol}\]</span></p>
-<p>Z bardzo podobnego wzoru korzystamy obliczając entalpii dowolnej
+odnajduję w tablicach maturalnych. Wstawiając dane otrzymujemy:
+  </p>
+  <p>
+   <span class="math display">
+    \[{\mathrm{\Delta}H}_{reakcji} = (‒1675.7
++ 3·0) - (3·(‒272.0) + 2·0) = - 858.2\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   Z bardzo podobnego wzoru korzystamy obliczając entalpii dowolnej
 reakcji WYKORZYSTUJĄC entalpie reakcji spalania, ale uwaga, bo wzór jest
-na opak wobec poprzedniego:</p>
-<p><span class="math display">\[{\mathrm{\Delta}H}_{reakcji} =
+na opak wobec poprzedniego:
+  </p>
+  <p>
+   <span class="math display">
+    \[{\mathrm{\Delta}H}_{reakcji} =
 \sum_{}^{}{\mathrm{\Delta}H}_{subst}^{spal} -
-\sum_{}^{}{\mathrm{\Delta}H}_{prod}^{spal}\]</span></p>
-<p>Mnemotechnia: jak masz wzór na tworzenie (produkcje) to pierwsze jest
-<strong><mark>p</mark></strong>rodukcji
-<strong><mark>p</mark></strong>roduktów, a jak wzór na spalenie to masz
-pierwsze <strong><mark>s</mark></strong>palenie
-<strong><mark>s</mark></strong>ubstratów. Metoda
-<strong><mark>SS</mark>.</strong></p>
-<p>Aby obliczyć entalpię reakcji</p>
-<p><span class="math display">\[3C_{2}H_{2} \rightarrow
-C_{6}H_{6}\]</span></p>
-<p>Możemy napisać:</p>
-<p><span class="math display">\[H_{reakcji} =
+\sum_{}^{}{\mathrm{\Delta}H}_{prod}^{spal}\]
+   </span>
+  </p>
+  <p>
+   Mnemotechnia: jak masz wzór na tworzenie (produkcje) to pierwsze jest
+   <strong>
+    <mark>
+     p
+    </mark>
+   </strong>
+   rodukcji
+   <strong>
+    <mark>
+     p
+    </mark>
+   </strong>
+   roduktów, a jak wzór na spalenie to masz
+pierwsze
+   <strong>
+    <mark>
+     s
+    </mark>
+   </strong>
+   palenie
+   <strong>
+    <mark>
+     s
+    </mark>
+   </strong>
+   ubstratów. Metoda
+   <strong>
+    <mark>
+     SS
+    </mark>
+    .
+   </strong>
+  </p>
+  <p>
+   Aby obliczyć entalpię reakcji
+  </p>
+  <p>
+   <span class="math display">
+    \[3C_{2}H_{2} \rightarrow
+C_{6}H_{6}\]
+   </span>
+  </p>
+  <p>
+   Możemy napisać:
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{reakcji} =
 \sum_{}^{}{3·H_{C_{2}H_{2}}^{spal}} - \sum_{}^{}H_{C_{6}H_{6}}^{spal} =
-3·( - 1300) - ( - 3267) = - 633\frac{kJ}{mol}\]</span></p>
-<p>Analogicznie możemy obliczyć entalpię reakcji:</p>
-<p><span class="math display">\[C_{2}H_{4} + C_{2}H_{6} \rightarrow
-C_{4}H_{10}\]</span></p>
-<p><span class="math display">\[H_{reakcji} =
+3·( - 1300) - ( - 3267) = - 633\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   Analogicznie możemy obliczyć entalpię reakcji:
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{4} + C_{2}H_{6} \rightarrow
+C_{4}H_{10}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{reakcji} =
 \sum_{}^{}{\mathrm{\Delta}H}_{subst}^{spal} -
 \sum_{}^{}{\mathrm{\Delta}H}_{prod}^{spal} = H_{C_{2}H_{4}}^{spal} +
-H_{C_{2}H_{6}}^{spal} - H_{C_{4}H_{10}}^{spal} =\]</span></p>
-<p>Poniższych zależności nie ma na maturze, ale dziwnym trafem, niektóre
+H_{C_{2}H_{6}}^{spal} - H_{C_{4}H_{10}}^{spal} =\]
+   </span>
+  </p>
+  <p>
+   Poniższych zależności nie ma na maturze, ale dziwnym trafem, niektóre
 zbiory zadań je lubią. Obliczanie entalpii reakcji przy użyciu
-entalpii/energii wiązań</p>
-<p>Entalpia/ energia wiązania to ilość energii, którą musisz włożyć żeby
-to wiązanie rozerwać.</p>
-<p>Aby wykorzystać wartości energii wiązań należy najpierw rozrysować
+entalpii/energii wiązań
+  </p>
+  <p>
+   Entalpia/ energia wiązania to ilość energii, którą musisz włożyć żeby
+to wiązanie rozerwać.
+  </p>
+  <p>
+   Aby wykorzystać wartości energii wiązań należy najpierw rozrysować
 sobie na początku substraty i produkty na wzory Lewisa, tak, aby widzieć
 wszystkie wiązania. Krotność wiązania ma znaczenie, inna jest energia
-wiązania jednokrotnego, inna dwukrotnego, a inna trzykrotnego.</p>
-<p>Dla poniższej reakcji utleniania amoniaku oblicz entalpię reakcji na
+wiązania jednokrotnego, inna dwukrotnego, a inna trzykrotnego.
+  </p>
+  <p>
+   Dla poniższej reakcji utleniania amoniaku oblicz entalpię reakcji na
 podstawie energii wiązań, a następnie narysuj wykres energetyczny
-reakcji i opisz go:</p>
-<p><span class="math display">\[4NH_{3}^{g} + \ 5O_{2}^{g} \rightarrow
-4NO^{g} + 6H_{2}O^{g}\]</span></p>
-<table>
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th><span class="math display">\[N - H\]</span></th>
-<th><span class="math display">\[O = O\]</span></th>
-<th><span class="math display">\[N = O\]</span></th>
-<th><span class="math display">\[H - O\]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[390\frac{kJ}{mol}\]</span></td>
-<td><span class="math display">\[499\frac{kJ}{mol}\]</span></td>
-<td><span class="math display">\[631\frac{kJ}{mol}\]</span></td>
-<td><span class="math display">\[465\frac{kJ}{mol}\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Musimy sobie na początku rozrysować związki i zobaczyć, jakie w nich
-występują wiazania.</p>
-<p><img src="funkcje-stanu/media/image2.png"
-style="width:6.3in;height:1.37683in" /></p>
-<p>Widzimy że w substratach jest 12 wiązań N-H (4amoniaki po 3 wiazania)
+reakcji i opisz go:
+  </p>
+  <p>
+   <span class="math display">
+    \[4NH_{3}^{g} + \ 5O_{2}^{g} \rightarrow
+4NO^{g} + 6H_{2}O^{g}\]
+   </span>
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 24%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+      <span class="math display">
+       \[N - H\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[O = O\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[N = O\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[H - O\]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[390\frac{kJ}{mol}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[499\frac{kJ}{mol}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[631\frac{kJ}{mol}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[465\frac{kJ}{mol}\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Musimy sobie na początku rozrysować związki i zobaczyć, jakie w nich
+występują wiazania.
+  </p>
+  <p>
+   <img src="funkcje-stanu/media/image2.png" style="width:6.3in;height:1.37683in"/>
+  </p>
+  <p>
+   Widzimy że w substratach jest 12 wiązań N-H (4amoniaki po 3 wiazania)
 ;5 wiazan O=O; w produktach są 4 wiazania N=O i 12 wiazan O-H (6 wód po
-2 wiązania)</p>
-<p><span class="math display">\[H_{reakcji} =
+2 wiązania)
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{reakcji} =
 \sum_{}^{}H_{wiazan}^{substratow} -
-\sum_{}^{}H_{wiazan}^{produktów},\]</span></p>
-<p>Oczywiście uwzględniamy ile wiązań jednego i drugiego typu tworzymy.
+\sum_{}^{}H_{wiazan}^{produktów},\]
+   </span>
+  </p>
+  <p>
+   Oczywiście uwzględniamy ile wiązań jednego i drugiego typu tworzymy.
 Dodatkowo krotność wiązania ma oczywiście znaczenie, czyli wiązanie
-<span class="math inline">\(O - O\)</span> i <span
-class="math inline">\(O = O\)</span> to sa różne wiazanaia</p>
-<p><span class="math display">\[H_{reakcji} = \left( 12·H_{N - H} +
+   <span class="math inline">
+    \(O - O\)
+   </span>
+   i
+   <span class="math inline">
+    \(O = O\)
+   </span>
+   to sa różne wiazanaia
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{reakcji} = \left( 12·H_{N - H} +
 5H_{O = O} \right) - \left( 4·H_{N = O} + 12H_{O - H} \right) = (12·390
-+ 5·499) - (4·631 + 12·465) = - 929\frac{kJ}{mol}\]</span></p>
-<p><span class="math display">\[2N_{2}O_{5}^{g}\ 2NO_{2}^{g} + \
-O_{2}^{g}\]</span></p>
-<table style="width:100%;">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr>
-<th>N-H</th>
-<th>O=O</th>
-<th>N=O</th>
-<th>H-O</th>
-<th>N-O</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>390 kJ/mol</td>
-<td>499 kJ/mol</td>
-<td>631 kJ/mol</td>
-<td>465 kJ/mol</td>
-<td>210 kJ/mol</td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[H_{reakcji} =
++ 5·499) - (4·631 + 12·465) = - 929\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[2N_{2}O_{5}^{g}\ 2NO_{2}^{g} + \
+O_{2}^{g}\]
+   </span>
+  </p>
+  <table style="width:100%;">
+   <colgroup>
+    <col style="width: 19%"/>
+    <col style="width: 20%"/>
+    <col style="width: 20%"/>
+    <col style="width: 20%"/>
+    <col style="width: 20%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+      N-H
+     </th>
+     <th>
+      O=O
+     </th>
+     <th>
+      N=O
+     </th>
+     <th>
+      H-O
+     </th>
+     <th>
+      N-O
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      390 kJ/mol
+     </td>
+     <td>
+      499 kJ/mol
+     </td>
+     <td>
+      631 kJ/mol
+     </td>
+     <td>
+      465 kJ/mol
+     </td>
+     <td>
+      210 kJ/mol
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   <span class="math display">
+    \[H_{reakcji} =
 \sum_{}^{}H_{wiazan}^{substratow} -
-\sum_{}^{}H_{wiazan}^{produktów},\]</span></p>
-<p>W tym wypadku należy rozróżnić ilość wiązań podwójnych i pojedynczych
-pomiędzy tlenem i azotem</p>
-<p><img src="funkcje-stanu/media/image3.png"
-style="width:3.66389in;height:1.52014in" /></p>
-<p><span class="math display">\[\text{ }{2N}_{2}O_{5} \rightarrow
-4NO_{2} + O_{2}\]</span></p>
-<p><span class="math display">\[H_{reakcji} =
+\sum_{}^{}H_{wiazan}^{produktów},\]
+   </span>
+  </p>
+  <p>
+   W tym wypadku należy rozróżnić ilość wiązań podwójnych i pojedynczych
+pomiędzy tlenem i azotem
+  </p>
+  <p>
+   <img src="funkcje-stanu/media/image3.png" style="width:3.66389in;height:1.52014in"/>
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }{2N}_{2}O_{5} \rightarrow
+4NO_{2} + O_{2}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{reakcji} =
 \sum_{}^{}H_{wiazan}^{substratow} -
-\sum_{}^{}H_{wiazan}^{produktów},\]</span></p>
-<p><span class="math display">\[H_{reakcji} = \left( 2·\left( 4H_{N - O}
+\sum_{}^{}H_{wiazan}^{produktów},\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{reakcji} = \left( 2·\left( 4H_{N - O}
 + 2H_{N = O} \right) \right) - \left( 4·\left( H_{N - O} + H_{N = O}
-\right) + H_{O = O} \right) = \ldots\]</span></p>
-<h1 id="obliczenia-przy-użyciu-entalpii-metoda-macierzowa">Obliczenia
-przy użyciu entalpii-metoda macierzowa</h1>
-<p>Zadania z starych matur były łatwiejsze, gdyż z uwagi na brak tablic
+\right) + H_{O = O} \right) = \ldots\]
+   </span>
+  </p>
+  <h1 id="obliczenia-przy-użyciu-entalpii-metoda-macierzowa">
+   Obliczenia
+przy użyciu entalpii-metoda macierzowa
+  </h1>
+  <p>
+   Zadania z starych matur były łatwiejsze, gdyż z uwagi na brak tablic
 autorzy zadania wskazywali entalpie i reakcje, z których mamy korzystać,
 aby obliczyć zadaną wartość entalpii szukanej reakcji. Przedstawiona
 metoda macierzowa jest polecana do matury, szczególnie, jeżeli nie
 możemy korzystać z podanych powyżej wzorów bo mamy różne entalpie
-reakcji, a nie same entalpie tworzenia lub same entalpie spalania.</p>
-<p>Aby rozwiązać zadanie dotyczące bilansu entalpii i obliczenia
+reakcji, a nie same entalpie tworzenia lub same entalpie spalania.
+  </p>
+  <p>
+   Aby rozwiązać zadanie dotyczące bilansu entalpii i obliczenia
 wartości entalpii szukanej reakcji należy najpierw zapisać reakcje
 poszukiwaną i reakcje dane, których entalpie mamy dane w zadaniu. Znane
-entalpie oznaczamy jako <span class="math inline">\(H_{1},\
-H_{2}\)</span> , raczej nie należy wstawiać wartości liczbowych
+entalpie oznaczamy jako
+   <span class="math inline">
+    \(H_{1},\
+H_{2}\)
+   </span>
+   , raczej nie należy wstawiać wartości liczbowych
 poszczególnych entalpii, gdyż z uwagi na dużą ilość rachunków jest
-pewne, że się któraś cyferka jebnie.</p>
-<p><span class="math display">\[C_{2}H_{6} + 3,5O_{2} \rightarrow
-2CO_{2} + 3H_{2}O\ \ \ H_{1}\]</span></p>
-<p><span class="math display">\[C_{2}H_{4} + 3O_{2} \rightarrow 2CO_{2}
-+ {2H}_{2}O\ \ \ \ \ H_{2}\]</span></p>
-<p><span class="math display">\[H_{2} + 0.5O_{2} \rightarrow H_{2}O\ \ \
-\ \ H_{3}\]</span></p>
-<p>Dozwolone operacje na entalpiach i tym samym na reakcjach są trzy</p>
-<p>- mnożyć entalpie i reakcje(tzn. Współczynniki reakcji) razy jakąś
-liczbę (może być też niecałkowita)</p>
-<p><span class="math display">\[C_{2}H_{6} + 3,5O_{2} \rightarrow
-2CO_{2} + 3H_{2}O\ \ \ \ H_{1}\text{/}·2\]</span></p>
-<p><span class="math display">\[{2C}_{2}H_{6} + 7O_{2} \rightarrow
-4CO_{2} + 6H_{2}O\ \ \ \ \ \ 2H_{1}\]</span></p>
-<p>Możemy odwracać stronami – odwracamy wówczas znak entalpii, inaczej
+pewne, że się któraś cyferka jebnie.
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{6} + 3,5O_{2} \rightarrow
+2CO_{2} + 3H_{2}O\ \ \ H_{1}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{4} + 3O_{2} \rightarrow 2CO_{2}
++ {2H}_{2}O\ \ \ \ \ H_{2}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2} + 0.5O_{2} \rightarrow H_{2}O\ \ \
+\ \ H_{3}\]
+   </span>
+  </p>
+  <p>
+   Dozwolone operacje na entalpiach i tym samym na reakcjach są trzy
+  </p>
+  <p>
+   - mnożyć entalpie i reakcje(tzn. Współczynniki reakcji) razy jakąś
+liczbę (może być też niecałkowita)
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{6} + 3,5O_{2} \rightarrow
+2CO_{2} + 3H_{2}O\ \ \ \ H_{1}\text{/}·2\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[{2C}_{2}H_{6} + 7O_{2} \rightarrow
+4CO_{2} + 6H_{2}O\ \ \ \ \ \ 2H_{1}\]
+   </span>
+  </p>
+  <p>
+   Możemy odwracać stronami – odwracamy wówczas znak entalpii, inaczej
 jest to mnożenie reakcji razy liczbę ujemną. Jest to analogia do wyprawy
 w góry. Jeżeli my mamy 2000 m. do góry do yeti ego to yeti ma 2000m. w
-dół do nas.</p>
-<p><span class="math display">\[C_{2}H_{6} + 3,5O_{2} \rightarrow
-2CO_{2} + 3H_{2}O\ \ H_{1}\ /\text{·-1}\]</span></p>
-<p><span class="math display">\[2CO_{2} + 3H_{2}O \rightarrow C_{2}H_{6}
-+ 3,5O_{2}\ \ \ \ \ \  - H_{1}\]</span></p>
-<p>Ostatnią dozwoloną operacją jest sumowanie reakcji i entalpii.
+dół do nas.
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{6} + 3,5O_{2} \rightarrow
+2CO_{2} + 3H_{2}O\ \ H_{1}\ /\text{·-1}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[2CO_{2} + 3H_{2}O \rightarrow C_{2}H_{6}
++ 3,5O_{2}\ \ \ \ \ \  - H_{1}\]
+   </span>
+  </p>
+  <p>
+   Ostatnią dozwoloną operacją jest sumowanie reakcji i entalpii.
 Analogią do tej operacji jest sumowanie wysokości podczas wyprawy
-górskiej</p>
-<p>Czyli jeżeli mamy 500m do góry do baru, a od baru do yetiego jest
-1000metrów do góry to od nas do yeti jest 1 500m do góry</p>
-<p><span class="math display">\[My \rightarrow bar\ \ \ \ \ \  +
-500m\]</span></p>
-<p><span class="math display">\[bar \rightarrow yeti\ \ \ \ \  +
-1000m\]</span></p>
-<p><span class="math display">\[my + bar \rightarrow bar + yeti\ \ \ \ \
-\ \ \ 500 + 1000\]</span></p>
-<p>Analogicznie dla reakcji</p>
-<p><span class="math display">\[C_{2}H_{4} + 3O_{2} \rightarrow 2CO_{2}
-+ {2H}_{2}O\ \ \ \ \ H_{2}\]</span></p>
-<p><span class="math display">\[H_{2} + 0.5O_{2} \rightarrow H_{2}O\ \ \
-\ \ H_{3}\]</span></p>
-<p><span class="math display">\[C_{2}H_{4} + 3O_{2} + H_{2} + 0.5O_{2}
+górskiej
+  </p>
+  <p>
+   Czyli jeżeli mamy 500m do góry do baru, a od baru do yetiego jest
+1000metrów do góry to od nas do yeti jest 1 500m do góry
+  </p>
+  <p>
+   <span class="math display">
+    \[My \rightarrow bar\ \ \ \ \ \  +
+500m\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[bar \rightarrow yeti\ \ \ \ \  +
+1000m\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[my + bar \rightarrow bar + yeti\ \ \ \ \
+\ \ \ 500 + 1000\]
+   </span>
+  </p>
+  <p>
+   Analogicznie dla reakcji
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{4} + 3O_{2} \rightarrow 2CO_{2}
++ {2H}_{2}O\ \ \ \ \ H_{2}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2} + 0.5O_{2} \rightarrow H_{2}O\ \ \
+\ \ H_{3}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{4} + 3O_{2} + H_{2} + 0.5O_{2}
 \rightarrow H_{2}O + 2CO_{2} + {2H}_{2}O\ \ \ \ \ \ \ \ \ H_{2} +
-H_{3}\]</span></p>
-<p>W tabeli podano wartości standardowej molowej entalpii trzech
-reakcji:</p>
-<table>
-<colgroup>
-<col style="width: 53%" />
-<col style="width: 46%" />
-</colgroup>
-<thead>
-<tr>
-<th>Równanie reakcji</th>
-<th>Standardowa molowa entalpia</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[C_{2}H_{6}^{g} + 3.5O_{2}^{g}
-\rightarrow 2CO_{2}^{g}\  + \ 3H_{2}O^{c}\]</span></td>
-<td><span class="math display">\[\Delta_{sp}H^{0}(C_{2}H_{6}) = -
-1560.7\ kJ·mol^{- 1}\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[C_{2}H_{4}^{g} + 3\ O_{2}^{g}
-\rightarrow 2CO_{2}^{g}\  + \ 2\ H_{2}O^{c}\]</span></td>
-<td><span class="math display">\[\Delta_{sp}H^{0}(C_{2}H_{4}) = -
-1411.2\ kJ·mol^{- 1}\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[H2g + 0.5\ O2g \rightarrow \
-H2Oc\]</span></td>
-<td><span class="math display">\[\Delta_{sp}H^{0}(H_{2}) = \  - 285.8\
-kJ·mol^{- 1}\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Na podstawie powyższych danych oblicz standardową molową entalpię
-reakcji uwodornienia etenu <span class="math inline">\(\Delta
-H_{x}^{0}\)</span>, która zachodzi zgodnie z równaniem:</p>
-<p><span class="math display">\[C_{2}H_{4}^{g} + H_{2}^{g} \rightarrow
-C_{2}H_{6}^{g}\]</span></p>
-<p>Do problemu przedstawionego zadania podchodzi w ten sposób, że
-zapisujemy reakcje, której entalpii szukamy</p>
-<p><span class="math display">\[\text{ }C_{2}H_{4} + H_{2} \rightarrow
-C_{2}H_{6}\ \ \ \ \ \ \ \ H_{szuk}\]</span></p>
-<p>I patrzymy, które elementy możemy wykorzystać z powyższych
-reakcji</p>
-<p><span class="math display">\[\text{
+H_{3}\]
+   </span>
+  </p>
+  <p>
+   W tabeli podano wartości standardowej molowej entalpii trzech
+reakcji:
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 53%"/>
+    <col style="width: 46%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+      Równanie reakcji
+     </th>
+     <th>
+      Standardowa molowa entalpia
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[C_{2}H_{6}^{g} + 3.5O_{2}^{g}
+\rightarrow 2CO_{2}^{g}\  + \ 3H_{2}O^{c}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[\Delta_{sp}H^{0}(C_{2}H_{6}) = -
+1560.7\ kJ·mol^{- 1}\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[C_{2}H_{4}^{g} + 3\ O_{2}^{g}
+\rightarrow 2CO_{2}^{g}\  + \ 2\ H_{2}O^{c}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[\Delta_{sp}H^{0}(C_{2}H_{4}) = -
+1411.2\ kJ·mol^{- 1}\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[H2g + 0.5\ O2g \rightarrow \
+H2Oc\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[\Delta_{sp}H^{0}(H_{2}) = \  - 285.8\
+kJ·mol^{- 1}\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Na podstawie powyższych danych oblicz standardową molową entalpię
+reakcji uwodornienia etenu
+   <span class="math inline">
+    \(\Delta
+H_{x}^{0}\)
+   </span>
+   , która zachodzi zgodnie z równaniem:
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{4}^{g} + H_{2}^{g} \rightarrow
+C_{2}H_{6}^{g}\]
+   </span>
+  </p>
+  <p>
+   Do problemu przedstawionego zadania podchodzi w ten sposób, że
+zapisujemy reakcje, której entalpii szukamy
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }C_{2}H_{4} + H_{2} \rightarrow
+C_{2}H_{6}\ \ \ \ \ \ \ \ H_{szuk}\]
+   </span>
+  </p>
+  <p>
+   I patrzymy, które elementy możemy wykorzystać z powyższych
+reakcji
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{
 }\mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{6}} + 3.5O_{2} \rightarrow
-2CO_{2} + 3H_{2}O\ \ \ {\ \ \ H}_{1}\]</span></p>
-<p><span class="math display">\[\text{
+2CO_{2} + 3H_{2}O\ \ \ {\ \ \ H}_{1}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{
 }\mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{4}} + 3O_{2} \rightarrow
-2CO_{2} + {2H}_{2}O\ \ \ \ \ H_{2}\]</span></p>
-<p><span class="math display">\[\text{ }\mathbf{H}_{\mathbf{2}} +
-0.5O_{2} \rightarrow H_{2}O\ \ \ \ \ H_{3}\]</span></p>
-<p>Widzimy, iż pierwszej reakcję musimy odwrócić, bo interesujący nas
-związek <em><strong>C<sub>2</sub>H<sub>6</sub></strong></em> jest nie po
+2CO_{2} + {2H}_{2}O\ \ \ \ \ H_{2}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }\mathbf{H}_{\mathbf{2}} +
+0.5O_{2} \rightarrow H_{2}O\ \ \ \ \ H_{3}\]
+   </span>
+  </p>
+  <p>
+   Widzimy, iż pierwszej reakcję musimy odwrócić, bo interesujący nas
+związek
+   <em>
+    <strong>
+     C
+     <sub>
+      2
+     </sub>
+     H
+     <sub>
+      6
+     </sub>
+    </strong>
+   </em>
+   jest nie po
 tej stronie. Druga i trzecia reakcja ma interesujące nas reagenty po
 właściwej stronie. Wszystkie reagenty mają współczynniki jak w
-poszukiwanym równaniu, więc nie musimy mnożyć żadnego z równania.</p>
-<p><img src="funkcje-stanu/media/image4.png"
-style="width:3.33924in;height:0.91859in" /></p>
-<p>Po zsumowaniu dostajemy:</p>
-<p><img src="funkcje-stanu/media/image5.png"
-style="width:4.21597in;height:1.16806in" /></p>
-<p><img src="funkcje-stanu/media/image6.png"
-style="width:5.00833in;height:0.36806in" /></p>
-<p><span class="math display">\[H_{sz} = - H_{1} + H_{2} +
+poszukiwanym równaniu, więc nie musimy mnożyć żadnego z równania.
+  </p>
+  <p>
+   <img src="funkcje-stanu/media/image4.png" style="width:3.33924in;height:0.91859in"/>
+  </p>
+  <p>
+   Po zsumowaniu dostajemy:
+  </p>
+  <p>
+   <img src="funkcje-stanu/media/image5.png" style="width:4.21597in;height:1.16806in"/>
+  </p>
+  <p>
+   <img src="funkcje-stanu/media/image6.png" style="width:5.00833in;height:0.36806in"/>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{sz} = - H_{1} + H_{2} +
 H_{3}\mathbf{= - (} - 1560.7) + ( - 1411.2) + ( - 285.8) = -
-136.3\mathbf{\ }kJ/mol\]</span></p>
-<p>Oblicz entalpię reakcji</p>
-<p><span class="math display">\[CuO^{s} + \ H_{2}^{s}\  \rightarrow
-Cu^{s}\  + \ H_{2}O^{c}\]</span></p>
-<p>Mając następujące dane:</p>
-<p><span class="math display">\[2Cu^{s} + O_{2}^{g} \rightarrow 2CuO\ \
-\ \ \ \ \ \ \ \Delta H_{1} = - 310\frac{kJ}{mol}\]</span></p>
-<p><span class="math display">\[2H_{2}^{g} + O_{2}^{g} \rightarrow \
+136.3\mathbf{\ }kJ/mol\]
+   </span>
+  </p>
+  <p>
+   Oblicz entalpię reakcji
+  </p>
+  <p>
+   <span class="math display">
+    \[CuO^{s} + \ H_{2}^{s}\  \rightarrow
+Cu^{s}\  + \ H_{2}O^{c}\]
+   </span>
+  </p>
+  <p>
+   Mając następujące dane:
+  </p>
+  <p>
+   <span class="math display">
+    \[2Cu^{s} + O_{2}^{g} \rightarrow 2CuO\ \
+\ \ \ \ \ \ \ \Delta H_{1} = - 310\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[2H_{2}^{g} + O_{2}^{g} \rightarrow \
 2H_{2}O^{g}\ \ \ \ \ \ \ \ \ \Delta H_{2} = -
-484\frac{kJ}{mol}\]</span></p>
-<p><span class="math display">\[H_{2}O^{c} \rightarrow H_{2}O^{g}\ \ \ \
-\ \ \ \ \ \ \ \ \ \ \ \ \ \Delta H_{3} = 44\frac{kJ}{mol}\]</span></p>
-<p>Widzimy, iż w podanych równaniach woda występuje w dwóch różnych
+484\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2}O^{c} \rightarrow H_{2}O^{g}\ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \Delta H_{3} = 44\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   Widzimy, iż w podanych równaniach woda występuje w dwóch różnych
 stanach skupienia – ciekłym i gazowym, powinniśmy, więc bardzo uważać na
 stan skupienia. Pierwszą reakcję widzimy, iż powinniśmy odwrócić, z
-uwagi na występowanie <span class="math inline">\(CuO\)</span> z lewej
-strony reakcji, a <span class="math inline">\(Cu\)</span> z prawej.
+uwagi na występowanie
+   <span class="math inline">
+    \(CuO\)
+   </span>
+   z lewej
+strony reakcji, a
+   <span class="math inline">
+    \(Cu\)
+   </span>
+   z prawej.
 Jednocześnie powinniśmy współczynniki tej reakcji przemnożyć razy ½ .
 Widzimy, że w reakcji numer dwa występuje wodór, jest on z właściwej
 strony, jednak, również potrzebujemy 1 wodoru, a mamy dwa – też musimy
 przemnożyć współczynniki tej reakcji razy ½. Trzecią reakcję musimy
 odwrócić, z uwagi na występowanie wody ciekłej po stronie produktów w
-poszukiwanym równaniu reakcji. Zapisujac całość widzimy:</p>
-<p><span class="math display">\[\text{
+poszukiwanym równaniu reakcji. Zapisujac całość widzimy:
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{
 }\mathbf{Cu}\mathbf{O}^{\mathbf{s}}\mathbf{\  + \
 }\mathbf{H}_{\mathbf{2}}^{\mathbf{s}}\mathbf{\
 }\mathbf{\rightarrow}\mathbf{\ C}\mathbf{u}^{\mathbf{s}}\mathbf{\  + \
-}\mathbf{H}_{\mathbf{2}}\mathbf{O}^{\mathbf{c}}\]</span></p>
-<p><span
-class="math display">\[\mathbf{2}\mathbf{C}\mathbf{u}^{\mathbf{s}}\mathbf{+}\mathbf{O}_{\mathbf{2}}^{\mathbf{g}}\mathbf{\rightarrow}\mathbf{\
+}\mathbf{H}_{\mathbf{2}}\mathbf{O}^{\mathbf{c}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{2}\mathbf{C}\mathbf{u}^{\mathbf{s}}\mathbf{+}\mathbf{O}_{\mathbf{2}}^{\mathbf{g}}\mathbf{\rightarrow}\mathbf{\
 2}\mathbf{CuO}\mathbf{\ \ \ \ \ \ \ \ \
 \Delta}\mathbf{H}_{\mathbf{1}}\mathbf{\ \ \ }\text{/}\mathbf{·
--}\frac{\mathbf{1}}{\mathbf{2}}\]</span></p>
-<p><span
-class="math display">\[\mathbf{2}\mathbf{H}_{\mathbf{2}}^{\mathbf{g}}\mathbf{+}\mathbf{O}_{\mathbf{2}}^{\mathbf{g}}\mathbf{\rightarrow}\mathbf{\
+-}\frac{\mathbf{1}}{\mathbf{2}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{2}\mathbf{H}_{\mathbf{2}}^{\mathbf{g}}\mathbf{+}\mathbf{O}_{\mathbf{2}}^{\mathbf{g}}\mathbf{\rightarrow}\mathbf{\
 \ 2}\mathbf{H}_{\mathbf{2}}\mathbf{O\ \ \ \ \ \ \ \ \
-\Delta}\mathbf{H}_{\mathbf{2}}\text{/}\mathbf{·}\frac{\mathbf{1}}{\mathbf{2}}\]</span></p>
-<p><span class="math display">\[\mathbf{\ \ \ \ \ }{\text{
+\Delta}\mathbf{H}_{\mathbf{2}}\text{/}\mathbf{·}\frac{\mathbf{1}}{\mathbf{2}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{\ \ \ \ \ }{\text{
 }\mathbf{H}}_{\mathbf{2}}\mathbf{O}^{\mathbf{c}}\mathbf{\rightarrow}\mathbf{\
 H}_{\mathbf{2}}\mathbf{O}^{\mathbf{g}}\mathbf{\ \ \ \ \ \ \ \ \ \ \ \ \
 \ \ \ \ \Delta}\mathbf{H}_{\mathbf{3}}\text{/}\mathbf{· -
-1}\]</span></p>
-<p>Po wymnożeniu i zsumowaniu otrzymujemy:</p>
-<p><img src="funkcje-stanu/media/image7.png"
-style="width:2.79554in;height:1.31969in" /></p>
-<p><span class="math display">\[\text{
+1}\]
+   </span>
+  </p>
+  <p>
+   Po wymnożeniu i zsumowaniu otrzymujemy:
+  </p>
+  <p>
+   <img src="funkcje-stanu/media/image7.png" style="width:2.79554in;height:1.31969in"/>
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{
 }\mathbf{Cu}\mathbf{O}^{\mathbf{s}}\mathbf{\  + \
 }\mathbf{H}_{\mathbf{2}}^{\mathbf{s}}\mathbf{\
 }\mathbf{\rightarrow}\mathbf{\ C}\mathbf{u}^{\mathbf{s}}\mathbf{\  + \
 }\mathbf{H}_{\mathbf{2}}\mathbf{O}^{\mathbf{c}}\mathbf{\ \ \ \ \ \ \ \ \
 }\mathbf{H}_{\mathbf{szuk}}\mathbf{=
 -}\frac{\mathbf{1}}{\mathbf{2}}\mathbf{\Delta}\mathbf{H}_{\mathbf{1}}\mathbf{+}\frac{\mathbf{1}}{\mathbf{2}}\mathbf{\Delta}\mathbf{H}_{\mathbf{2}}\mathbf{-
-\Delta}\mathbf{H}_{\mathbf{3}}\]</span></p>
-<h1
-id="obliczenia-przy-użyciu-entalpii-metoda-macierzowawykorzystanie-tablic-cke">Obliczenia
-przy użyciu entalpii-metoda macierzowa+wykorzystanie tablic CKE</h1>
-<p><strong><mark>Aby wykorzystywać dane z tablic należy napisać
+\Delta}\mathbf{H}_{\mathbf{3}}\]
+   </span>
+  </p>
+  <h1 id="obliczenia-przy-użyciu-entalpii-metoda-macierzowawykorzystanie-tablic-cke">
+   Obliczenia
+przy użyciu entalpii-metoda macierzowa+wykorzystanie tablic CKE
+  </h1>
+  <p>
+   <strong>
+    <mark>
+     Aby wykorzystywać dane z tablic należy napisać
 wszystkie reakcje dla danych reagentów, które występują w reakcji
 szukanej. Jeżeli korzystasz z lewej i prawej tablicy czasem musisz użyć
-również reakcji tworzenia <em>CO<sub>2</sub></em> i ciekłej wody
-<em>H<sub>2</sub>O</em>:</mark></strong></p>
-<p><span class="math display">\[\mathbf{C
+również reakcji tworzenia
+     <em>
+      CO
+      <sub>
+       2
+      </sub>
+     </em>
+     i ciekłej wody
+     <em>
+      H
+      <sub>
+       2
+      </sub>
+      O
+     </em>
+     :
+    </mark>
+   </strong>
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{C
 +}\mathbf{O}_{\mathbf{2}}\mathbf{\rightarrow
 C}\mathbf{O}_{\mathbf{2}}\mathbf{\ \ \ \ \ \
-}\mathbf{H}_{\mathbf{tw}}^{\mathbf{C}\mathbf{O}_{\mathbf{2}}}\]</span></p>
-<p><span
-class="math display">\[\mathbf{H}_{\mathbf{2}}\mathbf{+}\frac{\mathbf{1}}{\mathbf{2}}\mathbf{O}_{\mathbf{2}}\mathbf{\rightarrow}\mathbf{H}_{\mathbf{2}}\mathbf{O}^{\mathbf{c}}\mathbf{\
+}\mathbf{H}_{\mathbf{tw}}^{\mathbf{C}\mathbf{O}_{\mathbf{2}}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{H}_{\mathbf{2}}\mathbf{+}\frac{\mathbf{1}}{\mathbf{2}}\mathbf{O}_{\mathbf{2}}\mathbf{\rightarrow}\mathbf{H}_{\mathbf{2}}\mathbf{O}^{\mathbf{c}}\mathbf{\
 \ \ \ \ \
-}\mathbf{H}_{\mathbf{tw}}^{\mathbf{H}_{\mathbf{2}}\mathbf{O}^{\mathbf{c}}}\]</span></p>
-<p><strong>Mamy wtedy wypisane reakcje, których możemy używać, więc
+}\mathbf{H}_{\mathbf{tw}}^{\mathbf{H}_{\mathbf{2}}\mathbf{O}^{\mathbf{c}}}\]
+   </span>
+  </p>
+  <p>
+   <strong>
+    Mamy wtedy wypisane reakcje, których możemy używać, więc
 stosując opisane powyżej metody bilansu możemy ustalić entalpię
-poszukiwanej reakcji.</strong></p>
-<p>Trudność zadań, w których mamy wykorzystać tablice entalpii wobec
+poszukiwanej reakcji.
+   </strong>
+  </p>
+  <p>
+   Trudność zadań, w których mamy wykorzystać tablice entalpii wobec
 zadań, w których mamy podane entalpie i reakcje, z których możemy
 korzystać polega na samodzielnym znalezieniu reakcji, które musimy
-wykorzystać.</p>
-<p>Zwróć uwagę na różnicę trudności uprzednio analizowanego zadania,
-które napisane jest tak :</p>
-<p>W tabeli podano wartości standardowej molowej entalpii trzech
-reakcji:</p>
-<table>
-<colgroup>
-<col style="width: 53%" />
-<col style="width: 46%" />
-</colgroup>
-<thead>
-<tr>
-<th>Równanie reakcji</th>
-<th>Standardowa molowa entalpia</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[C_{2}H_{6}^{g} + 3.5O_{2}^{g}
-\rightarrow 2CO_{2}^{g}\  + \ 3H_{2}O^{c}\]</span></td>
-<td><span class="math display">\[\Delta_{sp}H^{0}(C_{2}H_{6}) = -
-1560.7\ kJ·mol^{- 1}\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[C_{2}H_{4}^{g} + 3\ O_{2}^{g}
-\rightarrow 2CO_{2}^{g}\  + \ 2\ H_{2}O^{c}\]</span></td>
-<td><span class="math display">\[\Delta_{sp}H^{0}(C_{2}H_{4}) = -
-1411.2\ kJ·mol^{- 1}\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[H2g + 0.5\ O2g \rightarrow \
-H2Oc\]</span></td>
-<td><span class="math display">\[\Delta_{sp}H^{0}(H_{2}) = \  - 285.8\
-kJ·mol^{- 1}\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Na podstawie powyższych danych oblicz standardową molową entalpię
-reakcji uwodornienia etenu ΔH<sup>0</sup><sub>x</sub>, która zachodzi
-zgodnie z równaniem:</p>
-<p><span class="math display">\[C_{2}H_{4}^{g} + H_{2}^{g} \rightarrow
-C_{2}H_{6}^{g}\ \ \ \ H_{szuk}\]</span></p>
-<p>I zadania, które napisane jest :</p>
-<p>Oblicz standardową molową entalpię reakcji uwodornienia etenu
-ΔH<sup>0</sup><sub>x</sub>, która zachodzi zgodnie z równaniem</p>
-<p><span class="math display">\[C_{2}H_{4} + H_{2} \rightarrow
-C_{2}H_{6}\]</span></p>
-<p>Problem: w tym drugim poleceniu musisz wiedzieć, że masz skorzystać z
+wykorzystać.
+  </p>
+  <p>
+   Zwróć uwagę na różnicę trudności uprzednio analizowanego zadania,
+które napisane jest tak :
+  </p>
+  <p>
+   W tabeli podano wartości standardowej molowej entalpii trzech
+reakcji:
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 53%"/>
+    <col style="width: 46%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+      Równanie reakcji
+     </th>
+     <th>
+      Standardowa molowa entalpia
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[C_{2}H_{6}^{g} + 3.5O_{2}^{g}
+\rightarrow 2CO_{2}^{g}\  + \ 3H_{2}O^{c}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[\Delta_{sp}H^{0}(C_{2}H_{6}) = -
+1560.7\ kJ·mol^{- 1}\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[C_{2}H_{4}^{g} + 3\ O_{2}^{g}
+\rightarrow 2CO_{2}^{g}\  + \ 2\ H_{2}O^{c}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[\Delta_{sp}H^{0}(C_{2}H_{4}) = -
+1411.2\ kJ·mol^{- 1}\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[H2g + 0.5\ O2g \rightarrow \
+H2Oc\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[\Delta_{sp}H^{0}(H_{2}) = \  - 285.8\
+kJ·mol^{- 1}\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Na podstawie powyższych danych oblicz standardową molową entalpię
+reakcji uwodornienia etenu ΔH
+   <sup>
+    0
+   </sup>
+   <sub>
+    x
+   </sub>
+   , która zachodzi
+zgodnie z równaniem:
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{4}^{g} + H_{2}^{g} \rightarrow
+C_{2}H_{6}^{g}\ \ \ \ H_{szuk}\]
+   </span>
+  </p>
+  <p>
+   I zadania, które napisane jest :
+  </p>
+  <p>
+   Oblicz standardową molową entalpię reakcji uwodornienia etenu
+ΔH
+   <sup>
+    0
+   </sup>
+   <sub>
+    x
+   </sub>
+   , która zachodzi zgodnie z równaniem
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{4} + H_{2} \rightarrow
+C_{2}H_{6}\]
+   </span>
+  </p>
+  <p>
+   Problem: w tym drugim poleceniu musisz wiedzieć, że masz skorzystać z
 reakcji, które są w tablicach. I musisz wiedzieć, których; a w tym
-pierwszym masz wyłożone czarno na białym</p>
-<p>Do problemu podchodzę znajdując reakcje, w których występują powyższe
+pierwszym masz wyłożone czarno na białym
+  </p>
+  <p>
+   Do problemu podchodzę znajdując reakcje, w których występują powyższe
 reagenty. Zarówno dla etanu jak i etenu mam podaną entalpię
-spalenia.</p>
-<p><span
-class="math display">\[\mathbf{1}\mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{4}}
+spalenia.
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{1}\mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{4}}
 + 3O_{2} \rightarrow 2CO_{2} + 2H_{2}O^{c}\ \ \ \
-H_{spal}^{C_{2}H_{4}}\]</span></p>
-<p><span
-class="math display">\[\mathbf{1}\mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{6}}
+H_{spal}^{C_{2}H_{4}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{1}\mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{6}}
 + 3.5O_{2} \rightarrow 2CO_{2} + 3H_{2}O^{c}\ \ \ \
-H_{spal}^{C_{2}H_{6}}\]</span></p>
-<p>Kolejno pierwszą reakcję przepisuje jak jest, bo eten jest z
+H_{spal}^{C_{2}H_{6}}\]
+   </span>
+  </p>
+  <p>
+   Kolejno pierwszą reakcję przepisuje jak jest, bo eten jest z
 właściwej strony i ma właściwy współczynnik, natomiast drugą odwracam,
-gdyż <span class="math inline">\(C_{2}H_{6}\)</span> jest produktem
-szukanej reakcji.</p>
-<p><span
-class="math display">\[\mathbf{1}\mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{4}}
+gdyż
+   <span class="math inline">
+    \(C_{2}H_{6}\)
+   </span>
+   jest produktem
+szukanej reakcji.
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{1}\mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{4}}
 + 3O_{2} \rightarrow 2CO_{2} + 2H_{2}O\ \ \ \
-H_{spal}^{C_{2}H_{4}}\]</span></p>
-<p><span class="math display">\[2CO_{2} + 3H_{2}O \rightarrow
+H_{spal}^{C_{2}H_{4}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[2CO_{2} + 3H_{2}O \rightarrow
 \mathbf{1}\mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{6}} + 3.5O_{2}\ \ \
-\ \  - H_{spal}^{C_{2}H_{6}}\]</span></p>
-<p>Suma daje mi</p>
-<p><span class="math display">\[1C_{2}H_{4} + H_{2}O^{c} \rightarrow
+\ \  - H_{spal}^{C_{2}H_{6}}\]
+   </span>
+  </p>
+  <p>
+   Suma daje mi
+  </p>
+  <p>
+   <span class="math display">
+    \[1C_{2}H_{4} + H_{2}O^{c} \rightarrow
 C_{2}H_{6} + 0.5O_{2}\ \ \ \ H_{spal}^{C_{2}H_{4}} -
-H_{spal}^{C_{2}H_{6}}\]</span></p>
-<p>I nadmiarowe „śmieci” czyli te <span
-class="math inline">\(H_{2}O^{c}\)</span> i <span
-class="math inline">\(O_{2}\)</span> wywalam jedną z reakcji, którą
+H_{spal}^{C_{2}H_{6}}\]
+   </span>
+  </p>
+  <p>
+   I nadmiarowe „śmieci” czyli te
+   <span class="math inline">
+    \(H_{2}O^{c}\)
+   </span>
+   i
+   <span class="math inline">
+    \(O_{2}\)
+   </span>
+   wywalam jedną z reakcji, którą
 służą do wykańczania bilansu – tworzenia ciekłej wody i dwutlenku węgla.
-W tym wypadku używam tworzenia ciekłej wody.</p>
-<p><span class="math display">\[1C_{2}H_{4} + H_{2}O^{c} \rightarrow
+W tym wypadku używam tworzenia ciekłej wody.
+  </p>
+  <p>
+   <span class="math display">
+    \[1C_{2}H_{4} + H_{2}O^{c} \rightarrow
 C_{2}H_{6} + 0.5O_{2}\ \ \ \ H_{spal}^{C_{2}H_{4}} -
-H_{spal}^{C_{2}H_{6}}\]</span></p>
-<p><span class="math display">\[H_{2} + \frac{1}{2}O_{2} \rightarrow
-H_{2}O^{c}\ \ \ \ \ \ H_{tw}^{H_{2}O^{c}}\]</span></p>
-<p>Co po zsumowaniu daje mi:</p>
-<p><span class="math display">\[1C_{2}H_{4} + H_{2} \rightarrow
+H_{spal}^{C_{2}H_{6}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2} + \frac{1}{2}O_{2} \rightarrow
+H_{2}O^{c}\ \ \ \ \ \ H_{tw}^{H_{2}O^{c}}\]
+   </span>
+  </p>
+  <p>
+   Co po zsumowaniu daje mi:
+  </p>
+  <p>
+   <span class="math display">
+    \[1C_{2}H_{4} + H_{2} \rightarrow
 C_{2}H_{6}\ \ \ \ \ \ \ H_{spal}^{C_{2}H_{4}} - H_{spal}^{C_{2}H_{6}} +
-\ H_{tw}^{H_{2}O^{c}}\]</span></p>
-<p>Oblicz entalpie reakcij</p>
-<p><span class="math display">\[3C_{2}H_{2} \rightarrow
-C_{6}H_{6}\]</span></p>
-<p>Wpierw wypisujemy reakcje z tablic entalpii, w których występują
-reagenty, które masz w zadaniu z tablic. Dla etynu (<span
-class="math inline">\(C_{2}H_{2})\)</span> i dla benzenu (<span
-class="math inline">\(C_{6}H_{6}\)</span>) możemy znaleźć w tablicach
-reakcję spalenia.</p>
-<p><span class="math display">\[{\text{ }C}_{2}H_{2} + 2.5O_{2}
-\rightarrow 2CO_{2} + H_{2}O\ \ \ H_{1}\]</span></p>
-<p><span class="math display">\[\text{ }C_{6}H_{6} + 7.5O_{2}
-\rightarrow 6CO_{2} + 3H_{2}O\ \ \ H_{2}\]</span></p>
-<p>Kolejno widzimy, że potrzebujemy trzech etynów jako substratów (więc
+\ H_{tw}^{H_{2}O^{c}}\]
+   </span>
+  </p>
+  <p>
+   Oblicz entalpie reakcij
+  </p>
+  <p>
+   <span class="math display">
+    \[3C_{2}H_{2} \rightarrow
+C_{6}H_{6}\]
+   </span>
+  </p>
+  <p>
+   Wpierw wypisujemy reakcje z tablic entalpii, w których występują
+reagenty, które masz w zadaniu z tablic. Dla etynu (
+   <span class="math inline">
+    \(C_{2}H_{2})\)
+   </span>
+   i dla benzenu (
+   <span class="math inline">
+    \(C_{6}H_{6}\)
+   </span>
+   ) możemy znaleźć w tablicach
+reakcję spalenia.
+  </p>
+  <p>
+   <span class="math display">
+    \[{\text{ }C}_{2}H_{2} + 2.5O_{2}
+\rightarrow 2CO_{2} + H_{2}O\ \ \ H_{1}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }C_{6}H_{6} + 7.5O_{2}
+\rightarrow 6CO_{2} + 3H_{2}O\ \ \ H_{2}\]
+   </span>
+  </p>
+  <p>
+   Kolejno widzimy, że potrzebujemy trzech etynów jako substratów (więc
 powinniśmy przemnożyć pierwszą reakcję razy trzy), natomiast drugą
-reakcję odwracamy, gdyż benzen powinnien być po stronie produktów.</p>
-<p><span class="math display">\[3C_{2}H_{2} + 7.5O_{2} \rightarrow
-6CO_{2} + 3H_{2}O\ \ \ 3H_{1}\]</span></p>
-<p><span class="math display">\[6CO_{2} + 3H_{2}O \rightarrow C_{6}H_{6}
-+ 7,5O_{2}\ \  - H_{2}\]</span></p>
-<p>Sumując dostajemy</p>
-<p><span class="math display">\[3C_{2}H_{2} \rightarrow C_{6}H_{6}\ \ \
-\ H_{szuk} = \ 3H_{1} - H_{2}\]</span></p>
-<p>Oblicz entalpię tworzenia glicerolu <span
-class="math inline">\(C_{3}H_{8}O_{3}\)</span>.</p>
-<p>Zadanie rozpoczynam w ogóle od reakcji tworzenia glicerolu.
-Substratami oczywiście są tutaj węgiel <span
-class="math inline">\(C\)</span>, wodór <span
-class="math inline">\(H_{2}\)</span> oraz tlen <span
-class="math inline">\(O_{2}\)</span></p>
-<p><span class="math display">\[\mathbf{3}\mathbf{C +
+reakcję odwracamy, gdyż benzen powinnien być po stronie produktów.
+  </p>
+  <p>
+   <span class="math display">
+    \[3C_{2}H_{2} + 7.5O_{2} \rightarrow
+6CO_{2} + 3H_{2}O\ \ \ 3H_{1}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[6CO_{2} + 3H_{2}O \rightarrow C_{6}H_{6}
++ 7,5O_{2}\ \  - H_{2}\]
+   </span>
+  </p>
+  <p>
+   Sumując dostajemy
+  </p>
+  <p>
+   <span class="math display">
+    \[3C_{2}H_{2} \rightarrow C_{6}H_{6}\ \ \
+\ H_{szuk} = \ 3H_{1} - H_{2}\]
+   </span>
+  </p>
+  <p>
+   Oblicz entalpię tworzenia glicerolu
+   <span class="math inline">
+    \(C_{3}H_{8}O_{3}\)
+   </span>
+   .
+  </p>
+  <p>
+   Zadanie rozpoczynam w ogóle od reakcji tworzenia glicerolu.
+Substratami oczywiście są tutaj węgiel
+   <span class="math inline">
+    \(C\)
+   </span>
+   , wodór
+   <span class="math inline">
+    \(H_{2}\)
+   </span>
+   oraz tlen
+   <span class="math inline">
+    \(O_{2}\)
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{3}\mathbf{C +
 4}\mathbf{H}_{\mathbf{2}}\mathbf{+}\frac{\mathbf{3}}{\mathbf{2}}\mathbf{O}_{\mathbf{2}}\mathbf{\rightarrow}\mathbf{C}_{\mathbf{3}}\mathbf{H}_{\mathbf{8}}\mathbf{O}_{\mathbf{3}}\
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ H_{szuk}\]</span></p>
-<p>Jedynie w tablicach znajdę dla tych reagentów to entalpia spalania
-glicerolu.</p>
-<p><span class="math display">\[C_{3}H_{8}O_{3} + \frac{7}{2}O_{2}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ H_{szuk}\]
+   </span>
+  </p>
+  <p>
+   Jedynie w tablicach znajdę dla tych reagentów to entalpia spalania
+glicerolu.
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{3}H_{8}O_{3} + \frac{7}{2}O_{2}
 \rightarrow 3CO_{2} + 4H_{2}O^{c}\ \ {\ \ \ \ \ \ \ \ \ \ \ \ \
-H}_{spal}^{C_{3}H_{8}O_{3}}\]</span></p>
-<p>No wiadomo, że tę entalpię trzeba odwrócić, gdyż glicerol jest po
-stronie produktów w szukanej reakcji.</p>
-<p><span class="math display">\[3CO_{2} + 4H_{2}O \rightarrow
+H}_{spal}^{C_{3}H_{8}O_{3}}\]
+   </span>
+  </p>
+  <p>
+   No wiadomo, że tę entalpię trzeba odwrócić, gdyż glicerol jest po
+stronie produktów w szukanej reakcji.
+  </p>
+  <p>
+   <span class="math display">
+    \[3CO_{2} + 4H_{2}O \rightarrow
 C_{3}H_{8}O_{3} + \frac{7}{2}O_{2}\ \ \ \ \ \ \ \ \ \ \ {-
-H}_{spal}^{C_{3}H_{8}O_{3}}\]</span></p>
-<p>I wbrew pozorom możemy to dobilansować stosując entalpie tworzenia
-<span class="math inline">\(CO_{2}\)</span> i <span
-class="math inline">\(H_{2}O^{c}\)</span>. Widzimy, iż potrzebujemy
+H}_{spal}^{C_{3}H_{8}O_{3}}\]
+   </span>
+  </p>
+  <p>
+   I wbrew pozorom możemy to dobilansować stosując entalpie tworzenia
+   <span class="math inline">
+    \(CO_{2}\)
+   </span>
+   i
+   <span class="math inline">
+    \(H_{2}O^{c}\)
+   </span>
+   . Widzimy, iż potrzebujemy
 skrócić trzy dwutlenki węgla, więc mnożymy entalpię otrzymywania razy
 trzy. Analogicznie mnożymy reakcję otrzymywana wody mnożymy razy
-cztery.</p>
-<p><span class="math display">\[3CO_{2} + 4H_{2}O^{c} \rightarrow
+cztery.
+  </p>
+  <p>
+   <span class="math display">
+    \[3CO_{2} + 4H_{2}O^{c} \rightarrow
 C_{3}H_{8}O_{3} + \frac{7}{2}O_{2}\ \ \ \ \ \ \ {-
-H}_{spal}^{C_{3}H_{8}O_{3}}\]</span></p>
-<p><span class="math display">\[C + O_{2} \rightarrow CO_{2}\ \ \ \ \ \
-\ H_{CO_{2}}^{tw}\]</span></p>
-<p><span class="math display">\[H_{2} + \frac{1}{2}O_{2} \rightarrow
-H_{2}O^{c}\ \ \ \ \ H_{H_{2}O^{c}}^{tw}\]</span></p>
-<p>Po zsumowaniu dostajemy</p>
-<p><span class="math display">\[3CO_{2} + 4H_{2}O^{c} \rightarrow
+H}_{spal}^{C_{3}H_{8}O_{3}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[C + O_{2} \rightarrow CO_{2}\ \ \ \ \ \
+\ H_{CO_{2}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2} + \frac{1}{2}O_{2} \rightarrow
+H_{2}O^{c}\ \ \ \ \ H_{H_{2}O^{c}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   Po zsumowaniu dostajemy
+  </p>
+  <p>
+   <span class="math display">
+    \[3CO_{2} + 4H_{2}O^{c} \rightarrow
 C_{3}H_{8}O_{3} + \frac{7}{2}O_{2}\ \ \ \ \ \ \ \ {-
-H}_{spal}^{C_{3}H_{8}O_{3}}\]</span></p>
-<p><span class="math display">\[3C + 3O_{2} \rightarrow 3CO_{2}\ \ \ \
-3H_{CO_{2}}^{tw}\]</span></p>
-<p><span class="math display">\[{4H}_{2} + 2O_{2} \rightarrow
-4H_{2}O^{c}\ \ \ \ 4H_{H_{2}O^{c}}^{tw}\]</span></p>
-<p><span class="math display">\[\mathbf{3}\mathbf{C +
+H}_{spal}^{C_{3}H_{8}O_{3}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[3C + 3O_{2} \rightarrow 3CO_{2}\ \ \ \
+3H_{CO_{2}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[{4H}_{2} + 2O_{2} \rightarrow
+4H_{2}O^{c}\ \ \ \ 4H_{H_{2}O^{c}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{3}\mathbf{C +
 4}\mathbf{H}_{\mathbf{2}}\mathbf{+}\frac{\mathbf{3}}{\mathbf{2}}\mathbf{O}_{\mathbf{2}}\mathbf{\rightarrow}\mathbf{C}_{\mathbf{3}}\mathbf{H}_{\mathbf{8}}\mathbf{O}_{\mathbf{3}}\
 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ H_{szuk} = {-
 H}_{spal}^{C_{3}H_{8}O_{3}} + 3H_{CO_{2}}^{tw} + 4H_{H_{2}O^{c}}^{tw}
-=\]</span></p>
-<p>Zadanie trudne: oblicz entalpie procesu:</p>
-<p><span class="math display">\[CaC_{2} + 2H_{2}O^{g} \rightarrow
-Ca(OH)_{2} + C_{2}H_{2}\]</span></p>
-<p>Wypisujemy reakcje z tablic, w których występują poszczególne
+=\]
+   </span>
+  </p>
+  <p>
+   Zadanie trudne: oblicz entalpie procesu:
+  </p>
+  <p>
+   <span class="math display">
+    \[CaC_{2} + 2H_{2}O^{g} \rightarrow
+Ca(OH)_{2} + C_{2}H_{2}\]
+   </span>
+  </p>
+  <p>
+   Wypisujemy reakcje z tablic, w których występują poszczególne
 reagenty. Dla wody gazowej, wodorotlenku wapnia oraz węgliku wapnia mamy
-w tablicach entalpię tworzenia. Dla etynu <span
-class="math inline">\(C_{2}H_{2}\)</span> możemy znaleźć entalpię
-spalania.</p>
-<p><span class="math display">\[Ca + 2C \rightarrow CaC_{2}\ \ \ \ \ \ \
-\ \ H_{CaC_{2}}^{tw}\]</span></p>
-<p><span class="math display">\[H_{2} + \frac{1}{2}O_{2} \rightarrow
-H_{2}O^{g}\ \ \ \ \ \ \ \ H_{H_{2}O^{g}}^{tw}\]</span></p>
-<p><span class="math display">\[Ca + H_{2} + O_{2} \rightarrow
-Ca(OH)_{2}\ \ \ \ \ \ \ \ \ H_{Ca(OH)_{2}}^{tw}\]</span></p>
-<p><span class="math display">\[C_{2}H_{2} + \frac{5}{2}O_{2}
+w tablicach entalpię tworzenia. Dla etynu
+   <span class="math inline">
+    \(C_{2}H_{2}\)
+   </span>
+   możemy znaleźć entalpię
+spalania.
+  </p>
+  <p>
+   <span class="math display">
+    \[Ca + 2C \rightarrow CaC_{2}\ \ \ \ \ \ \
+\ \ H_{CaC_{2}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2} + \frac{1}{2}O_{2} \rightarrow
+H_{2}O^{g}\ \ \ \ \ \ \ \ H_{H_{2}O^{g}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[Ca + H_{2} + O_{2} \rightarrow
+Ca(OH)_{2}\ \ \ \ \ \ \ \ \ H_{Ca(OH)_{2}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[C_{2}H_{2} + \frac{5}{2}O_{2}
 \rightarrow 2CO_{2} + H_{2\ }O^{c}\ \ \ \ \ \ \ \
-H_{C_{2}H_{2}}^{spal}\]</span></p>
-<p>Widzimy, iż pierwszą reakcję musimy odwrócić, gdyż <span
-class="math inline">\(CaC_{2}\)</span> występuje po stronie substratów.
+H_{C_{2}H_{2}}^{spal}\]
+   </span>
+  </p>
+  <p>
+   Widzimy, iż pierwszą reakcję musimy odwrócić, gdyż
+   <span class="math inline">
+    \(CaC_{2}\)
+   </span>
+   występuje po stronie substratów.
 To samo dotyczy otrzymywania wody gazowej, dodatkowo reakcję tę mnożymy
 razy dwa, gdyż potrzebujemy dwóch wód po stronie lewej. Reakcję
-tworzenia <span class="math inline">\(Ca(OH)_{2}\)</span> przepisujemy
-bez zmian. Reakcję spalania <span
-class="math inline">\(C_{2}H_{2}\)</span> odwracamy, gdyż potrzebujemy
-acetylenu po prawej stronie.</p>
-<p><span class="math display">\[CaC_{2} \rightarrow Ca + 2C\ \ \ \ \ \ \
-\  - H_{CaC_{2}}^{tw}\]</span></p>
-<p><span class="math display">\[2H_{2}O^{g} \rightarrow 2H_{2} + O_{2}\
-\ \ \ \  - 2H_{H_{2}O^{g}}^{tw}\]</span></p>
-<p><span class="math display">\[Ca + H_{2} + O_{2} \rightarrow
-Ca(OH)_{2}\ \ \ \ \ \ \ \ \ H_{Ca(OH)_{2}}^{tw}\]</span></p>
-<p><span class="math display">\[2CO_{2} + H_{2\ }O^{c} \rightarrow
+tworzenia
+   <span class="math inline">
+    \(Ca(OH)_{2}\)
+   </span>
+   przepisujemy
+bez zmian. Reakcję spalania
+   <span class="math inline">
+    \(C_{2}H_{2}\)
+   </span>
+   odwracamy, gdyż potrzebujemy
+acetylenu po prawej stronie.
+  </p>
+  <p>
+   <span class="math display">
+    \[CaC_{2} \rightarrow Ca + 2C\ \ \ \ \ \ \
+\  - H_{CaC_{2}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[2H_{2}O^{g} \rightarrow 2H_{2} + O_{2}\
+\ \ \ \  - 2H_{H_{2}O^{g}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[Ca + H_{2} + O_{2} \rightarrow
+Ca(OH)_{2}\ \ \ \ \ \ \ \ \ H_{Ca(OH)_{2}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[2CO_{2} + H_{2\ }O^{c} \rightarrow
 C_{2}H_{2} + \frac{5}{2}O_{2}\ \ \ \ \  -
-H_{C_{2}H_{2}}^{spal}\]</span></p>
-<p>Po zsumowani stronami widzimy reakcję znacznie większą niż
-poszukujemy w zadaniu,</p>
-<p><span
-class="math display">\[\mathbf{Ca}\mathbf{C}_{\mathbf{2}}\mathbf{+
+H_{C_{2}H_{2}}^{spal}\]
+   </span>
+  </p>
+  <p>
+   Po zsumowani stronami widzimy reakcję znacznie większą niż
+poszukujemy w zadaniu,
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{Ca}\mathbf{C}_{\mathbf{2}}\mathbf{+
 2}\mathbf{H}_{\mathbf{2}}\mathbf{O}^{\mathbf{g}} + 2CO_{2} + H_{2}O^{c}
 \rightarrow 2C + \mathbf{Ca}\left( \mathbf{OH} \right)_{\mathbf{2}} +
 \mathbf{C}_{\mathbf{2}}\mathbf{H}_{\mathbf{2}} + \frac{5}{2}O_{2} +
 H_{2}\ \ \ \ \  - H_{CaC_{2}}^{tw} - 2H_{H_{2}O^{g}}^{tw} +
-H_{Ca(OH)_{2}}^{tw} - H_{C_{2}H_{2}}^{spal}\]</span></p>
-<p>Raczej to nie jest reakcja, której poszukujemy w zadaniu, ale zawsze
-możemy dobilansować reakcjami tworzenia <span
-class="math inline">\(CO_{2}\)</span> i <span
-class="math inline">\(H_{2}O^{c}\)</span>.</p>
-<p><span class="math display">\[CaC_{2} + 2H_{2}O^{g} + 2CO_{2} +
+H_{Ca(OH)_{2}}^{tw} - H_{C_{2}H_{2}}^{spal}\]
+   </span>
+  </p>
+  <p>
+   Raczej to nie jest reakcja, której poszukujemy w zadaniu, ale zawsze
+możemy dobilansować reakcjami tworzenia
+   <span class="math inline">
+    \(CO_{2}\)
+   </span>
+   i
+   <span class="math inline">
+    \(H_{2}O^{c}\)
+   </span>
+   .
+  </p>
+  <p>
+   <span class="math display">
+    \[CaC_{2} + 2H_{2}O^{g} + 2CO_{2} +
 H_{2}O^{c} \rightarrow 2C + Ca(OH)_{2} + C_{2}H_{2} + \frac{5}{2}O_{2} +
 H_{2}\ \ \ \ \ \ \ \  - H_{CaC_{2}}^{tw} - 2H_{H_{2}O^{g}}^{tw} +
-H_{Ca(OH)_{2}}^{tw} - H_{C_{2}H_{2}}^{spal}\]</span></p>
-<p><span class="math display">\[C + O_{2} \rightarrow CO_{2}\ \ \ \ \ \
-H_{CO_{2}}^{tw}\]</span></p>
-<p><span class="math display">\[H_{2} + \frac{1}{2}O_{2} \rightarrow
-H_{2}O^{c}\ \ \ H_{H_{2}O^{c}}^{tw}\]</span></p>
-<p>Widzimy, że potrzebujemy skrócić dwa dwutlenki węgla i jedną ciekłą
-wodę, wymnażamy, więc reakcję otrzymywania <span
-class="math inline">\(CO_{2}\)</span> razy dwa, a wodę przepisujemy</p>
-<p><span class="math display">\[CaC_{2} + 2H_{2}O^{g} + 2CO_{2} +
+H_{Ca(OH)_{2}}^{tw} - H_{C_{2}H_{2}}^{spal}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[C + O_{2} \rightarrow CO_{2}\ \ \ \ \ \
+H_{CO_{2}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2} + \frac{1}{2}O_{2} \rightarrow
+H_{2}O^{c}\ \ \ H_{H_{2}O^{c}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   Widzimy, że potrzebujemy skrócić dwa dwutlenki węgla i jedną ciekłą
+wodę, wymnażamy, więc reakcję otrzymywania
+   <span class="math inline">
+    \(CO_{2}\)
+   </span>
+   razy dwa, a wodę przepisujemy
+  </p>
+  <p>
+   <span class="math display">
+    \[CaC_{2} + 2H_{2}O^{g} + 2CO_{2} +
 H_{2}O^{c} \rightarrow 2C + Ca(OH)_{2} + C_{2}H_{2} + \frac{5}{2}O_{2} +
 H_{2}\ \ \ \ \ \ \ \  - H_{CaC_{2}}^{tw} - 2H_{H_{2}O^{g}}^{tw} +
-H_{Ca(OH)_{2}}^{tw} - H_{C_{2}H_{2}}^{spal}\]</span></p>
-<p><span class="math display">\[2C + {2O}_{2} \rightarrow 2CO_{2}\ \ \ \
-\ \ {2H}_{CO_{2}}^{tw}\]</span></p>
-<p><span class="math display">\[H_{2} + \frac{1}{2}O_{2} \rightarrow
-H_{2}O^{c}\ \ \ H_{H_{2}O^{c}}^{tw}\]</span></p>
-<p><img src="funkcje-stanu/media/image8.png"
-style="width:6.3in;height:1.17728in" /></p>
-<p>Widać, że zsumowanie tych reakcji daje oczekiwaną, a więc i entalpia
-tej reakcji jest sumą entalpii</p>
-<p><span class="math display">\[CaC_{2} + 2H_{2}O^{g} \rightarrow
-Ca(OH)_{2} + C_{2}H_{2}\]</span></p>
-<p><span class="math display">\[H_{reakcji} = - H_{CaC_{2}}^{tw} -
+H_{Ca(OH)_{2}}^{tw} - H_{C_{2}H_{2}}^{spal}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[2C + {2O}_{2} \rightarrow 2CO_{2}\ \ \ \
+\ \ {2H}_{CO_{2}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2} + \frac{1}{2}O_{2} \rightarrow
+H_{2}O^{c}\ \ \ H_{H_{2}O^{c}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <img src="funkcje-stanu/media/image8.png" style="width:6.3in;height:1.17728in"/>
+  </p>
+  <p>
+   Widać, że zsumowanie tych reakcji daje oczekiwaną, a więc i entalpia
+tej reakcji jest sumą entalpii
+  </p>
+  <p>
+   <span class="math display">
+    \[CaC_{2} + 2H_{2}O^{g} \rightarrow
+Ca(OH)_{2} + C_{2}H_{2}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{reakcji} = - H_{CaC_{2}}^{tw} -
 2H_{H_{2}O^{g}}^{tw} + H_{Ca(OH)_{2}}^{tw} - H_{C_{2}H_{2}}^{spal} +
-2H_{CO_{2}}^{tw} + H_{H_{2}O^{c}}^{tw}\]</span></p>
-<p><img src="funkcje-stanu/media/image9.png"
-style="width:6.3in;height:0.82427in" /></p>
-<h1 id="ciepło-wydzielone-podczas-reakcji">Ciepło wydzielone podczas
-reakcji</h1>
-<p>Obliczoną wartość entalpii możemy wykorzystać do obliczenia energii
+2H_{CO_{2}}^{tw} + H_{H_{2}O^{c}}^{tw}\]
+   </span>
+  </p>
+  <p>
+   <img src="funkcje-stanu/media/image9.png" style="width:6.3in;height:0.82427in"/>
+  </p>
+  <h1 id="ciepło-wydzielone-podczas-reakcji">
+   Ciepło wydzielone podczas
+reakcji
+  </h1>
+  <p>
+   Obliczoną wartość entalpii możemy wykorzystać do obliczenia energii
 Gibbsa, ale co ważniejsze na poziom matury do obliczenia energii
 wydzielonej podczas reakcji określonej ilości reagenta. Do obliczeń
-proponuje używać wzoru:</p>
-<p><span class="math display">\[\mathbf{Q =
--}\frac{\mathbf{n}_{\mathbf{reagenta}}}{\mathbf{ws}\mathbf{p}_{\mathbf{stech}}^{\mathbf{reagenta}}}\mathbf{\mathrm{\Delta}H}\]</span></p>
-<p>Gdzie <span class="math inline">\(Q\)</span> – ilość energii
-wydzielonej (Q dodatnie) lub pochłoniętej (Q ujemne). <span
-class="math inline">\(n_{reagenta}\)</span>- ilość moli rozpatrywanego
-reagenta; <span class="math inline">\(\Delta H\)</span> – entalpia
-reakcji. <span class="math inline">\(wsp_{stech}^{reagenta}\)</span> –
+proponuje używać wzoru:
+  </p>
+  <p>
+   <span class="math display">
+    \[\mathbf{Q =
+-}\frac{\mathbf{n}_{\mathbf{reagenta}}}{\mathbf{ws}\mathbf{p}_{\mathbf{stech}}^{\mathbf{reagenta}}}\mathbf{\mathrm{\Delta}H}\]
+   </span>
+  </p>
+  <p>
+   Gdzie
+   <span class="math inline">
+    \(Q\)
+   </span>
+   – ilość energii
+wydzielonej (Q dodatnie) lub pochłoniętej (Q ujemne).
+   <span class="math inline">
+    \(n_{reagenta}\)
+   </span>
+   - ilość moli rozpatrywanego
+reagenta;
+   <span class="math inline">
+    \(\Delta H\)
+   </span>
+   – entalpia
+reakcji.
+   <span class="math inline">
+    \(wsp_{stech}^{reagenta}\)
+   </span>
+   –
 współczynnik stechiometryczny rozpatrywanego reagenta w danej reakcji,
-tej którą wartość entalpii mamy</p>
-<p>Oblicz ile węgla musisz spalić, aby uzyskać <mark>10MJ
-energii.</mark></p>
-<p>Oczywiście entalpia spalenia węgla jest w tablicach maturalnych,
-możemy ją odczytać jako:</p>
-<p><span class="math display">\[\ \text{ }\text{1}C + O_{2} \rightarrow
-CO_{2}\ \ \ \ \ \ \mathrm{\Delta}H = - 393.5\frac{kJ}{mol}\]</span></p>
-<p>Wykorzystuje wzór łączący ciepło z entalpią:</p>
-<p><span class="math display">\[\text{ }Q = -
-\frac{n_{reagenta}}{wsp_{stech}^{reagenta}}\mathrm{\Delta}H\]</span></p>
-<p>Po wstawieniu danych i zamianie jednostek dostajemy:</p>
-<p><span class="math display">\[10\ 000kJ = - \frac{n_{reagenta}}{1}·( -
-393.5\frac{kJ}{mol})\]</span></p>
-<p>Obliczając ilość moli węgla i przeliczając to na masę</p>
-<p><span class="math display">\[n_{reagenta} = \frac{10\ 000}{393.5} =
-25.4\ mol_{C} \rightarrow m_{C} = 25.4·12 = 304.8g\]</span></p>
-<p><strong>Ciepło wydzielone w reakcjach jest wielkością
-addytywną</strong>, czyli całkowite ciepło wydzielone jest równe sumie
+tej którą wartość entalpii mamy
+  </p>
+  <p>
+   Oblicz ile węgla musisz spalić, aby uzyskać
+   <mark>
+    10MJ
+energii.
+   </mark>
+  </p>
+  <p>
+   Oczywiście entalpia spalenia węgla jest w tablicach maturalnych,
+możemy ją odczytać jako:
+  </p>
+  <p>
+   <span class="math display">
+    \[\ \text{ }\text{1}C + O_{2} \rightarrow
+CO_{2}\ \ \ \ \ \ \mathrm{\Delta}H = - 393.5\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   Wykorzystuje wzór łączący ciepło z entalpią:
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }Q = -
+\frac{n_{reagenta}}{wsp_{stech}^{reagenta}}\mathrm{\Delta}H\]
+   </span>
+  </p>
+  <p>
+   Po wstawieniu danych i zamianie jednostek dostajemy:
+  </p>
+  <p>
+   <span class="math display">
+    \[10\ 000kJ = - \frac{n_{reagenta}}{1}·( -
+393.5\frac{kJ}{mol})\]
+   </span>
+  </p>
+  <p>
+   Obliczając ilość moli węgla i przeliczając to na masę
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{reagenta} = \frac{10\ 000}{393.5} =
+25.4\ mol_{C} \rightarrow m_{C} = 25.4·12 = 304.8g\]
+   </span>
+  </p>
+  <p>
+   <strong>
+    Ciepło wydzielone w reakcjach jest wielkością
+addytywną
+   </strong>
+   , czyli całkowite ciepło wydzielone jest równe sumie
 ciepeł wydzielonych we wszystkich reakcjach zachodzących w układzie. Z
 polskiego na nasze jak spalisz propan –butan to całkowite ciepło
 wydzielone będzie równe sumie ciepła wydzielonego z propanu i ciepła
-wydzielonego z butanu.</p>
-<p>Reakcje w roztworach wodnych rozpatrujemy raczej, jako reakcje jonów,
+wydzielonego z butanu.
+  </p>
+  <p>
+   Reakcje w roztworach wodnych rozpatrujemy raczej, jako reakcje jonów,
 a nie, jako reakcje cząsteczek, bo związki występują w postaci jonów w
 roztworze. Musimy, więc analizować reakcję zapisaną w sposób jonowy
-(skrócony)</p>
-<p>Efekt cieplny reakcji musi być taki sam, jeżeli mamy tyle samo moli
-reagentów i taką samą reakcję.</p>
-<p>Reakcja rozkładu azotanu(V) ołowiu(II) jest procesem
-endoenergetycznym i przebiega zgodnie z równaniem:</p>
-<p><span class="math display">\[2Pb\left( NO_{3}
+(skrócony)
+  </p>
+  <p>
+   Efekt cieplny reakcji musi być taki sam, jeżeli mamy tyle samo moli
+reagentów i taką samą reakcję.
+  </p>
+  <p>
+   Reakcja rozkładu azotanu(V) ołowiu(II) jest procesem
+endoenergetycznym i przebiega zgodnie z równaniem:
+  </p>
+  <p>
+   <span class="math display">
+    \[2Pb\left( NO_{3}
 \right)_{2}\  \rightarrow \ 2PbO\  + \ 4NO_{2} \uparrow \  + \ O_{2}
-\uparrow\]</span></p>
-<p>Wartości standardowych entalpii tworzenia związków biorących udział w
-opisanej reakcji podano w poniższej tabeli.</p>
-<table>
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 24%" />
-<col style="width: 24%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th><span class="math display">\[Pb\left( NO_{3}
-\right)_{2}\]</span></th>
-<th><span class="math display">\[PbO\]</span></th>
-<th><span class="math display">\[NO_{2}\ \]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>standardowa entalpia tworzenia <span class="math inline">\(\Delta
-H{^\circ},\ kJ\  · \ mol^{- 1}\)</span></td>
-<td>−449.2</td>
-<td>−218.6</td>
-<td>34.2</td>
-</tr>
-</tbody>
-</table>
-<p>Oblicz, ile energii na sposób ciepła należy dostarczyć, aby
-całkowicie rozłożyć 3,31 g Pb(NO<sub>3</sub>)<sub>2</sub>.</p>
-<p>Zadanie rozpoczynamy od napisania reakcji danych w tabeli</p>
-<p><span class="math display">\[Pb + N_{2} + 3O_{2} \rightarrow Pb\left(
-NO_{3} \right)_{2}\ \ \ \ \ \ H_{1}\]</span></p>
-<p><span class="math display">\[Pb + \frac{1}{2}O_{2} \rightarrow PbO\ \
-\ \ \ \ H_{2}\]</span></p>
-<p><span class="math display">\[\frac{1}{2}N_{2} + O_{2} \rightarrow
-NO_{2}\ \ \ \ \ \ H_{3}\]</span></p>
-<p>Kolejno z tych reakcji chcemy złożyć reakcję oczekiwaną. Widzimy, iż
-<span class="math inline">\(Pb\left( NO_{3} \right)_{2}\)</span>
-występuje z współczynnikiem stechiometrycznym równym dwa po stronie
+\uparrow\]
+   </span>
+  </p>
+  <p>
+   Wartości standardowych entalpii tworzenia związków biorących udział w
+opisanej reakcji podano w poniższej tabeli.
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 24%"/>
+    <col style="width: 24%"/>
+    <col style="width: 24%"/>
+    <col style="width: 25%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+     </th>
+     <th>
+      <span class="math display">
+       \[Pb\left( NO_{3}
+\right)_{2}\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[PbO\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[NO_{2}\ \]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      standardowa entalpia tworzenia
+      <span class="math inline">
+       \(\Delta
+H{^\circ},\ kJ\  · \ mol^{- 1}\)
+      </span>
+     </td>
+     <td>
+      −449.2
+     </td>
+     <td>
+      −218.6
+     </td>
+     <td>
+      34.2
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Oblicz, ile energii na sposób ciepła należy dostarczyć, aby
+całkowicie rozłożyć 3,31 g Pb(NO
+   <sub>
+    3
+   </sub>
+   )
+   <sub>
+    2
+   </sub>
+   .
+  </p>
+  <p>
+   Zadanie rozpoczynamy od napisania reakcji danych w tabeli
+  </p>
+  <p>
+   <span class="math display">
+    \[Pb + N_{2} + 3O_{2} \rightarrow Pb\left(
+NO_{3} \right)_{2}\ \ \ \ \ \ H_{1}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[Pb + \frac{1}{2}O_{2} \rightarrow PbO\ \
+\ \ \ \ H_{2}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\frac{1}{2}N_{2} + O_{2} \rightarrow
+NO_{2}\ \ \ \ \ \ H_{3}\]
+   </span>
+  </p>
+  <p>
+   Kolejno z tych reakcji chcemy złożyć reakcję oczekiwaną. Widzimy, iż
+   <span class="math inline">
+    \(Pb\left( NO_{3} \right)_{2}\)
+   </span>
+   występuje z współczynnikiem stechiometrycznym równym dwa po stronie
 substratów, więc reakcję jego otrzymywania mnożymy razy dwa i odwracamy.
-Analogicznie widząc że <span class="math inline">\(PbO\)</span> i <span
-class="math inline">\(NO_{2}\)</span> jest po stronie produktów mnożymy
-odpowiednio razy dwa i razy cztery.</p>
-<p>2<span class="math inline">\(Pb\left( NO_{3} \right)_{2} \rightarrow
-2Pb + 2N_{2} + 6O_{2}\ \ \ \ \  - 2H_{1}\)</span></p>
-<p><span class="math display">\[2Pb + O_{2} \rightarrow 2PbO\ \ \ \ \ \
-{2H}_{2}\]</span></p>
-<p><span class="math display">\[2N_{2} + {4O}_{2} \rightarrow 4NO_{2}\ \
-\ \ \ 4H_{3}\]</span></p>
-<p>Dostajemy po zsumowaniu oczekiwaną reakcję wraz z wzorem łączącym
-entalpię tej reakcji z entalpiami podanymi w zadaniu.</p>
-<p><span class="math display">\[2Pb\left( NO_{3} \right)_{2} \rightarrow
+Analogicznie widząc że
+   <span class="math inline">
+    \(PbO\)
+   </span>
+   i
+   <span class="math inline">
+    \(NO_{2}\)
+   </span>
+   jest po stronie produktów mnożymy
+odpowiednio razy dwa i razy cztery.
+  </p>
+  <p>
+   2
+   <span class="math inline">
+    \(Pb\left( NO_{3} \right)_{2} \rightarrow
+2Pb + 2N_{2} + 6O_{2}\ \ \ \ \  - 2H_{1}\)
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[2Pb + O_{2} \rightarrow 2PbO\ \ \ \ \ \
+{2H}_{2}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[2N_{2} + {4O}_{2} \rightarrow 4NO_{2}\ \
+\ \ \ 4H_{3}\]
+   </span>
+  </p>
+  <p>
+   Dostajemy po zsumowaniu oczekiwaną reakcję wraz z wzorem łączącym
+entalpię tej reakcji z entalpiami podanymi w zadaniu.
+  </p>
+  <p>
+   <span class="math display">
+    \[2Pb\left( NO_{3} \right)_{2} \rightarrow
 2PbO + 4NO_{2} + O_{2}\ \ \ \ \ \ \  - 2H_{1} + 2H_{2} +
-4H_{3}\]</span></p>
-<p><span class="math display">\[H_{szuk} = - 2H_{1} + 2H_{2} + 4H_{3} =
-- 2·( - 449.2) + 2·( - 218.6) + 4·34.2 = 598\frac{kJ}{mol}\]</span></p>
-<p>Ile ciepła trzeba dostarczyć żeby rozłożyć 3.31 g <span
-class="math inline">\(Pb\left( NO_{3} \right)_{2}\)</span>. Mając już
+4H_{3}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{szuk} = - 2H_{1} + 2H_{2} + 4H_{3} =
+- 2·( - 449.2) + 2·( - 218.6) + 4·34.2 = 598\frac{kJ}{mol}\]
+   </span>
+  </p>
+  <p>
+   Ile ciepła trzeba dostarczyć żeby rozłożyć 3.31 g
+   <span class="math inline">
+    \(Pb\left( NO_{3} \right)_{2}\)
+   </span>
+   . Mając już
 wartość entalpii reakcji możemy rozwiązać ten podpunkt stosując
-wzór:</p>
-<p><span class="math display">\[Q = -
-\frac{n}{wsp_{stech}}H\]</span></p>
-<p>Pozostaje obliczyć tylko ilość moli reagentów:</p>
-<p><span class="math display">\[n_{Pb\left( NO_{3} \right)_{2}} =
-\frac{3.31}{207.8 + 14·2 + 6·16} = 0.01\]</span></p>
-<p><span class="math display">\[\text{ }2Pb\left( NO_{3} \right)_{2}
-\rightarrow 2PbO + 4NO_{2} + O_{2}\]</span></p>
-<p>Co po wstawieniu daje:</p>
-<p><span class="math display">\[Q = - \frac{n}{wsp_{stech}}H =
-\frac{0.01}{2}·589 = - 2.945kJ\]</span></p>
-<p>Czyli trzeba dostarczyć 2945 J energii</p>
-</body>
+wzór:
+  </p>
+  <p>
+   <span class="math display">
+    \[Q = -
+\frac{n}{wsp_{stech}}H\]
+   </span>
+  </p>
+  <p>
+   Pozostaje obliczyć tylko ilość moli reagentów:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{Pb\left( NO_{3} \right)_{2}} =
+\frac{3.31}{207.8 + 14·2 + 6·16} = 0.01\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }2Pb\left( NO_{3} \right)_{2}
+\rightarrow 2PbO + 4NO_{2} + O_{2}\]
+   </span>
+  </p>
+  <p>
+   Co po wstawieniu daje:
+  </p>
+  <p>
+   <span class="math display">
+    \[Q = - \frac{n}{wsp_{stech}}H =
+\frac{0.01}{2}·589 = - 2.945kJ\]
+   </span>
+  </p>
+  <p>
+   Czyli trzeba dostarczyć 2945 J energii
+  </p>
+ </body>
 </html>

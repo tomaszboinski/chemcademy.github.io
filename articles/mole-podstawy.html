@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>mole podstawy</title>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="pandoc" name="generator"/>
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+  <title>
+   Mole podstawy - chemia teoria i obliczenia | Chemcademy
+  </title>
   <style>
-    code{white-space: pre-wrap;}
+   code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -21,323 +23,961 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="artykul.css" />
-  <script
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
-  type="text/javascript"></script>
-</head>
-<body>
-<p>Mol jest pojęciem ilości sztuk takim jak tuzin – różnica polega na
-tym, że tuzin to 12 natomiast mol to taki tuzin na sterydach - <span
-class="math inline">\(6.02·10^{23}\)</span> sztuk, obie te wielkości
+  <link href="artykul.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript">
+  </script>
+  <meta content="mole podstawy - Mol jest pojęciem ilości sztuk takim jak tuzin – różnica polega na
+tym, że tuzin to 12 natomiast mol to taki tuzin na sterydach - \(6.02·10^{23}\) sztuk, obie te wielkości
 możemy stosować zarówno w mikroświecie jak i makroświecie, a więc w
 praktyce możemy mówić o tuzinie psów – 12 sztukach psów i tak samo
-możemy mówić o molu psów -<span
-class="math inline">\(6.02·10^{23}\)</span> sztukach. Z podobieństwa
+możemy mówić o molu psów - \(6.02·10^{23}\) sztukach. Z podobieństwa
 tych dwóch wielkości wynika, iż każde pojęcie i operacja matematyczna,
 która ma sens dla tuzina, ma też sens dla mola, ale w związku z
-niemożliwością wyobrażenia sobie tak dużej wartości, jaką jest <span
-class="math inline">\(6.02·10^{23}\)</span> sztuk, może wyobrażać sobie
+niemożliwością wyobrażenia sobie tak dużej wartości, jaką jest \(6.02·10^{23}\) sztuk, może wyobrażać sobie
 tuzin i patrzeć czy dana operacja działa. Każda operacja, która działa
-na tuzinie będzie działać też na molu. Wartość <span
-class="math inline">\(6.02·10^{23}\)</span> tzw. stałej Avogadra została
+na tuzinie będzie działać też na molu. Wartość \(6.02·10^{23}\) tzw. stałej Avogadra została
 dobrana tak, aby po prostu masa molowa danego związku wyrażona w gramach
 była liczbowo równa masie jednej drobiny tegoż związku wyrażonej w
-unitach.</p>
-<p>Najważniejsze jest stwierdzenie, że TO, CO DZIALA CI NA TUZINIE
+unitach." name="description"/>
+  <link href="https://chemcademy.edu.pl/articles/mole-podstawy.html" rel="canonical"/>
+  <meta content="Mole podstawy - chemia teoria i obliczenia | Chemcademy" property="og:title"/>
+  <meta content="mole podstawy - Mol jest pojęciem ilości sztuk takim jak tuzin – różnica polega na
+tym, że tuzin to 12 natomiast mol to taki tuzin na sterydach - \(6.02·10^{23}\) sztuk, obie te wielkości
+możemy stosować zarówno w mikroświecie jak i makroświecie, a więc w
+praktyce możemy mówić o tuzinie psów – 12 sztukach psów i tak samo
+możemy mówić o molu psów - \(6.02·10^{23}\) sztukach. Z podobieństwa
+tych dwóch wielkości wynika, iż każde pojęcie i operacja matematyczna,
+która ma sens dla tuzina, ma też sens dla mola, ale w związku z
+niemożliwością wyobrażenia sobie tak dużej wartości, jaką jest \(6.02·10^{23}\) sztuk, może wyobrażać sobie
+tuzin i patrzeć czy dana operacja działa. Każda operacja, która działa
+na tuzinie będzie działać też na molu. Wartość \(6.02·10^{23}\) tzw. stałej Avogadra została
+dobrana tak, aby po prostu masa molowa danego związku wyrażona w gramach
+była liczbowo równa masie jednej drobiny tegoż związku wyrażonej w
+unitach." property="og:description"/>
+  <meta content="article" property="og:type"/>
+  <meta content="https://chemcademy.edu.pl/articles/mole-podstawy.html" property="og:url"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="Mole podstawy - chemia teoria i obliczenia | Chemcademy" name="twitter:title"/>
+  <meta content="mole podstawy - Mol jest pojęciem ilości sztuk takim jak tuzin – różnica polega na
+tym, że tuzin to 12 natomiast mol to taki tuzin na sterydach - \(6.02·10^{23}\) sztuk, obie te wielkości
+możemy stosować zarówno w mikroświecie jak i makroświecie, a więc w
+praktyce możemy mówić o tuzinie psów – 12 sztukach psów i tak samo
+możemy mówić o molu psów - \(6.02·10^{23}\) sztukach. Z podobieństwa
+tych dwóch wielkości wynika, iż każde pojęcie i operacja matematyczna,
+która ma sens dla tuzina, ma też sens dla mola, ale w związku z
+niemożliwością wyobrażenia sobie tak dużej wartości, jaką jest \(6.02·10^{23}\) sztuk, może wyobrażać sobie
+tuzin i patrzeć czy dana operacja działa. Każda operacja, która działa
+na tuzinie będzie działać też na molu. Wartość \(6.02·10^{23}\) tzw. stałej Avogadra została
+dobrana tak, aby po prostu masa molowa danego związku wyrażona w gramach
+była liczbowo równa masie jednej drobiny tegoż związku wyrażonej w
+unitach." name="twitter:description"/>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Mole podstawy - chemia teoria i obliczenia | Chemcademy",
+  "description": "mole podstawy - Mol jest pojęciem ilości sztuk takim jak tuzin – różnica polega na\ntym, że tuzin to 12 natomiast mol to taki tuzin na sterydach - \\(6.02·10^{23}\\) sztuk, obie te wielkości\nmożemy stosować zarówno w mikroświecie jak i makroświecie, a więc w\npraktyce możemy mówić o tuzinie psów – 12 sztukach psów i tak samo\nmożemy mówić o molu psów - \\(6.02·10^{23}\\) sztukach. Z podobieństwa\ntych dwóch wielkości wynika, iż każde pojęcie i operacja matematyczna,\nktóra ma sens dla tuzina, ma też sens dla mola, ale w związku z\nniemożliwością wyobrażenia sobie tak dużej wartości, jaką jest \\(6.02·10^{23}\\) sztuk, może wyobrażać sobie\ntuzin i patrzeć czy dana operacja działa. Każda operacja, która działa\nna tuzinie będzie działać też na molu. Wartość \\(6.02·10^{23}\\) tzw. stałej Avogadra została\ndobrana tak, aby po prostu masa molowa danego związku wyrażona w gramach\nbyła liczbowo równa masie jednej drobiny tegoż związku wyrażonej w\nunitach.",
+  "dateModified": "2026-08-05",
+  "author": {
+    "@type": "Organization",
+    "name": "Chemcademy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chemcademy"
+  },
+  "mainEntityOfPage": "https://chemcademy.edu.pl/articles/mole-podstawy.html"
+}
+  </script>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Chemcademy",
+      "item": "https://chemcademy.edu.pl"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artykuły chemiczne"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Mole podstawy - chemia teoria i obliczenia | Chemcademy",
+      "item": "https://chemcademy.edu.pl/articles/mole-podstawy.html"
+    }
+  ]
+}
+  </script>
+ </head>
+ <body>
+  <p>
+   Mol jest pojęciem ilości sztuk takim jak tuzin – różnica polega na
+tym, że tuzin to 12 natomiast mol to taki tuzin na sterydach -
+   <span class="math inline">
+    \(6.02·10^{23}\)
+   </span>
+   sztuk, obie te wielkości
+możemy stosować zarówno w mikroświecie jak i makroświecie, a więc w
+praktyce możemy mówić o tuzinie psów – 12 sztukach psów i tak samo
+możemy mówić o molu psów -
+   <span class="math inline">
+    \(6.02·10^{23}\)
+   </span>
+   sztukach. Z podobieństwa
+tych dwóch wielkości wynika, iż każde pojęcie i operacja matematyczna,
+która ma sens dla tuzina, ma też sens dla mola, ale w związku z
+niemożliwością wyobrażenia sobie tak dużej wartości, jaką jest
+   <span class="math inline">
+    \(6.02·10^{23}\)
+   </span>
+   sztuk, może wyobrażać sobie
+tuzin i patrzeć czy dana operacja działa. Każda operacja, która działa
+na tuzinie będzie działać też na molu. Wartość
+   <span class="math inline">
+    \(6.02·10^{23}\)
+   </span>
+   tzw. stałej Avogadra została
+dobrana tak, aby po prostu masa molowa danego związku wyrażona w gramach
+była liczbowo równa masie jednej drobiny tegoż związku wyrażonej w
+unitach.
+  </p>
+  <p>
+   Najważniejsze jest stwierdzenie, że TO, CO DZIALA CI NA TUZINIE
 ZAWSZE BEDZIE DZIAŁAć NA MOLU, dla tuzina nijako wartość stałej
-tuzinowej <span class="math inline">\(&quot;N_{A} = 12&quot;\)</span>; a
-dla mola <span class="math inline">\(N_{A} = 6.02·10^{23}\)</span></p>
-<p>W zapisach molowych preferowany zapis można przedstawić, jako:</p>
-<p><span class="math display">\[n,m,N_{czego}^{warunki}\]</span></p>
-<p>Gdzie <span class="math inline">\(n\)</span> - ilość moli, <span
-class="math inline">\(m\)</span> - masę, <span
-class="math inline">\(N\)</span> - ilość sztuk, <span
-class="math inline">\(V\)</span>-objętość, <span
-class="math inline">\(czego\)</span> -symbolizuje substancję, którą
-rozważamy, natomiast <span class="math inline">\(warunki\)</span> - to
+tuzinowej
+   <span class="math inline">
+    \("N_{A} = 12"\)
+   </span>
+   ; a
+dla mola
+   <span class="math inline">
+    \(N_{A} = 6.02·10^{23}\)
+   </span>
+  </p>
+  <p>
+   W zapisach molowych preferowany zapis można przedstawić, jako:
+  </p>
+  <p>
+   <span class="math display">
+    \[n,m,N_{czego}^{warunki}\]
+   </span>
+  </p>
+  <p>
+   Gdzie
+   <span class="math inline">
+    \(n\)
+   </span>
+   - ilość moli,
+   <span class="math inline">
+    \(m\)
+   </span>
+   - masę,
+   <span class="math inline">
+    \(N\)
+   </span>
+   - ilość sztuk,
+   <span class="math inline">
+    \(V\)
+   </span>
+   -objętość,
+   <span class="math inline">
+    \(czego\)
+   </span>
+   -symbolizuje substancję, którą
+rozważamy, natomiast
+   <span class="math inline">
+    \(warunki\)
+   </span>
+   - to
 warunki w jakich substancja się znajduje. Zastosowanie jednoznaczne
 przedstawionej metody zapisu umożliwia jednoznaczny zapis warunków
 prowadzenia i otworzenia ich po dowolnym czasie. Kategorycznie nie
-należy używać oznaczeń typu <span class="math inline">\(x\)</span> gdyż
+należy używać oznaczeń typu
+   <span class="math inline">
+    \(x\)
+   </span>
+   gdyż
 przez nadużywanie są one niejednoznaczne i tym samym wymagają
-rozwiązania całego zadania, aby dowiedzieć czym one są.</p>
-<p>Rozwiązywanie zadań proporcjami również należy skrytykować –
+rozwiązania całego zadania, aby dowiedzieć czym one są.
+  </p>
+  <p>
+   Rozwiązywanie zadań proporcjami również należy skrytykować –
 proporcję jest bardzo łatwo zapisać, ale bardzo ciężko sprawdzić jej
 poprawność. Moim zdaniem należy stosować wówczas wzory, które wiążą
-najczęściej występujące wartości molowe w zadaniach:</p>
-<p><span class="math display">\[n = \frac{m}{M};\ \ \ \ \ n_{gazu} =
-\frac{V_{gazu}}{V_{mol}};\ \ \ n = \frac{N}{N_{A}}\]</span></p>
-<p>Gdzie</p>
-<p><span class="math inline">\(n -\)</span>ilość moli, <span
-class="math inline">\(m\)</span> - masa zważona; <span
-class="math inline">\(M\)</span> - masa molowa „ta z układu”; <span
-class="math inline">\(V_{gazu}\)</span> - objętość gazu, <span
-class="math inline">\(V_{mol}\)</span> - objętość molowa gazu, w
-warunkach normalnych <span
-class="math inline">\(22.4\frac{dm^{3}}{mol}\)</span>; <span
-class="math inline">\(N\)</span> - ilość sztuk, <span
-class="math inline">\(N_{A}\)</span> -stałą Avogadra</p>
-<p>Z przedstawionych zależności wynika, iż mole są najbardziej
+najczęściej występujące wartości molowe w zadaniach:
+  </p>
+  <p>
+   <span class="math display">
+    \[n = \frac{m}{M};\ \ \ \ \ n_{gazu} =
+\frac{V_{gazu}}{V_{mol}};\ \ \ n = \frac{N}{N_{A}}\]
+   </span>
+  </p>
+  <p>
+   Gdzie
+  </p>
+  <p>
+   <span class="math inline">
+    \(n -\)
+   </span>
+   ilość moli,
+   <span class="math inline">
+    \(m\)
+   </span>
+   - masa zważona;
+   <span class="math inline">
+    \(M\)
+   </span>
+   - masa molowa „ta z układu”;
+   <span class="math inline">
+    \(V_{gazu}\)
+   </span>
+   - objętość gazu,
+   <span class="math inline">
+    \(V_{mol}\)
+   </span>
+   - objętość molowa gazu, w
+warunkach normalnych
+   <span class="math inline">
+    \(22.4\frac{dm^{3}}{mol}\)
+   </span>
+   ;
+   <span class="math inline">
+    \(N\)
+   </span>
+   - ilość sztuk,
+   <span class="math inline">
+    \(N_{A}\)
+   </span>
+   -stałą Avogadra
+  </p>
+  <p>
+   Z przedstawionych zależności wynika, iż mole są najbardziej
 uniwersalną wartością z wymienionych i tym samym są najbardziej
 uniwersalne – można je z łatwością przekształcić na dowolną inna
-potrzebną wartość.</p>
-<p>Rozpatrzmy zadanie na poziomie podstawówki:</p>
-<p><mark>Ilość sztuk jajek to 30. Oblicz ile to tuzinów
-jajek?</mark></p>
-<p>Ilość tuzinów jajek z łatwością obliczymy przez podzielenie ilości
-sztuk jajek przez 12:</p>
-<p><span class="math display">\[n_{tuzinow} = \frac{N_{sztuk}}{12} =
-\frac{30}{12} = 2.5\ tuzina\]</span></p>
-<p>Analogiczne zadanie związane z obliczeniami molowymi, o podobnym
-stopniu skomplikowania ma postać:</p>
-<p>Ile moli cząsteczek wody stanowi <span
-class="math inline">\(3.01·10^{22}\)</span> sztuk cząsteczek wody?</p>
-<p>W przypadku tego zadania ilość sztuk cząsteczek wody po prostu
+potrzebną wartość.
+  </p>
+  <p>
+   Rozpatrzmy zadanie na poziomie podstawówki:
+  </p>
+  <p>
+   <mark>
+    Ilość sztuk jajek to 30. Oblicz ile to tuzinów
+jajek?
+   </mark>
+  </p>
+  <p>
+   Ilość tuzinów jajek z łatwością obliczymy przez podzielenie ilości
+sztuk jajek przez 12:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{tuzinow} = \frac{N_{sztuk}}{12} =
+\frac{30}{12} = 2.5\ tuzina\]
+   </span>
+  </p>
+  <p>
+   Analogiczne zadanie związane z obliczeniami molowymi, o podobnym
+stopniu skomplikowania ma postać:
+  </p>
+  <p>
+   Ile moli cząsteczek wody stanowi
+   <span class="math inline">
+    \(3.01·10^{22}\)
+   </span>
+   sztuk cząsteczek wody?
+  </p>
+  <p>
+   W przypadku tego zadania ilość sztuk cząsteczek wody po prostu
 podzielimy przez stałą Avogadra analogicznie jak w przypadku tuzinów,
-gdzie dzieliliśmy przez dwanaście:</p>
-<p><span class="math display">\[n_{H_{2}O} = \frac{N_{H_{2}O}}{N_{A}} =
-\frac{3.01·10^{22}}{6.02·10^{23}} = 0.05\ mol\]</span></p>
-<p>Rozpatrzmy dalsze zadanie związane z molami:</p>
-<p><mark>Mieliśmy 2.5 tuzina jajek z Czarnobyla, każde z nich miało po 4
-żółtka. Ile tuzinów żółtek miałeś?</mark></p>
-<p>Zadanie to można rozwiązać na dwa sposoby – albo obliczając najpierw
+gdzie dzieliliśmy przez dwanaście:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{H_{2}O} = \frac{N_{H_{2}O}}{N_{A}} =
+\frac{3.01·10^{22}}{6.02·10^{23}} = 0.05\ mol\]
+   </span>
+  </p>
+  <p>
+   Rozpatrzmy dalsze zadanie związane z molami:
+  </p>
+  <p>
+   <mark>
+    Mieliśmy 2.5 tuzina jajek z Czarnobyla, każde z nich miało po 4
+żółtka. Ile tuzinów żółtek miałeś?
+   </mark>
+  </p>
+  <p>
+   Zadanie to można rozwiązać na dwa sposoby – albo obliczając najpierw
 ilość sztuk jajek, potem ilość żółtek a następnie ilość tuzinów żółtek
 lub, co wymaga trochę sprytu, ale jest znacznie szybsze ułożenia
-proporcji na tuzinach.</p>
-<p>Wedle pierwszej metody najpierw należy obliczyć ilość sztuk jajek, w
-tym celu mnożę ilość tuzinów razy dwanaście</p>
-<p><span class="math display">\[N_{jajek} = 12n_{jajek} = 12·2.5 =
-30\]</span></p>
-<p>Można obliczyć najpierw obliczając ilość sztuk żółtek mnożąc ilość
-jajek razy 4 – każde jajko ma 4 żółtka.</p>
-<p><span class="math display">\[N_{zoltek} = 4N_{jajek} = 4·30 =
-120\]</span></p>
-<p>Po podzieleniu tej wartości przez 12 – ilość sztuk w jednym tuzinie
-otrzymam ilość tuzinów żółtek:</p>
-<p><span class="math display">\[n_{zoltek}^{tuzinow} =
-\frac{N_{zoltek}}{12} = \frac{120}{12} = 10\]</span></p>
-<p>Metoda jest dość oczywista, ale wymaga dużej ilości rachunków.</p>
-<p>Druga metoda jest znacznie szybsza – wymaga ułożenia jednej
+proporcji na tuzinach.
+  </p>
+  <p>
+   Wedle pierwszej metody najpierw należy obliczyć ilość sztuk jajek, w
+tym celu mnożę ilość tuzinów razy dwanaście
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{jajek} = 12n_{jajek} = 12·2.5 =
+30\]
+   </span>
+  </p>
+  <p>
+   Można obliczyć najpierw obliczając ilość sztuk żółtek mnożąc ilość
+jajek razy 4 – każde jajko ma 4 żółtka.
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{zoltek} = 4N_{jajek} = 4·30 =
+120\]
+   </span>
+  </p>
+  <p>
+   Po podzieleniu tej wartości przez 12 – ilość sztuk w jednym tuzinie
+otrzymam ilość tuzinów żółtek:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{zoltek}^{tuzinow} =
+\frac{N_{zoltek}}{12} = \frac{120}{12} = 10\]
+   </span>
+  </p>
+  <p>
+   Metoda jest dość oczywista, ale wymaga dużej ilości rachunków.
+  </p>
+  <p>
+   Druga metoda jest znacznie szybsza – wymaga ułożenia jednej
 proporcji. Jeżeli jedno jajko ma 4 żółtka to tuzin jajek (12 sztuk) ma 4
 tuziny żółtek (48 sztuk), a dowolna ilość tuzinów jajek będzie zawierała
-proporcjonalną ilość żółtek. Możemy mądrość tę zapisać proporcją:</p>
-<p><span class="math display">\[jajko - - - żółtko\]</span></p>
-<p><span class="math display">\[1sztuk - - - 4sztuki\]</span></p>
-<p><span class="math display">\[\text{ }1tuzin - - - 4\
-tuziny\]</span></p>
-<p><span class="math display">\[\left( n_{jajek}^{tuzin} = 2.5 \right) -
-- - n_{tuzinow}^{zoltek}\]</span></p>
-<p>Wymnożenie proporcji daje nam od razu ilość tuzinów żółtek.</p>
-<p><span class="math display">\[n_{tuzinow}^{zoltek} = 4·2.5 = 10\
-tuzinow.\]</span></p>
-<p>Analogiczne zadanie będzie miało postać:</p>
-<p>Oblicz ile moli atomów zawiera <span
-class="math inline">\(0.05\)</span> mola cząsteczek wody.</p>
-<p>Wcześniej ustaliliśmy, iż jeżeli jakaś metoda działa na tuzinach to
+proporcjonalną ilość żółtek. Możemy mądrość tę zapisać proporcją:
+  </p>
+  <p>
+   <span class="math display">
+    \[jajko - - - żółtko\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[1sztuk - - - 4sztuki\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }1tuzin - - - 4\
+tuziny\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\left( n_{jajek}^{tuzin} = 2.5 \right) -
+- - n_{tuzinow}^{zoltek}\]
+   </span>
+  </p>
+  <p>
+   Wymnożenie proporcji daje nam od razu ilość tuzinów żółtek.
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{tuzinow}^{zoltek} = 4·2.5 = 10\
+tuzinow.\]
+   </span>
+  </p>
+  <p>
+   Analogiczne zadanie będzie miało postać:
+  </p>
+  <p>
+   Oblicz ile moli atomów zawiera
+   <span class="math inline">
+    \(0.05\)
+   </span>
+   mola cząsteczek wody.
+  </p>
+  <p>
+   Wcześniej ustaliliśmy, iż jeżeli jakaś metoda działa na tuzinach to
 działa też na molach, a więc możemy zadanie to rozwiązać również dwiema
 metodami; albo obliczając ilość sztuk cząsteczek wody, następnie ilość
 sztuk atomów i przeliczając na ilość moli albo co znacznie szybsze
 układając proporcje na molach – bo jeżeli działała na tuzinach to będzie
-również działać na molach</p>
-<p>Wykorzystując pierwszą metodę, na początku musimy obliczyć ilość
+również działać na molach
+  </p>
+  <p>
+   Wykorzystując pierwszą metodę, na początku musimy obliczyć ilość
 sztuk cząsteczek wody z ilości sztuk ilość moli wody na ilość sztuk
-cząsteczek wody:</p>
-<p><span class="math display">\[N_{H_{2}O} = n_{H_{2}O}N_{A} =
-0.05·6.02·10^{23} = 3.01·10^{22}\]</span></p>
-<p>Jedna cząsteczka wody zawiera jeden atom tlenu, a więc sztuk atomów
-tlenu będziemy mieli dokładnie tyle, ile mamy sztuk cząsteczek wody:</p>
-<p><span class="math display">\[N_{O} = N_{H_{2}O} =
-3.01·10^{22}\]</span></p>
-<p>Atomów wodoru jest dwa razy więcej niż cząsteczek wody:</p>
-<p><span class="math display">\[N_{H} = 2N_{H_{2}O} =
-6.02·10^{22}\]</span></p>
-<p>Czyli łącznie mamy atomów:</p>
-<p><span class="math display">\[N_{atomow} = 6.02·10^{22} + 3.01·10^{22}
-= 9.03·10^{22}\]</span></p>
-<p>Ilość sztuk przeliczam na ilość moli atomów używając stałej
-Avogadra:</p>
-<p><span class="math display">\[n_{atomów} = \frac{N_{atomów}}{N_{A}} =
-\frac{9.03·10^{22}}{6.02·10^{23}} = 0.15\]</span></p>
-<p>Metoda jest poprawna, ale żeby nie jest ona przyjemna z uwagi na
-„brzydkie” liczby, dodatkowo względnie łatwo o błąd rachunkowy.</p>
-<p>Alternatywnie znając ilość moli cząsteczek wody <span
-class="math inline">\(n_{H_{2}O} = 0.05\ \)</span>układam proporcje
+cząsteczek wody:
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{H_{2}O} = n_{H_{2}O}N_{A} =
+0.05·6.02·10^{23} = 3.01·10^{22}\]
+   </span>
+  </p>
+  <p>
+   Jedna cząsteczka wody zawiera jeden atom tlenu, a więc sztuk atomów
+tlenu będziemy mieli dokładnie tyle, ile mamy sztuk cząsteczek wody:
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{O} = N_{H_{2}O} =
+3.01·10^{22}\]
+   </span>
+  </p>
+  <p>
+   Atomów wodoru jest dwa razy więcej niż cząsteczek wody:
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{H} = 2N_{H_{2}O} =
+6.02·10^{22}\]
+   </span>
+  </p>
+  <p>
+   Czyli łącznie mamy atomów:
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{atomow} = 6.02·10^{22} + 3.01·10^{22}
+= 9.03·10^{22}\]
+   </span>
+  </p>
+  <p>
+   Ilość sztuk przeliczam na ilość moli atomów używając stałej
+Avogadra:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{atomów} = \frac{N_{atomów}}{N_{A}} =
+\frac{9.03·10^{22}}{6.02·10^{23}} = 0.15\]
+   </span>
+  </p>
+  <p>
+   Metoda jest poprawna, ale żeby nie jest ona przyjemna z uwagi na
+„brzydkie” liczby, dodatkowo względnie łatwo o błąd rachunkowy.
+  </p>
+  <p>
+   Alternatywnie znając ilość moli cząsteczek wody
+   <span class="math inline">
+    \(n_{H_{2}O} = 0.05\ \)
+   </span>
+   układam proporcje
 analogiczną do poprzedniej z jajkami i żółtkami. Jedna cząsteczka wody
 zawiera 3 atomy (dwa atomy wodoru + atom tlenu). Jeden tuzin – 12 sztuk
 cząsteczek wody zawiera 3 tuziny atomów (dwa tuziny – 24 sztuki atomów
 wodoru + 1tuzin -12 sztuk atomów tlenu), a dowolna ilość tuzinów
 zawierać będzie proporcjonalną ilość atomów. Jeżeli dana proporcja
-działa na tuzinach, to również działa na molach. Mając daną <span
-class="math inline">\(0.05\ mol\)</span> cząsteczek wody mogę ułożyć
-proporcję:</p>
-<p><span class="math display">\[H_{2}O - - - atomy\]</span></p>
-<p><span class="math display">\[1sztuk - - - 3sztuki\
-atomów\]</span></p>
-<p><span class="math display">\[1\ tuzin - - - 3tuzin\]</span></p>
-<p>W przypadku tego zadania mogę zapisać, że 1 mol zawiera 3 mole
-atomów:</p>
-<p><span class="math display">\[H_{2}O - - - atomy\]</span></p>
-<p><span class="math display">\[1mol - - - 3\ mole\]</span></p>
-<p><span class="math display">\[0.05\ mol - - - n_{atomów}\]</span></p>
-<p>Wówczas ilość moli atomów mamy po jednym krótkim obliczeniu:</p>
-<p><span class="math display">\[n_{atomów} = 0.05·3 = 0.15\]</span></p>
-<p>Metoda ta jest znacznie wygodniejsza – unikamy obliczeń z „brzydkimi”
+działa na tuzinach, to również działa na molach. Mając daną
+   <span class="math inline">
+    \(0.05\ mol\)
+   </span>
+   cząsteczek wody mogę ułożyć
+proporcję:
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2}O - - - atomy\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[1sztuk - - - 3sztuki\
+atomów\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[1\ tuzin - - - 3tuzin\]
+   </span>
+  </p>
+  <p>
+   W przypadku tego zadania mogę zapisać, że 1 mol zawiera 3 mole
+atomów:
+  </p>
+  <p>
+   <span class="math display">
+    \[H_{2}O - - - atomy\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[1mol - - - 3\ mole\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[0.05\ mol - - - n_{atomów}\]
+   </span>
+  </p>
+  <p>
+   Wówczas ilość moli atomów mamy po jednym krótkim obliczeniu:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{atomów} = 0.05·3 = 0.15\]
+   </span>
+  </p>
+  <p>
+   Metoda ta jest znacznie wygodniejsza – unikamy obliczeń z „brzydkimi”
 liczbami i wykładnikami, a dodatkowo ilość obliczeń jest znacznie
-ograniczona.</p>
-<p>Pojęcie masy molowej</p>
-<p>Masa molowa zdefiniowana jest, jako masa jednego mola danego związku
+ograniczona.
+  </p>
+  <p>
+   Pojęcie masy molowej
+  </p>
+  <p>
+   Masa molowa zdefiniowana jest, jako masa jednego mola danego związku
 lub drobiny wyrażona w gramach. Masę tę można odczytać z układu
 okresowego; jest ona liczbowo równa masie jednej cząsteczki wyrażonej w
 unitach. Masa molowa cząsteczki jest równa sumie mas molowych wszystkich
-wchodzą w skład cząsteczki</p>
-<p>Np. masę molową <span class="math inline">\(H_{2}SO_{4}\)</span>
-obliczę, jako sumę mas molowych</p>
-<p><span class="math display">\[M_{H_{2}SO_{4}} = 2·M_{H} + M_{S} +
-4·M_{O} = 2·1.008 + 32.06 + 4·16 = 98.076\frac{g}{mol}\ \]</span></p>
-<p>Zależność pomiędzy masą zważoną („tą użytą w reakcji”), masą molową
-oraz ilością moli przedstawia wzór:</p>
-<p><span class="math display">\[n = \frac{m}{M}\]</span></p>
-<p>Gdzie <span class="math inline">\(n\)</span> to ilość moli
-substancji, <span class="math inline">\(m\)</span> - masa zważona –
-realna masa próbki, <span class="math inline">\(M\)</span> - masa
-molowa, „ ta z układu”.</p>
-<p>Przykładem zadania, w którym wykorzystuje analogiczne pojęcie
-związane z tuzinem jest</p>
-<p>Jeden tuzin groszy wazy 19.68 g. Oblicz ile tuzinów groszy i ile
-sztuk groszy znajduje się w 1 kilogramie groszy.</p>
-<p>Znając masę próbki z groszami i masę „tuzinową” – masę jednego tuzina
+wchodzą w skład cząsteczki
+  </p>
+  <p>
+   Np. masę molową
+   <span class="math inline">
+    \(H_{2}SO_{4}\)
+   </span>
+   obliczę, jako sumę mas molowych
+  </p>
+  <p>
+   <span class="math display">
+    \[M_{H_{2}SO_{4}} = 2·M_{H} + M_{S} +
+4·M_{O} = 2·1.008 + 32.06 + 4·16 = 98.076\frac{g}{mol}\ \]
+   </span>
+  </p>
+  <p>
+   Zależność pomiędzy masą zważoną („tą użytą w reakcji”), masą molową
+oraz ilością moli przedstawia wzór:
+  </p>
+  <p>
+   <span class="math display">
+    \[n = \frac{m}{M}\]
+   </span>
+  </p>
+  <p>
+   Gdzie
+   <span class="math inline">
+    \(n\)
+   </span>
+   to ilość moli
+substancji,
+   <span class="math inline">
+    \(m\)
+   </span>
+   - masa zważona –
+realna masa próbki,
+   <span class="math inline">
+    \(M\)
+   </span>
+   - masa
+molowa, „ ta z układu”.
+  </p>
+  <p>
+   Przykładem zadania, w którym wykorzystuje analogiczne pojęcie
+związane z tuzinem jest
+  </p>
+  <p>
+   Jeden tuzin groszy wazy 19.68 g. Oblicz ile tuzinów groszy i ile
+sztuk groszy znajduje się w 1 kilogramie groszy.
+  </p>
+  <p>
+   Znając masę próbki z groszami i masę „tuzinową” – masę jednego tuzina
 groszy mogę obliczyć ilość tuzinów groszy znajdujących się w 1
-kilogramie groszy:</p>
-<p><span class="math display">\[n_{tuzinów} =
+kilogramie groszy:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{tuzinów} =
 \frac{m_{zwazona}}{M_{tuzina}} = \frac{1\ 000}{19.68} = 50.81\ tuzinow\
-groszy\]</span></p>
-<p>Następnie obliczam ilość sztuk groszy mnożąc ilość tuzinów groszy
-przez 12:</p>
-<p><span class="math display">\[N_{groszy} = n_{groszy}^{tuzinow}·12 =
-50.81·12 = 609.72 = 610groszy\]</span></p>
-<p>Obliczenia przy użyciu masy molowej są dokładną analogią tych
-obliczeń, rozważmy zadanie:</p>
-<p>Oblicz ilość moli cząsteczek wody i oraz ilość sztuk cząsteczek wody,
-które znajdują się w 1000 g wody.</p>
-<p>Najpierw z układu okresowego obliczam masę molową wody:</p>
-<p><span class="math display">\[M_{H_{2}O} = 2·1.008 + 16 =
-18.016\]</span></p>
-<p>Następnie stosując wzór <span class="math inline">\(n_{H_{2}O} =
-\frac{m_{H_{2}O}}{M_{H_{2}O}}\)</span> obliczam ilość moli wody w
-próbce:</p>
-<p><span class="math display">\[n_{H_{2}O} =
+groszy\]
+   </span>
+  </p>
+  <p>
+   Następnie obliczam ilość sztuk groszy mnożąc ilość tuzinów groszy
+przez 12:
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{groszy} = n_{groszy}^{tuzinow}·12 =
+50.81·12 = 609.72 = 610groszy\]
+   </span>
+  </p>
+  <p>
+   Obliczenia przy użyciu masy molowej są dokładną analogią tych
+obliczeń, rozważmy zadanie:
+  </p>
+  <p>
+   Oblicz ilość moli cząsteczek wody i oraz ilość sztuk cząsteczek wody,
+które znajdują się w 1000 g wody.
+  </p>
+  <p>
+   Najpierw z układu okresowego obliczam masę molową wody:
+  </p>
+  <p>
+   <span class="math display">
+    \[M_{H_{2}O} = 2·1.008 + 16 =
+18.016\]
+   </span>
+  </p>
+  <p>
+   Następnie stosując wzór
+   <span class="math inline">
+    \(n_{H_{2}O} =
+\frac{m_{H_{2}O}}{M_{H_{2}O}}\)
+   </span>
+   obliczam ilość moli wody w
+próbce:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{H_{2}O} =
 \frac{m_{H_{2}O}}{M_{H_{2}O}} = \frac{1000}{18.016} =
-55.5mol\]</span></p>
-<p>Ilość moli wody wykorzystuje do obliczenia ilości sztuk wody: <span
-class="math inline">\(N_{H_{2}O} = n_{H_{2}O}N_{A}\)</span></p>
-<p><span class="math display">\[N_{H_{2}O} = n_{H_{2}O}N_{A} =
-55.5·6.02·10^{23} = 334.1·10^{23}\]</span></p>
-<p>Porównując dwa powyższa zadania widzimy, iż dla tuzina używamy 12, a
-dla mola <span class="math inline">\(6.02·10^{23}\)</span>, a pojęcie
+55.5mol\]
+   </span>
+  </p>
+  <p>
+   Ilość moli wody wykorzystuje do obliczenia ilości sztuk wody:
+   <span class="math inline">
+    \(N_{H_{2}O} = n_{H_{2}O}N_{A}\)
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{H_{2}O} = n_{H_{2}O}N_{A} =
+55.5·6.02·10^{23} = 334.1·10^{23}\]
+   </span>
+  </p>
+  <p>
+   Porównując dwa powyższa zadania widzimy, iż dla tuzina używamy 12, a
+dla mola
+   <span class="math inline">
+    \(6.02·10^{23}\)
+   </span>
+   , a pojęcie
 masy molowej jest analogicznym pojęciem jak masa tuzinowa – masa
-dwunastu sztuk czegoś.</p>
-<p>Masa molowa i masa jednej cząsteczki wyrażona w gramach są z sobą
+dwunastu sztuk czegoś.
+  </p>
+  <p>
+   Masa molowa i masa jednej cząsteczki wyrażona w gramach są z sobą
 powiązane. Najłatwiej jest je połączyć układając proporcję; wiemy, że
-masa jednego mola jest równa masie molowej, a więc <span
-class="math inline">\(6.02·10^{23}\)</span> sztuk interesujących drobin
+masa jednego mola jest równa masie molowej, a więc
+   <span class="math inline">
+    \(6.02·10^{23}\)
+   </span>
+   sztuk interesujących drobin
 waży tyle, ile wynosi masa molowa. Interesuje nas masa jednej sztuki, co
-mogę zapisać np. dla <span class="math inline">\(NaOH\)</span> o masie
-molowej <span class="math inline">\(40\frac{g}{mol}\)</span> jako:</p>
-<p><span class="math display">\[1mol = 6.02·10^{23}sztuk - - -
-40g\]</span></p>
-<p><span class="math display">\[\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-\ \ 1\ sztuka - - - m_{sztuki}\]</span></p>
-<p>Po wymnożeniu otrzymujemy masę jednej sztuki cząsteczki <span
-class="math inline">\(NaOH\)</span>:</p>
-<p><span class="math display">\[m_{sztuki} = \frac{40}{6.02·10^{23}} =
-0.1661·10^{- 23}·40 = 6.644·10^{- 23}g\ \]</span></p>
-<p>Czyli ogólna proporcja do przeliczania masy wyrażonej w gramach na
-masę jednej cząsteczki wygląda następująco:</p>
-<p><span class="math display">\[6.02·10^{23} - - -
-M_{molowa}\]</span></p>
-<p><span class="math display">\[1 - - - m_{sztuki}\]</span></p>
-<p>Przykłady zadań prostych, związanych z przeliczaniem ilości moli, mas
-i tabelkami:</p>
-<p>Jaka jest ilość sztuk atomów zawartych w 10 gramach <span
-class="math inline">\(P_{2}O_{5}\)</span>?</p>
-<p>Najpierw obliczam ilość moli <span
-class="math inline">\(P_{2}O_{5}\)</span> wykorzystując wzór:</p>
-<p><span class="math display">\[n_{P_{2}O_{5}} = \frac{m}{M} =
-\frac{10}{2·30.97 + 5·16} = 0.0705mol\ \ _{P_{2}O_{5}}\]</span></p>
-<p><span class="math display">\[n_{P_{2}O_{5}} =
-\frac{N_{P_{2}O_{5}}}{N_{A}}\]</span></p>
-<p><span class="math display">\[0.0705 =
-\frac{N_{P_{2}O_{5}}}{6.02·10^{23}}\]</span></p>
-<p><span class="math display">\[N_{P_{2}O_{5}} = 0.0705·6.02·10^{23} =
-0.424·10^{23}\]</span></p>
-<p>Znając ilość sztuk <span class="math inline">\(P_{2}O_{5}\)</span>
-można obliczyć ilość sztuk atomów, układając proporcję:</p>
-<p><span class="math display">\[P_{2}O_{5} - - - atomy\]</span></p>
-<p><span class="math display">\[1 - - - 7\]</span></p>
-<p><span class="math display">\[0.424·10^{23} - - -
-N_{Atomow}\]</span></p>
-<p>Po wymnożeniu dostajemy odpowiedź:</p>
-<p><span class="math display">\[N_{atomow} = 0.424·10^{23}·7 =
-3·10^{23}\]</span></p>
-<p>Oblicz masę próbki kwasu octowego, o której wiemy, że ilość atomów
-wodoru w niej wynosi <span class="math inline">\(5·10^{24}\)</span>.</p>
-<p>Zadanie układy od napisania proporcji – jedna cząsteczka kwasu
+mogę zapisać np. dla
+   <span class="math inline">
+    \(NaOH\)
+   </span>
+   o masie
+molowej
+   <span class="math inline">
+    \(40\frac{g}{mol}\)
+   </span>
+   jako:
+  </p>
+  <p>
+   <span class="math display">
+    \[1mol = 6.02·10^{23}sztuk - - -
+40g\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ 1\ sztuka - - - m_{sztuki}\]
+   </span>
+  </p>
+  <p>
+   Po wymnożeniu otrzymujemy masę jednej sztuki cząsteczki
+   <span class="math inline">
+    \(NaOH\)
+   </span>
+   :
+  </p>
+  <p>
+   <span class="math display">
+    \[m_{sztuki} = \frac{40}{6.02·10^{23}} =
+0.1661·10^{- 23}·40 = 6.644·10^{- 23}g\ \]
+   </span>
+  </p>
+  <p>
+   Czyli ogólna proporcja do przeliczania masy wyrażonej w gramach na
+masę jednej cząsteczki wygląda następująco:
+  </p>
+  <p>
+   <span class="math display">
+    \[6.02·10^{23} - - -
+M_{molowa}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[1 - - - m_{sztuki}\]
+   </span>
+  </p>
+  <p>
+   Przykłady zadań prostych, związanych z przeliczaniem ilości moli, mas
+i tabelkami:
+  </p>
+  <p>
+   Jaka jest ilość sztuk atomów zawartych w 10 gramach
+   <span class="math inline">
+    \(P_{2}O_{5}\)
+   </span>
+   ?
+  </p>
+  <p>
+   Najpierw obliczam ilość moli
+   <span class="math inline">
+    \(P_{2}O_{5}\)
+   </span>
+   wykorzystując wzór:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{P_{2}O_{5}} = \frac{m}{M} =
+\frac{10}{2·30.97 + 5·16} = 0.0705mol\ \ _{P_{2}O_{5}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{P_{2}O_{5}} =
+\frac{N_{P_{2}O_{5}}}{N_{A}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[0.0705 =
+\frac{N_{P_{2}O_{5}}}{6.02·10^{23}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{P_{2}O_{5}} = 0.0705·6.02·10^{23} =
+0.424·10^{23}\]
+   </span>
+  </p>
+  <p>
+   Znając ilość sztuk
+   <span class="math inline">
+    \(P_{2}O_{5}\)
+   </span>
+   można obliczyć ilość sztuk atomów, układając proporcję:
+  </p>
+  <p>
+   <span class="math display">
+    \[P_{2}O_{5} - - - atomy\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[1 - - - 7\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[0.424·10^{23} - - -
+N_{Atomow}\]
+   </span>
+  </p>
+  <p>
+   Po wymnożeniu dostajemy odpowiedź:
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{atomow} = 0.424·10^{23}·7 =
+3·10^{23}\]
+   </span>
+  </p>
+  <p>
+   Oblicz masę próbki kwasu octowego, o której wiemy, że ilość atomów
+wodoru w niej wynosi
+   <span class="math inline">
+    \(5·10^{24}\)
+   </span>
+   .
+  </p>
+  <p>
+   Zadanie układy od napisania proporcji – jedna cząsteczka kwasu
 octowego zawiera cztery atomy wodoru; znając ilość sztuk atomów wodoru
-będę w stanie obliczyć ilość sztuk cząsteczek kwasu octowego:</p>
-<p><span class="math display">\[CH_{3}COOH - - - H\]</span></p>
-<p><span class="math display">\[1 - - - 4\]</span></p>
-<p><span class="math display">\[N_{CH_{3}COOH} - - -
-5·10^{24}\]</span></p>
-<p>Wówczas ilość sztuk kwasu octowego wynosi:</p>
-<p><span class="math display">\[4N_{CH_{3}COOH} = 5·10^{24}\]</span></p>
-<p><span class="math display">\[N_{CH_{3}COOH} =
-1.25·10^{24}\]</span></p>
-<p>Wielkość tę używam do obliczenia liczby moli kwasu octowego:</p>
-<p><span class="math display">\[n_{CH_{3}COOH} =
+będę w stanie obliczyć ilość sztuk cząsteczek kwasu octowego:
+  </p>
+  <p>
+   <span class="math display">
+    \[CH_{3}COOH - - - H\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[1 - - - 4\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{CH_{3}COOH} - - -
+5·10^{24}\]
+   </span>
+  </p>
+  <p>
+   Wówczas ilość sztuk kwasu octowego wynosi:
+  </p>
+  <p>
+   <span class="math display">
+    \[4N_{CH_{3}COOH} = 5·10^{24}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[N_{CH_{3}COOH} =
+1.25·10^{24}\]
+   </span>
+  </p>
+  <p>
+   Wielkość tę używam do obliczenia liczby moli kwasu octowego:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{CH_{3}COOH} =
 \frac{N_{CH_{3}COOH}}{N_{A}} = \frac{1.25·10^{24}}{6.02·10^{23}} =
-0.2076·10 = 2.076\ mol\]</span></p>
-<p>Liczba moli danego reagenta powiązana jest z masą tegoż reagenta
-przez masę molową, wzorem <span class="math inline">\(m =
-nM\)</span></p>
-<p><span class="math display">\[m_{CH_{3}COOH} =
+0.2076·10 = 2.076\ mol\]
+   </span>
+  </p>
+  <p>
+   Liczba moli danego reagenta powiązana jest z masą tegoż reagenta
+przez masę molową, wzorem
+   <span class="math inline">
+    \(m =
+nM\)
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[m_{CH_{3}COOH} =
 n_{CH_{3}COOH}·M_{CH_{3}COOH} = 2.076·(12 + 12 + 4 + 32) =
-124.56g\]</span></p>
-<p>W ilu <span class="math inline">\(dm^{3}\)</span> tlenku chloru (I)
-<span class="math inline">\(Cl_{2}O\)</span> w warunkach normalnych
-znajduje się taka sama ilość chloru co w 6.75g tlenku chloru (IV) <span
-class="math inline">\(ClO_{2}\)</span>?</p>
-<p>Zadanie rozpoczynam od obliczenia ilości moli <span
-class="math inline">\(ClO_{2}\)</span>, korzystając ze wzoru łączącego
-mole, masę i masę molową:</p>
-<p><span class="math display">\[n_{ClO_{2}} = \frac{m}{M} =
-\frac{6.75}{35.5 + 2·16} = 0.1\]</span></p>
-<p>Znając ilość moli <span class="math inline">\(ClO_{2}\)</span> mogę
+124.56g\]
+   </span>
+  </p>
+  <p>
+   W ilu
+   <span class="math inline">
+    \(dm^{3}\)
+   </span>
+   tlenku chloru (I)
+   <span class="math inline">
+    \(Cl_{2}O\)
+   </span>
+   w warunkach normalnych
+znajduje się taka sama ilość chloru co w 6.75g tlenku chloru (IV)
+   <span class="math inline">
+    \(ClO_{2}\)
+   </span>
+   ?
+  </p>
+  <p>
+   Zadanie rozpoczynam od obliczenia ilości moli
+   <span class="math inline">
+    \(ClO_{2}\)
+   </span>
+   , korzystając ze wzoru łączącego
+mole, masę i masę molową:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{ClO_{2}} = \frac{m}{M} =
+\frac{6.75}{35.5 + 2·16} = 0.1\]
+   </span>
+  </p>
+  <p>
+   Znając ilość moli
+   <span class="math inline">
+    \(ClO_{2}\)
+   </span>
+   mogę
 powiedzieć, że ilość moli atomów chloru jest taka sama jak tego związku,
 gdyż jedna cząsteczka zawiera jeden atom, jeden tuzin cząsteczek zawiera
-jeden tuzin atomów, a jeden mol – jeden mol. Wówczas:</p>
-<p><span class="math display">\[n_{Cl} = n_{ClO_{2}} = 0.1\]</span></p>
-<p>Znając ilość moli chloru mogę obliczyć ile cząsteczek <span
-class="math inline">\(Cl_{2}O\)</span> potrzebuje. W tym celu
+jeden tuzin atomów, a jeden mol – jeden mol. Wówczas:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{Cl} = n_{ClO_{2}} = 0.1\]
+   </span>
+  </p>
+  <p>
+   Znając ilość moli chloru mogę obliczyć ile cząsteczek
+   <span class="math inline">
+    \(Cl_{2}O\)
+   </span>
+   potrzebuje. W tym celu
 wykorzystuje propocję – jedna cząsteczka zawiera dwa atomy, a więc jeden
 mol tych cząsteczek zawiera dwa mole atomów, a reszta
-proporcjonalnie:</p>
-<p><span class="math display">\[Cl_{2}O - - - Cl\]</span></p>
-<p><span class="math display">\[1czasteczka - - - 2\ atomy\]</span></p>
-<p><span class="math display">\[1mol\ czas - - - 2\ mole\
-atomów\]</span></p>
-<p><span class="math display">\[n_{Cl_{2}O} - - - 0.1\]</span></p>
-<p>Mnożąc na krzyż uzyskuje:</p>
-<p><span class="math display">\[2n_{Cl_{2}O} = 0.1 \rightarrow
-n_{Cl_{2}O} = 0.05\ mol\]</span></p>
-<p>Znając ilość moli gazu <span class="math inline">\(Cl_{2}O\)</span>
-mogę obliczyć, jaką objętość on zajmuje wykorzystując wzór:</p>
-<p><span class="math display">\[n_{Cl_{2}O} =
-\frac{V_{Cl_{2}O}}{V_{mol}}\]</span></p>
-<p>Wstawiając za <span class="math inline">\(n_{Cl_{2}O} =
-0.05\)</span>, a za <span class="math inline">\(V_{mol} = 22.4\)</span>,
-bo warunki normalne obliczam objętość gazu:</p>
-<p><span class="math display">\[0.05 = \frac{V_{Cl_{2}O}}{22.4}
-\rightarrow V_{Cl_{2}O} = 1.12\ dm^{3}\]</span></p>
-</body>
+proporcjonalnie:
+  </p>
+  <p>
+   <span class="math display">
+    \[Cl_{2}O - - - Cl\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[1czasteczka - - - 2\ atomy\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[1mol\ czas - - - 2\ mole\
+atomów\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{Cl_{2}O} - - - 0.1\]
+   </span>
+  </p>
+  <p>
+   Mnożąc na krzyż uzyskuje:
+  </p>
+  <p>
+   <span class="math display">
+    \[2n_{Cl_{2}O} = 0.1 \rightarrow
+n_{Cl_{2}O} = 0.05\ mol\]
+   </span>
+  </p>
+  <p>
+   Znając ilość moli gazu
+   <span class="math inline">
+    \(Cl_{2}O\)
+   </span>
+   mogę obliczyć, jaką objętość on zajmuje wykorzystując wzór:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{Cl_{2}O} =
+\frac{V_{Cl_{2}O}}{V_{mol}}\]
+   </span>
+  </p>
+  <p>
+   Wstawiając za
+   <span class="math inline">
+    \(n_{Cl_{2}O} =
+0.05\)
+   </span>
+   , a za
+   <span class="math inline">
+    \(V_{mol} = 22.4\)
+   </span>
+   ,
+bo warunki normalne obliczam objętość gazu:
+  </p>
+  <p>
+   <span class="math display">
+    \[0.05 = \frac{V_{Cl_{2}O}}{22.4}
+\rightarrow V_{Cl_{2}O} = 1.12\ dm^{3}\]
+   </span>
+  </p>
+ </body>
 </html>

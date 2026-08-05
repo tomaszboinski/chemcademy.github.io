@@ -1,125 +1,103 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wyszukiwarka zadań OCh</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<link rel="stylesheet" href="assets/css/wyszukiwarka.css">
-<!-- HEADER -->
-  <div id="header-placeholder"></div>
-
-   
-<div class="tytulwyszukiwarka">
-        <h1>Wyszukiwarka zadań Olimpiady Chemicznej</h1>
-        <p>Filtruj zadania według tematów, etapów oraz edycji.</p>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Zadaniaolchem | Chemcademy
+  </title>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <meta content="Spis zadań olimpiady chemicznej z podziałem na tematy." name="description"/>
+  <link href="https://chemcademy.edu.pl/zadaniaolchem.html" rel="canonical"/>
+  <meta content="Zadaniaolchem | Chemcademy" property="og:title"/>
+  <meta content="Spis zadań olimpiady chemicznej z podziałem na tematy." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://chemcademy.edu.pl/zadaniaolchem.html" property="og:url"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="Zadaniaolchem | Chemcademy" name="twitter:title"/>
+  <meta content="Spis zadań olimpiady chemicznej z podziałem na tematy." name="twitter:description"/>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Zadaniaolchem | Chemcademy",
+  "url": "https://chemcademy.edu.pl/zadaniaolchem.html"
+}
+  </script>
+ </head>
+ <body>
+  <link href="assets/css/wyszukiwarka.css" rel="stylesheet"/>
+  <!-- HEADER -->
+  <div id="header-placeholder">
+  </div>
+  <div class="tytulwyszukiwarka">
+   <h1>
+    Wyszukiwarka zadań Olimpiady Chemicznej
+   </h1>
+   <p>
+    Filtruj zadania według tematów, etapów oraz edycji.
+   </p>
+  </div>
+  <!-- ========================= -->
+  <!-- FILTRY -->
+  <!-- ========================= -->
+  <section class="layout">
+   <!-- LEWA STRONA FILTRÓW -->
+   <aside class="filters">
+    <!-- ETAPY -->
+    <div class="filter-card stages-card">
+     <h2>
+      Etapy
+     </h2>
+     <div class="checkbox-grid" id="stages">
+     </div>
     </div>
-
-    <!-- ========================= -->
-    <!-- FILTRY -->
-    <!-- ========================= -->
-<section class="layout">
-
-    <!-- LEWA STRONA FILTRÓW -->
-    <aside class="filters">
-
-        <!-- ETAPY -->
-        <div class="filter-card stages-card">
-
-            <h2>Etapy</h2>
-
-            <div
-                id="stages"
-                class="checkbox-grid"
-            ></div>
-
-        </div>
-
-
-        <!-- EDYCJE + TEMATY -->
-        <div class="bottom-filters">
-
-            <div class="filter-card">
-
-                <h2>Edycje</h2>
-
-                <div
-                    id="editions"
-                    class="checkbox-grid"
-                ></div>
-
-            </div>
-
-
-            <div class="filter-card topics-card">
-
-                <div class="filter-header">
-
-                    <h2>Tematy</h2>
-
-                    <label class="mode">
-
-                        <input
-                            type="checkbox"
-                            id="topicMode"
-                        >
-
-                        <span>AND</span>
-
-                    </label>
-
-                </div>
-
-
-                <div
-                    id="topics"
-                    class="checkbox-grid"
-                ></div>
-
-            </div>
-
-        </div>
-
-    </aside>
-
-
-
-    <!-- PRAWA STRONA WYNIKÓW -->
-    <main class="results-section">
-
-        <div class="results-bar">
-
-            <div class="counter">
-
-                Znaleziono
-                <strong id="resultsCount">0</strong>
-                zadań
-
-            </div>
-
-        </div>
-
-
-        <div
-            id="results"
-            class="results"
-        ></div>
-
-    </main>
-
-</section>
-
-
-   
-</div>
-<div id="footer-placeholder"></div>
-<script src="assets/js/wyszukiwarka.js"></script>
-
- <script src="assets/js/header.js"></script>
-
-
-</body>
+    <!-- EDYCJE + TEMATY -->
+    <div class="bottom-filters">
+     <div class="filter-card">
+      <h2>
+       Edycje
+      </h2>
+      <div class="checkbox-grid" id="editions">
+      </div>
+     </div>
+     <div class="filter-card topics-card">
+      <div class="filter-header">
+       <h2>
+        Tematy
+       </h2>
+       <label class="mode">
+        <input id="topicMode" type="checkbox"/>
+        <span>
+         AND
+        </span>
+       </label>
+      </div>
+      <div class="checkbox-grid" id="topics">
+      </div>
+     </div>
+    </div>
+   </aside>
+   <!-- PRAWA STRONA WYNIKÓW -->
+   <main class="results-section">
+    <div class="results-bar">
+     <div class="counter">
+      Znaleziono
+      <strong id="resultsCount">
+       0
+      </strong>
+      zadań
+     </div>
+    </div>
+    <div class="results" id="results">
+    </div>
+   </main>
+  </section>
+  <div id="footer-placeholder">
+  </div>
+  <script src="assets/js/wyszukiwarka.js">
+  </script>
+  <script src="assets/js/header.js">
+  </script>
+ </body>
 </html>

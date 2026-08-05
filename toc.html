@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Spis treści – Artykuły chemiczne</title>
-   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/toc.css" />
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Toc | Chemcademy
+  </title>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <link href="assets/css/toc.css" rel="stylesheet"/>
   <style>
-    /* Dodatkowy CSS dla klikniętego tytułu */
+   /* Dodatkowy CSS dla klikniętego tytułu */
     .clickable-title {
       text-decoration: underline;
       color: #003366;
@@ -19,7 +21,7 @@
     }
   </style>
   <script>
-  window.MathJax = {
+   window.MathJax = {
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['$$', '$$'], ['\\[', '\\]']]
@@ -28,38 +30,56 @@
       fontCache: 'global'
     }
   };
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-</head>
-<body>
-
+  </script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <meta content="Spis treści materiałów Chemcademy." name="description"/>
+  <link href="https://chemcademy.edu.pl/toc.html" rel="canonical"/>
+  <meta content="Toc | Chemcademy" property="og:title"/>
+  <meta content="Spis treści materiałów Chemcademy." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://chemcademy.edu.pl/toc.html" property="og:url"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="Toc | Chemcademy" name="twitter:title"/>
+  <meta content="Spis treści materiałów Chemcademy." name="twitter:description"/>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Toc | Chemcademy",
+  "url": "https://chemcademy.edu.pl/toc.html"
+}
+  </script>
+ </head>
+ <body>
   <!-- HEADER -->
-  <div id="header-placeholder"></div>
-
+  <div id="header-placeholder">
+  </div>
   <!-- Hamburger (tylko na mobilkach) -->
-  <button id="hamburger" aria-label="Otwórz/zamknij menu spisu treści">☰</button>
-
+  <button aria-label="Otwórz/zamknij menu spisu treści" id="hamburger">
+   ☰
+  </button>
   <!-- SPIS TREŚCI -->
-  <aside id="toc-container" class="toc-hidden">
-    <h2><a href="#" id="toc-title" class="clickable-title">Spis treści</a></h2>
-    <!-- TOC wygenerowany przez JS -->
+  <aside class="toc-hidden" id="toc-container">
+   <h2>
+    <a class="clickable-title" href="#" id="toc-title">
+     Spis treści
+    </a>
+   </h2>
+   <!-- TOC wygenerowany przez JS -->
   </aside>
-
   <!-- Główna zawartość (ładowane artykuły) -->
   <main id="article-viewer">
-    <!-- Tu będzie ładowany artykuł -->
+   <!-- Tu będzie ładowany artykuł -->
   </main>
-
   <!-- FOOTER -->
-  <div id="footer-placeholder"></div>
-
+  <div id="footer-placeholder">
+  </div>
   <!-- Skrypt TOC -->
-  <script src="assets/js/toc.js"></script>
-
+  <script src="assets/js/toc.js">
+  </script>
   <!-- Dodatkowy skrypt do ładowania artykułów po kliknięciu "Spis treści" -->
-  <script src="assets/js/header.js"></script>
-
- 
-</body>
+  <script src="assets/js/header.js">
+  </script>
+ </body>
 </html>

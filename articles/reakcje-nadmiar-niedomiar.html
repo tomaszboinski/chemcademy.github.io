@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>nadmiar niedomiar</title>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="pandoc" name="generator"/>
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+  <title>
+   Reakcje nadmiar niedomiar - chemia teoria i obliczenia | Chemcademy
+  </title>
   <style>
-    code{white-space: pre-wrap;}
+   code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -21,496 +23,1435 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="artykul.css" />
-  <script
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
-  type="text/javascript"></script>
-</head>
-<body>
-<p>Zadania nadmiar – niedomiar</p>
-<p>Rozważmy je na prostym modelu, zupełnie niezwiązanym z chemią:</p>
-<p>Mamy 4 Oliwie i 18 Murzynów. Jedna Oliwia reaguje z trzema Murzynami
-dając jedną szczęśliwą Oliwię:</p>
-<p><span class="math display">\[\text{ }1O + 3M \rightarrow
-O^{\text{:)}}\]</span></p>
-<p>Oblicz ilu murzynów lub Oliwii pozostanie nieprzereagowanych, jeżeli
-jeden z tych reagentów reaguje całkowicie.</p>
-<p>Oczywiści intuicyjnie czujemy, że Oliwie przereagują całkowicie i
-jednocześnie pozostanie 6 nieprzereagowanych murzynów.</p>
-<p>Zadanie to mogę rozwiązać tabelką. Konstrukcja tabelki jest dość
+  <link href="artykul.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript">
+  </script>
+  <meta content="nadmiar niedomiar - Zadania nadmiar – niedomiar" name="description"/>
+  <link href="https://chemcademy.edu.pl/articles/reakcje-nadmiar-niedomiar.html" rel="canonical"/>
+  <meta content="Reakcje nadmiar niedomiar - chemia teoria i obliczenia | Chemcademy" property="og:title"/>
+  <meta content="nadmiar niedomiar - Zadania nadmiar – niedomiar" property="og:description"/>
+  <meta content="article" property="og:type"/>
+  <meta content="https://chemcademy.edu.pl/articles/reakcje-nadmiar-niedomiar.html" property="og:url"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="Reakcje nadmiar niedomiar - chemia teoria i obliczenia | Chemcademy" name="twitter:title"/>
+  <meta content="nadmiar niedomiar - Zadania nadmiar – niedomiar" name="twitter:description"/>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Reakcje nadmiar niedomiar - chemia teoria i obliczenia | Chemcademy",
+  "description": "nadmiar niedomiar - Zadania nadmiar – niedomiar",
+  "dateModified": "2026-08-05",
+  "author": {
+    "@type": "Organization",
+    "name": "Chemcademy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chemcademy"
+  },
+  "mainEntityOfPage": "https://chemcademy.edu.pl/articles/reakcje-nadmiar-niedomiar.html"
+}
+  </script>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Chemcademy",
+      "item": "https://chemcademy.edu.pl"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artykuły chemiczne"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Reakcje nadmiar niedomiar - chemia teoria i obliczenia | Chemcademy",
+      "item": "https://chemcademy.edu.pl/articles/reakcje-nadmiar-niedomiar.html"
+    }
+  ]
+}
+  </script>
+ </head>
+ <body>
+  <p>
+   Zadania nadmiar – niedomiar
+  </p>
+  <p>
+   Rozważmy je na prostym modelu, zupełnie niezwiązanym z chemią:
+  </p>
+  <p>
+   Mamy 4 Oliwie i 18 Murzynów. Jedna Oliwia reaguje z trzema Murzynami
+dając jedną szczęśliwą Oliwię:
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }1O + 3M \rightarrow
+O^{\text{:)}}\]
+   </span>
+  </p>
+  <p>
+   Oblicz ilu murzynów lub Oliwii pozostanie nieprzereagowanych, jeżeli
+jeden z tych reagentów reaguje całkowicie.
+  </p>
+  <p>
+   Oczywiści intuicyjnie czujemy, że Oliwie przereagują całkowicie i
+jednocześnie pozostanie 6 nieprzereagowanych murzynów.
+  </p>
+  <p>
+   Zadanie to mogę rozwiązać tabelką. Konstrukcja tabelki jest dość
 prosta: w pierwszym wierszu wpisujemy po kolei reagenty – zarówno
-substraty jak i produkty występujące w równaniu reakcji:</p>
-<p>W kolejnym wierszu wpisuje początkowe ilości sztuk (lub moli,
+substraty jak i produkty występujące w równaniu reakcji:
+  </p>
+  <p>
+   W kolejnym wierszu wpisuje początkowe ilości sztuk (lub moli,
 objętości, ciśnień, stężeń dla zadań z chemii, a nie z filmów dla
 dorosłych). Kolejny wiersz mówi o zmienia ilości sztuk podczas
 zachodzenia procesu – w praktyce są to spisane współczynniki
-stechiometryczne wraz z <span class="math inline">\(x\)</span> zapisanym
-po nim. Ten <span class="math inline">\(x\)</span> symbolizuje ilość
+stechiometryczne wraz z
+   <span class="math inline">
+    \(x\)
+   </span>
+   zapisanym
+po nim. Ten
+   <span class="math inline">
+    \(x\)
+   </span>
+   symbolizuje ilość
 nomen omen aktów reakcyjnych czyli ile razy taki akt miał miejsce.
 Oczywiście w jednym akcie reaguje jedna Oliwia oraz trzech Murzynów
 dając jedną szczęśliwą Oliwię. Im więcej aktów reakcyjnych będzie miało
 miejsce tym więcej Oliwii i Murzynów przereaguje ale zawsze w stosunku
-<span class="math inline">\(1:3\)</span> co symbolizuje współczynnik
+   <span class="math inline">
+    \(1:3\)
+   </span>
+   co symbolizuje współczynnik
 stechiometryczny przed reagentem. Subatraty oczywiście piszemy z znakiem
 minus bo ich ubywa. Końcowa ilość sztuk znajduje się w ostatnim wierszu
 i jest ona sumą pierwszej komórki (początkowej ilości danego reagenta)
-oraz zmiany w trakcie reakcji (drugiej komórki)</p>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 23%" />
-<col style="width: 26%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th><p><span class="math display">\[reagent_{1}\]</span></p>
-<p><span class="math display">\[Oliwia\]</span></p></th>
-<th><p><span class="math display">\[reagent_{2}\]</span></p>
-<p><span class="math display">\[Murzyn\]</span></p></th>
-<th><p><span class="math display">\[reagent_{3}\]</span></p>
-<p><span class="math display">\[szczęśliwa\]</span></p>
-<p><span class="math display">\[Oliwia\]</span></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><span class="math display">\[N^{0}\]</span></p>
-<p><span class="math display">\[początkowa\]</span></p>
-<p><span class="math display">\[ilość\]</span></p>
-<p><span class="math display">\[sztuk\]</span></p></td>
-<td><p><span class="math display">\[początkowe\]</span></p>
-<p><span class="math display">\[Oliwie\]</span></p>
-<p><span class="math display">\[4\]</span></p></td>
-<td><p><span class="math display">\[początkowe\ \]</span></p>
-<p><span class="math display">\[Murzyny\]</span></p>
-<p><span class="math display">\[18\]</span></p></td>
-<td><p><span class="math display">\[początkowe\]</span></p>
-<p><span class="math display">\[szczęśliwe\ \]</span></p>
-<p><span class="math display">\[Oliwie\]</span></p>
-<p><span class="math display">\[0\]</span></p></td>
-</tr>
-<tr>
-<td><p><span class="math display">\[\Delta N\]</span></p>
-<p><span class="math display">\[zmiana\ \]</span></p>
-<p><span class="math display">\[w\ reakcji\]</span></p></td>
-<td><span class="math display">\[- x\]</span></td>
-<td><span class="math display">\[- 3x\]</span></td>
-<td><span class="math display">\[+ x\]</span></td>
-</tr>
-<tr>
-<td><p><span class="math display">\[N^{K}\]</span></p>
-<p><span class="math display">\[końcowa\ \]</span></p>
-<p><span class="math display">\[ilość\]</span></p>
-<p><span class="math display">\[po\ reakcji\]</span></p></td>
-<td><span class="math display">\[4 - x\]</span></td>
-<td><span class="math display">\[18 - 3x\]</span></td>
-<td><span class="math display">\[x\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Nasza tabelka będzie miała postać:</p>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 23%" />
-<col style="width: 26%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th><span class="math display">\[O\]</span></th>
-<th><span class="math display">\[M\]</span></th>
-<th><span class="math display">\[O^{\text{:)}}\]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[N^{0}\]</span></td>
-<td><span class="math display">\[4\]</span></td>
-<td><span class="math display">\[18\]</span></td>
-<td><span class="math display">\[0\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[\Delta N\]</span></td>
-<td><span class="math display">\[- x\]</span></td>
-<td><span class="math display">\[- 3x\]</span></td>
-<td><span class="math display">\[+ x\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[N^{K}\]</span></td>
-<td><span class="math display">\[4 - x\]</span></td>
-<td><span class="math display">\[18 - 3x\]</span></td>
-<td><span class="math display">\[x\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Oliwie reaguja do końca, a więc ich ilość końcowa, po reakcji, spada
-do zera, co możemy zapisać jako:</p>
-<p><span class="math display">\[4 - x = 0 \rightarrow x = 4\]</span></p>
-<p>Znając <span class="math inline">\(x\)</span> możemy go wstawić do
+oraz zmiany w trakcie reakcji (drugiej komórki)
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 25%"/>
+    <col style="width: 23%"/>
+    <col style="width: 26%"/>
+    <col style="width: 25%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+     </th>
+     <th>
+      <p>
+       <span class="math display">
+        \[reagent_{1}\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[Oliwia\]
+       </span>
+      </p>
+     </th>
+     <th>
+      <p>
+       <span class="math display">
+        \[reagent_{2}\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[Murzyn\]
+       </span>
+      </p>
+     </th>
+     <th>
+      <p>
+       <span class="math display">
+        \[reagent_{3}\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[szczęśliwa\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[Oliwia\]
+       </span>
+      </p>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <p>
+       <span class="math display">
+        \[N^{0}\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[początkowa\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[ilość\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[sztuk\]
+       </span>
+      </p>
+     </td>
+     <td>
+      <p>
+       <span class="math display">
+        \[początkowe\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[Oliwie\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[4\]
+       </span>
+      </p>
+     </td>
+     <td>
+      <p>
+       <span class="math display">
+        \[początkowe\ \]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[Murzyny\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[18\]
+       </span>
+      </p>
+     </td>
+     <td>
+      <p>
+       <span class="math display">
+        \[początkowe\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[szczęśliwe\ \]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[Oliwie\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[0\]
+       </span>
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <p>
+       <span class="math display">
+        \[\Delta N\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[zmiana\ \]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[w\ reakcji\]
+       </span>
+      </p>
+     </td>
+     <td>
+      <span class="math display">
+       \[- x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 3x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[+ x\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <p>
+       <span class="math display">
+        \[N^{K}\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[końcowa\ \]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[ilość\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[po\ reakcji\]
+       </span>
+      </p>
+     </td>
+     <td>
+      <span class="math display">
+       \[4 - x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[18 - 3x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[x\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Nasza tabelka będzie miała postać:
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 25%"/>
+    <col style="width: 23%"/>
+    <col style="width: 26%"/>
+    <col style="width: 25%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+     </th>
+     <th>
+      <span class="math display">
+       \[O\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[M\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[O^{\text{:)}}\]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[N^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[4\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[18\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[\Delta N\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 3x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[+ x\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[N^{K}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[4 - x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[18 - 3x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[x\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Oliwie reaguja do końca, a więc ich ilość końcowa, po reakcji, spada
+do zera, co możemy zapisać jako:
+  </p>
+  <p>
+   <span class="math display">
+    \[4 - x = 0 \rightarrow x = 4\]
+   </span>
+  </p>
+  <p>
+   Znając
+   <span class="math inline">
+    \(x\)
+   </span>
+   możemy go wstawić do
 całej tabelki i obliczyć interesujące nas wartości, np. ilość
-nieprzereagowanych Murzynów:</p>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th><span class="math display">\[O\]</span></th>
-<th><span class="math display">\[M\]</span></th>
-<th><span class="math display">\[O^{\text{:)}}\]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[N^{0}\]</span></td>
-<td><span class="math display">\[4\]</span></td>
-<td><span class="math display">\[18\]</span></td>
-<td><span class="math display">\[0\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[\Delta N\]</span></td>
-<td><span class="math display">\[- x\]</span></td>
-<td><span class="math display">\[- 3x\]</span></td>
-<td><span class="math display">\[+ x\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[N^{K}\]</span></td>
-<td><span class="math display">\[4 - x = 0\]</span></td>
-<td><p><span class="math display">\[18 - 3x =\]</span></p>
-<p><span class="math display">\[18 - 3·4 = 6\]</span></p></td>
-<td><span class="math display">\[x = 4\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Zostało więc 6 Murzynów nieprzereagowanych. Wartość ta jest dodatnia,
+nieprzereagowanych Murzynów:
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+     </th>
+     <th>
+      <span class="math display">
+       \[O\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[M\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[O^{\text{:)}}\]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[N^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[4\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[18\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[\Delta N\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 3x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[+ x\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[N^{K}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[4 - x = 0\]
+      </span>
+     </td>
+     <td>
+      <p>
+       <span class="math display">
+        \[18 - 3x =\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[18 - 3·4 = 6\]
+       </span>
+      </p>
+     </td>
+     <td>
+      <span class="math display">
+       \[x = 4\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Zostało więc 6 Murzynów nieprzereagowanych. Wartość ta jest dodatnia,
 potwierdza to słuszności założenia całkowitego przereagowania Oliwii.
 Popełnienie błędnego założenia np. o całkowitym przereagowania Murzynów
-da nam ujemną wartość końcowej ilości Oliwii</p>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th><span class="math display">\[O\]</span></th>
-<th><span class="math display">\[M\]</span></th>
-<th><span class="math display">\[O^{\text{:)}}\]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[N^{0}\]</span></td>
-<td><span class="math display">\[4\]</span></td>
-<td><span class="math display">\[18\]</span></td>
-<td><span class="math display">\[0\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[\Delta N\]</span></td>
-<td><span class="math display">\[- x\]</span></td>
-<td><span class="math display">\[- 3x\]</span></td>
-<td><span class="math display">\[+ x\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[N^{K}\]</span></td>
-<td><span class="math display">\[4 - x\]</span></td>
-<td><span class="math display">\[18 - 3x = 0\]</span></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[18 - 3x = 0\]</span></p>
-<p><span class="math display">\[x = 6\]</span></p>
-<p>Co wstawiając do końcowych Oliwii dostajemy</p>
-<p><span class="math display">\[4 - x = 4 - 3 = 1\]</span></p>
-<p>Porównajmy zadanie z zadaniem z zadaniem z chemii. Ogólnie zadanie z
+da nam ujemną wartość końcowej ilości Oliwii
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+     </th>
+     <th>
+      <span class="math display">
+       \[O\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[M\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[O^{\text{:)}}\]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[N^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[4\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[18\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[\Delta N\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 3x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[+ x\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[N^{K}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[4 - x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[18 - 3x = 0\]
+      </span>
+     </td>
+     <td>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   <span class="math display">
+    \[18 - 3x = 0\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[x = 6\]
+   </span>
+  </p>
+  <p>
+   Co wstawiając do końcowych Oliwii dostajemy
+  </p>
+  <p>
+   <span class="math display">
+    \[4 - x = 4 - 3 = 1\]
+   </span>
+  </p>
+  <p>
+   Porównajmy zadanie z zadaniem z zadaniem z chemii. Ogólnie zadanie z
 nadmiaru niedomiaru rozpoznaje po występowaniu w zadaniu dwóch
-substratów, których znam lub muszę obliczyć ilość.</p>
-<p>Zmieszano 10 g glinu i 10 siarki. Oblicz, jakie będą zawartości
+substratów, których znam lub muszę obliczyć ilość.
+  </p>
+  <p>
+   Zmieszano 10 g glinu i 10 siarki. Oblicz, jakie będą zawartości
 procentowe reagentów w mieszaninie końcowej, wiedząc, iż zaszła
-reakcja:</p>
-<p><span class="math display">\[2Al + 3S \rightarrow
-Al_{2}S_{3}\]</span></p>
-<p>Zadanie rozpoczynam od obliczenia ilości moli, bo do tabelki muszę
+reakcja:
+  </p>
+  <p>
+   <span class="math display">
+    \[2Al + 3S \rightarrow
+Al_{2}S_{3}\]
+   </span>
+  </p>
+  <p>
+   Zadanie rozpoczynam od obliczenia ilości moli, bo do tabelki muszę
 wstawić wartości mówiące o ilości danego reagenta – w praktyce mogą być
-to mole, ale masa kategorycznie być nie może:</p>
-<p><span class="math display">\[n_{Al}^{0} = \frac{m}{M} = \frac{10}{27}
-= 0.37\]</span></p>
-<p><span class="math display">\[n_{S}^{0} = \frac{m}{M} = \frac{10}{32}
-= 0.3125\]</span></p>
-<p>Ogólnie tabelki w chemii możemy robić tabelki na:</p>
-<p>Molach – zawsze</p>
-<p>Ilościach sztuk – zawsze (ale to jest skrajnie niewygodne, dlatego ze
-mamy <span class="math inline">\(10^{23}\)</span>)</p>
-<p>Stężeniach molowych (jeżeli V=const)</p>
-<p>Dla gazów na ciśnieniach (jeżeli V,T= const)</p>
-<p>Dla gazów na objętościach (jeżeli p,T=const)</p>
-<p><span class="math display">\[\text{ }2Al + 3S \rightarrow
-Al_{2}S_{3}\]</span></p>
-<p>Nasza tabelka reakcyjna będzie miała postać:</p>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th><span class="math display">\[Al\]</span></th>
-<th><span class="math display">\[S\]</span></th>
-<th><span class="math display">\[Al_{2}S_{3}\]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[n^{0}\]</span></td>
-<td><span class="math display">\[0.37\]</span></td>
-<td><span class="math display">\[0.3125\]</span></td>
-<td><span class="math display">\[0\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[\Delta n\]</span></td>
-<td><span class="math display">\[- 2x\]</span></td>
-<td><span class="math display">\[- 3x\]</span></td>
-<td><span class="math display">\[+ x\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[n^{k}\]</span></td>
-<td><span class="math display">\[0.37 - 2x\]</span></td>
-<td><span class="math display">\[0.3125 - 3x\]</span></td>
-<td><span class="math display">\[x\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Strzelamy ze do końca reaguje siarka – jest jej mniej i ma większy
+to mole, ale masa kategorycznie być nie może:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{Al}^{0} = \frac{m}{M} = \frac{10}{27}
+= 0.37\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{S}^{0} = \frac{m}{M} = \frac{10}{32}
+= 0.3125\]
+   </span>
+  </p>
+  <p>
+   Ogólnie tabelki w chemii możemy robić tabelki na:
+  </p>
+  <p>
+   Molach – zawsze
+  </p>
+  <p>
+   Ilościach sztuk – zawsze (ale to jest skrajnie niewygodne, dlatego ze
+mamy
+   <span class="math inline">
+    \(10^{23}\)
+   </span>
+   )
+  </p>
+  <p>
+   Stężeniach molowych (jeżeli V=const)
+  </p>
+  <p>
+   Dla gazów na ciśnieniach (jeżeli V,T= const)
+  </p>
+  <p>
+   Dla gazów na objętościach (jeżeli p,T=const)
+  </p>
+  <p>
+   <span class="math display">
+    \[\text{ }2Al + 3S \rightarrow
+Al_{2}S_{3}\]
+   </span>
+  </p>
+  <p>
+   Nasza tabelka reakcyjna będzie miała postać:
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+     </th>
+     <th>
+      <span class="math display">
+       \[Al\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[S\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[Al_{2}S_{3}\]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[n^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.37\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.3125\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[\Delta n\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 3x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[+ x\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[n^{k}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.37 - 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.3125 - 3x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[x\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Strzelamy ze do końca reaguje siarka – jest jej mniej i ma większy
 współczynnik stechiometryczny w równaniu. Wówczas ilość ich moli
-końcowych spada do zera, z czego mogę obliczyć <span
-class="math inline">\(x\)</span> – współrzędną reakcji:</p>
-<p><span class="math display">\[0.3125 - 3x = 0 \rightarrow x =
-0.1041\]</span></p>
-<p>Znając <span class="math inline">\(x\)</span>, współrzędną reakcji
+końcowych spada do zera, z czego mogę obliczyć
+   <span class="math inline">
+    \(x\)
+   </span>
+   – współrzędną reakcji:
+  </p>
+  <p>
+   <span class="math display">
+    \[0.3125 - 3x = 0 \rightarrow x =
+0.1041\]
+   </span>
+  </p>
+  <p>
+   Znając
+   <span class="math inline">
+    \(x\)
+   </span>
+   , współrzędną reakcji
 mogę obliczyć wszystkie mole końcowe reagentów, wstawiając wartość x do
-tabelki:</p>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th><span class="math display">\[Al\]</span></th>
-<th><span class="math display">\[S\]</span></th>
-<th><span class="math display">\[Al_{2}S_{3}\]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[n^{0}\]</span></td>
-<td><span class="math display">\[0.37\]</span></td>
-<td><span class="math display">\[0.3125\]</span></td>
-<td><span class="math display">\[0\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[\Delta n\]</span></td>
-<td><span class="math display">\[- 2x\]</span></td>
-<td><span class="math display">\[- 3x\]</span></td>
-<td><span class="math display">\[+ x\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[n^{k}\]</span></td>
-<td><p><span class="math display">\[0.37 - 2x =\]</span></p>
-<p><span class="math display">\[0.37 - 2·0.1041 =\]</span></p>
-<p><span class="math display">\[0.1618\]</span></p></td>
-<td><span class="math display">\[0.3125 - 3x = 0\]</span></td>
-<td><span class="math display">\[x = 0.1041\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Jednocześnie dodatnia wartość moli glinu potwierdza, iż popełnione
-założenie było słuszne – siarka przereagowuje do końca.</p>
-<p>Znając końcową ilość moli reagentów – glinu oraz siarczku glinu mogę
+tabelki:
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+    <col style="width: 25%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+     </th>
+     <th>
+      <span class="math display">
+       \[Al\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[S\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[Al_{2}S_{3}\]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[n^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.37\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.3125\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[\Delta n\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 3x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[+ x\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[n^{k}\]
+      </span>
+     </td>
+     <td>
+      <p>
+       <span class="math display">
+        \[0.37 - 2x =\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[0.37 - 2·0.1041 =\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[0.1618\]
+       </span>
+      </p>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.3125 - 3x = 0\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[x = 0.1041\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Jednocześnie dodatnia wartość moli glinu potwierdza, iż popełnione
+założenie było słuszne – siarka przereagowuje do końca.
+  </p>
+  <p>
+   Znając końcową ilość moli reagentów – glinu oraz siarczku glinu mogę
 obliczyć masę końcową obu reagentów, wykorzystując przekształcony wzór
-na wiążący mole i masę</p>
-<p><span class="math display">\[n_{Al}^{k} =
-\frac{m_{Al}^{k}}{M_{Al}}\]</span></p>
-<p><span class="math display">\[m_{Al}^{k} = n_{Al}^{k}M_{Al} =
-0.1618·27 = 4.3686\]</span></p>
-<p><span class="math display">\[m_{Al_{2}S_{3}}^{k} =
+na wiążący mole i masę
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{Al}^{k} =
+\frac{m_{Al}^{k}}{M_{Al}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[m_{Al}^{k} = n_{Al}^{k}M_{Al} =
+0.1618·27 = 4.3686\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[m_{Al_{2}S_{3}}^{k} =
 n_{Al_{2}S_{3}}^{k}M_{Al_{2}S_{3}} = 0.1041·(2·27 + 3·32) =
-15.615\]</span></p>
-<p>Znając wartości mas wstawiam je do wzoru na zawartość procentową:</p>
-<p><span class="math display">\[\%_{Al} = \frac{m_{Al}}{m_{al} +
-m_{Al_{2}S_{3}}}·100\%\]</span></p>
-<p><span class="math display">\[\%_{Al} = \frac{4.3686}{4.3686 +
-15.615}·100\% = 22\%\]</span></p>
-<p><span class="math display">\[\%_{Al} = \frac{m_{Al_{2}S_{3}}}{m_{al}
-+ m_{Al_{2}S_{3}}}·100\%\]</span></p>
-<p><span class="math display">\[\%_{Al} = \frac{15.615}{4.3686 +
-15.615}·100\% = 78\%\]</span></p>
-<p>Przedstawiona metoda umożliwia rozwiązywanie trudniejszych zadań
+15.615\]
+   </span>
+  </p>
+  <p>
+   Znając wartości mas wstawiam je do wzoru na zawartość procentową:
+  </p>
+  <p>
+   <span class="math display">
+    \[\%_{Al} = \frac{m_{Al}}{m_{al} +
+m_{Al_{2}S_{3}}}·100\%\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\%_{Al} = \frac{4.3686}{4.3686 +
+15.615}·100\% = 22\%\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\%_{Al} = \frac{m_{Al_{2}S_{3}}}{m_{al}
++ m_{Al_{2}S_{3}}}·100\%\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[\%_{Al} = \frac{15.615}{4.3686 +
+15.615}·100\% = 78\%\]
+   </span>
+  </p>
+  <p>
+   Przedstawiona metoda umożliwia rozwiązywanie trudniejszych zadań
 –również takich, których nie sposób rozwiązać metodami opartymi na
 proporcjach. Przykładem takiego zadania, pozornie wyglądającego na
-proste, jest:</p>
-<p>Sód wrzucono do 9g wody. Uzyskano roztwór <span
-class="math inline">\(NaOH\)</span> o stężeniu masowym 40%. Jaką masę
-sodu użyto do reakcji.</p>
-<p>Podczas wrzucenia sodu do wody zachodzi reakcja:</p>
-<p><span class="math display">\[2Na + 2H_{2}O \rightarrow 2NaOH +
-H_{2}\]</span></p>
-<p>Jedyną wartość, którą możemy obliczyć jest początkowa ilość moli
-wody</p>
-<p><span class="math display">\[n_{H_{2}O}^{0} = \frac{9}{18} =
-0.5\]</span></p>
-<p>Poza nią na początku była również jakaś, nieznana ilość moli sodu,
-<span class="math inline">\(n_{Na}^{0}\)</span>. Przedstawione
-zależności możemy umieścić w tabelce:</p>
-<table>
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th><span class="math display">\[Na\]</span></th>
-<th><span class="math display">\[H_{2}O\]</span></th>
-<th><span class="math display">\[NaOH\]</span></th>
-<th><span class="math display">\[H_{2}\]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[n^{0}\]</span></td>
-<td><span class="math display">\[n_{Na}^{0}\]</span></td>
-<td><span class="math display">\[0.5\]</span></td>
-<td><span class="math display">\[0\]</span></td>
-<td><span class="math display">\[0\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[\Delta n\]</span></td>
-<td><span class="math display">\[- 2x\]</span></td>
-<td><span class="math display">\[- 2x\]</span></td>
-<td><span class="math display">\[+ 2x\]</span></td>
-<td><span class="math display">\[x\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[n^{k}\]</span></td>
-<td><span class="math display">\[n^{0} - 2x\]</span></td>
-<td><span class="math display">\[0.5 - 2x\]</span></td>
-<td><span class="math display">\[2x\]</span></td>
-<td><span class="math display">\[x\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Kolejny krok to ustalenie, który z reagentów użyty jest w niedomiarze
-. Z warunków zadania wynika, że po reakcji mamy mieć roztwór <span
-class="math inline">\(NaOH\)</span>, woda jest ciekła, a sód jest stały.
-Nie możemy mieć więc po całkowitym przereagowaniu <span
-class="math inline">\(Na\)</span>, bo jest on reagentem stałym. Wynika
+proste, jest:
+  </p>
+  <p>
+   Sód wrzucono do 9g wody. Uzyskano roztwór
+   <span class="math inline">
+    \(NaOH\)
+   </span>
+   o stężeniu masowym 40%. Jaką masę
+sodu użyto do reakcji.
+  </p>
+  <p>
+   Podczas wrzucenia sodu do wody zachodzi reakcja:
+  </p>
+  <p>
+   <span class="math display">
+    \[2Na + 2H_{2}O \rightarrow 2NaOH +
+H_{2}\]
+   </span>
+  </p>
+  <p>
+   Jedyną wartość, którą możemy obliczyć jest początkowa ilość moli
+wody
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{H_{2}O}^{0} = \frac{9}{18} =
+0.5\]
+   </span>
+  </p>
+  <p>
+   Poza nią na początku była również jakaś, nieznana ilość moli sodu,
+   <span class="math inline">
+    \(n_{Na}^{0}\)
+   </span>
+   . Przedstawione
+zależności możemy umieścić w tabelce:
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 19%"/>
+    <col style="width: 19%"/>
+    <col style="width: 19%"/>
+    <col style="width: 20%"/>
+    <col style="width: 20%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+     </th>
+     <th>
+      <span class="math display">
+       \[Na\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[H_{2}O\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[NaOH\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[H_{2}\]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[n^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[n_{Na}^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.5\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[\Delta n\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[+ 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[x\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[n^{k}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[n^{0} - 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.5 - 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[x\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Kolejny krok to ustalenie, który z reagentów użyty jest w niedomiarze
+. Z warunków zadania wynika, że po reakcji mamy mieć roztwór
+   <span class="math inline">
+    \(NaOH\)
+   </span>
+   , woda jest ciekła, a sód jest stały.
+Nie możemy mieć więc po całkowitym przereagowaniu
+   <span class="math inline">
+    \(Na\)
+   </span>
+   , bo jest on reagentem stałym. Wynika
 stąd, że musiał on przereagować całkowicie, a więc całkowita ilość tego
-reagenta musiała spaść do zera.</p>
-<p><span class="math display">\[n_{Na}^{0} - 2x = 0\]</span></p>
-<p>Przedstawione równanie umożliwia uzależnienie współrzędnej reakcji od
-początkowej ilości moli sodu:</p>
-<p><span class="math display">\[x = \frac{n^{0}}{2}\]</span></p>
-<p>Uzyskaną zależność wstawiamy do tabelki, otrzymując uzależnione mole
-końcowe wszystkich reagentów od początkowej ilości moli sodu:</p>
-<table>
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th><span class="math display">\[Na\]</span></th>
-<th><span class="math display">\[H_{2}O\]</span></th>
-<th><span class="math display">\[NaOH\]</span></th>
-<th><span class="math display">\[H_{2}\]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="math display">\[n^{0}\]</span></td>
-<td><span class="math display">\[n^{0}\]</span></td>
-<td><span class="math display">\[0.5\]</span></td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><span class="math display">\[\Delta n\]</span></td>
-<td><span class="math display">\[- 2x\]</span></td>
-<td><span class="math display">\[- 2x\]</span></td>
-<td><span class="math display">\[+ 2x\]</span></td>
-<td><span class="math display">\[x\]</span></td>
-</tr>
-<tr>
-<td><span class="math display">\[n^{k}\]</span></td>
-<td><p><span class="math display">\[n^{0} - 2x = 0
-\rightarrow\]</span></p>
-<p><span class="math display">\[X = \frac{n^{0}}{2}\ \]</span></p></td>
-<td><span class="math display">\[0.5 - 2x = 0.5 - n^{0}\]</span></td>
-<td><span class="math display">\[2x = n^{0}\]</span></td>
-<td><span class="math display">\[x = \frac{n^{0}}{2}\]</span></td>
-</tr>
-</tbody>
-</table>
-<p>Mając uzależnione mole końcowe reagentów od użytej ilości sodu mogę
-zapisać wzór na stężenie procentowe masowe:</p>
-<p><span class="math display">\[c_{p} =
-\frac{m_{substancji}}{m_{roztworu}} =\]</span></p>
-<p><span class="math display">\[40\% =
-\frac{m_{NaOH}^{k}}{m_{H_{2}O}^{k} + m_{NaOH}^{k}}100\%\]</span></p>
-<p>Widzę, że potrzebuje w tym wypadku mas końcowych reagentów – masy
-końcowej <span class="math inline">\(NaOH\)</span> oraz wody. Masy te
-mogę uzależnić od końcowej ilości mol wykorzystując wzór <span
-class="math inline">\(m = nM\)</span>. Oczywiście końcową ilość moli
-<span class="math inline">\(NaOH\)</span> oraz wody wezmę z tabelki – po
-to ją robiłem, natomiast masy molowe odczytam z układu okresowego:</p>
-<p><span class="math display">\[M_{NaOH} = 40;M_{H_{2}O} =
-18\]</span></p>
-<p><span class="math display">\[m_{NaOH}^{k} = n_{NaOH}^{k}M_{NaOH} =
-n_{Na}^{0}·40\]</span></p>
-<p><span class="math display">\[m_{H_{2}O}^{k} =
+reagenta musiała spaść do zera.
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{Na}^{0} - 2x = 0\]
+   </span>
+  </p>
+  <p>
+   Przedstawione równanie umożliwia uzależnienie współrzędnej reakcji od
+początkowej ilości moli sodu:
+  </p>
+  <p>
+   <span class="math display">
+    \[x = \frac{n^{0}}{2}\]
+   </span>
+  </p>
+  <p>
+   Uzyskaną zależność wstawiamy do tabelki, otrzymując uzależnione mole
+końcowe wszystkich reagentów od początkowej ilości moli sodu:
+  </p>
+  <table>
+   <colgroup>
+    <col style="width: 19%"/>
+    <col style="width: 19%"/>
+    <col style="width: 19%"/>
+    <col style="width: 20%"/>
+    <col style="width: 20%"/>
+   </colgroup>
+   <thead>
+    <tr>
+     <th>
+     </th>
+     <th>
+      <span class="math display">
+       \[Na\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[H_{2}O\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[NaOH\]
+      </span>
+     </th>
+     <th>
+      <span class="math display">
+       \[H_{2}\]
+      </span>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <span class="math display">
+       \[n^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[n^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.5\]
+      </span>
+     </td>
+     <td>
+      0
+     </td>
+     <td>
+      0
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[\Delta n\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[- 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[+ 2x\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[x\]
+      </span>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <span class="math display">
+       \[n^{k}\]
+      </span>
+     </td>
+     <td>
+      <p>
+       <span class="math display">
+        \[n^{0} - 2x = 0
+\rightarrow\]
+       </span>
+      </p>
+      <p>
+       <span class="math display">
+        \[X = \frac{n^{0}}{2}\ \]
+       </span>
+      </p>
+     </td>
+     <td>
+      <span class="math display">
+       \[0.5 - 2x = 0.5 - n^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[2x = n^{0}\]
+      </span>
+     </td>
+     <td>
+      <span class="math display">
+       \[x = \frac{n^{0}}{2}\]
+      </span>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Mając uzależnione mole końcowe reagentów od użytej ilości sodu mogę
+zapisać wzór na stężenie procentowe masowe:
+  </p>
+  <p>
+   <span class="math display">
+    \[c_{p} =
+\frac{m_{substancji}}{m_{roztworu}} =\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[40\% =
+\frac{m_{NaOH}^{k}}{m_{H_{2}O}^{k} + m_{NaOH}^{k}}100\%\]
+   </span>
+  </p>
+  <p>
+   Widzę, że potrzebuje w tym wypadku mas końcowych reagentów – masy
+końcowej
+   <span class="math inline">
+    \(NaOH\)
+   </span>
+   oraz wody. Masy te
+mogę uzależnić od końcowej ilości mol wykorzystując wzór
+   <span class="math inline">
+    \(m = nM\)
+   </span>
+   . Oczywiście końcową ilość moli
+   <span class="math inline">
+    \(NaOH\)
+   </span>
+   oraz wody wezmę z tabelki – po
+to ją robiłem, natomiast masy molowe odczytam z układu okresowego:
+  </p>
+  <p>
+   <span class="math display">
+    \[M_{NaOH} = 40;M_{H_{2}O} =
+18\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[m_{NaOH}^{k} = n_{NaOH}^{k}M_{NaOH} =
+n_{Na}^{0}·40\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[m_{H_{2}O}^{k} =
 m_{H_{2}O}^{k}M_{H_{2}O} = \left( 0.5 - n_{Na}^{0}
-\right)18\]</span></p>
-<p>Po wstawieniu tych zależności do wzoru na stężenie dostajemy równanie
-z jedną niewiadomą:</p>
-<p><span class="math display">\[40\% = \frac{40·n^{0}}{18·(0.5 - n^{0})
-+ 40n^{0}}100\%\]</span></p>
-<p>Które rozwiązujemy dostając:</p>
-<p><span class="math display">\[0.4 = \frac{40n^{0}}{9 - 18n^{0} +
-40n^{0}}\]</span></p>
-<p><span class="math display">\[0.4 = \frac{40n^{0}}{9 +
-22n^{0}}\]</span></p>
-<p><span class="math display">\[0.36 + 8.8n^{0} = 40n^{0}\]</span></p>
-<p><span class="math display">\[n_{Na}^{0} = \frac{0.36}{40 - 8.8} =
-0.115\]</span></p>
-<p>Znając ilość moli sodu z łatwością obliczamy masę <span
-class="math inline">\(Na\)</span>, którą użyto do reakcji:</p>
-<p><span class="math display">\[n_{Na}^{0} = 0.115 \rightarrow
-m_{Na}^{0} = n_{Na}^{0}·M = 0.115·23 = 2.645g\]</span></p>
-</body>
+\right)18\]
+   </span>
+  </p>
+  <p>
+   Po wstawieniu tych zależności do wzoru na stężenie dostajemy równanie
+z jedną niewiadomą:
+  </p>
+  <p>
+   <span class="math display">
+    \[40\% = \frac{40·n^{0}}{18·(0.5 - n^{0})
++ 40n^{0}}100\%\]
+   </span>
+  </p>
+  <p>
+   Które rozwiązujemy dostając:
+  </p>
+  <p>
+   <span class="math display">
+    \[0.4 = \frac{40n^{0}}{9 - 18n^{0} +
+40n^{0}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[0.4 = \frac{40n^{0}}{9 +
+22n^{0}}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[0.36 + 8.8n^{0} = 40n^{0}\]
+   </span>
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{Na}^{0} = \frac{0.36}{40 - 8.8} =
+0.115\]
+   </span>
+  </p>
+  <p>
+   Znając ilość moli sodu z łatwością obliczamy masę
+   <span class="math inline">
+    \(Na\)
+   </span>
+   , którą użyto do reakcji:
+  </p>
+  <p>
+   <span class="math display">
+    \[n_{Na}^{0} = 0.115 \rightarrow
+m_{Na}^{0} = n_{Na}^{0}·M = 0.115·23 = 2.645g\]
+   </span>
+  </p>
+ </body>
 </html>
