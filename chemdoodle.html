@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Test 4 bibliotek chemicznych</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #eeeeee;
+        margin: 30px;
+    }
+
+    .box {
+        background: white;
+        padding: 25px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px #0002;
+    }
+
+    .drawing {
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        background: white;
+        margin-top: 15px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    .status {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .error {
+        color: #b00020;
+        font-weight: bold;
+    }
+</style>
+
+
+<!-- ================================================= -->
+<!-- CHEMDOODLE -->
+<!-- ================================================= -->
+
+<link
+    rel="stylesheet"
+    href="https://web.chemdoodle.com/ChemDoodleWeb.css">
+
+<script
+    src="https://web.chemdoodle.com/ChemDoodleWeb.js">
+</script>
+
+
+<!-- ================================================= -->
+<!-- KEKULE.JS -->
+<!-- ================================================= -->
+
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/kekule/dist/themes/default/kekule.css">
+
+<script
+    src="https://cdn.jsdelivr.net/npm/kekule/dist/kekule.min.js">
+</script>
+
+
+<!-- ================================================= -->
+<!-- RDKIT -->
+<!-- ================================================= -->
+
+<script
+    src="https://unpkg.com/@rdkit/rdkit/dist/RDKit_minimal.js">
+</script>
+```
+
+</head>
+
+<body>
+
+<h1>Test bibliotek chemicznych</h1>
+
+<p>
+    Wszystkie cztery warianty próbują narysować tę samą cząsteczkę:
+</p>
+
+<pre>CC(=O)Oc1ccccc1C(=O)O</pre>
+
+<!-- ================================================= -->
+
+<!-- 1. CHEMDOODLE -->
+
+<!-- ================================================= -->
+
+<div class="box">
+
+```
+<h2>1. SMILES + ChemDoodle</h2>
+
+<p class="status">
+    ChemDoodle Web Components
+</p>
+
+<div class="drawing">
+
+    <canvas
+        id="chemdoodle"
+        width="500"
+        height="300">
+    </canvas>
+
+</div>
+
+<p id="chem-status" class="status">
+    Ładowanie...
+</p>
+```
+
+</div>
+
+<!-- ================================================= -->
+
+<!-- 2. JSMOL / JMOL -->
+
+<!-- ================================================= -->
+
+<div class="box">
+
+```
+<h2>2. JSmol / Jmol</h2>
+
+<p class="status">
+    Ten wariant jest głównie interesujący dla struktur 3D.
+</p>
+
+<div class="drawing">
+
+    <div id="jsmol">
+        JSmol nie został jeszcze uruchomiony.
+    </div>
+
+</div>
+```
+
+</div>
+
+<!-- ================================================= -->
+
+<!-- 3. KEKULE.JS -->
+
+<!-- ================================================= -->
+
+<div class="box">
+
+```
+<h2>3. SMILES + Kekule.js</h2>
+
+<p class="status">
+    Kekule.js
+</p>
+
+<div class="drawing">
+
+    <div
+        id="kekule"
+        style="width: 600px; height: 300px;">
+    </div>
+
+</div>
+
+<p id="kekule-status" class="status">
+    Ładowanie...
+</p>
+```
+
+</div>
+
+<!-- ================================================= -->
+
+<!-- 4. RDKIT -->
+
+<!-- ================================================= -->
+
+<div class="box">
+
+```
+<h2>4. SMILES + RDKit</h2>
+
+<p class="status">
+    RDKit generuje tutaj SVG bezpośrednio z SMILES.
+</p>
+
+<div
+    id="rdkit"
+    class="drawing">
+    Ładowanie...
+</div>
+```
+
+</div>
+
+<script>
+
+
+// ======================================================
+// WSPÓLNY SMILES
+// ======================================================
+
+const SMILES =
+    "CC(=O)Oc1ccccc1C(=O)O";
+
+
+// ======================================================
+// 1. CHEMDOODLE
+// ======================================================
+
+try {
+
+    if (typeof ChemDoodle !== "undefined") {
+
+        let viewer =
+            new ChemDoodle.ViewerCanvas(
+                "chemdoodle",
+                500,
+                300
+            );
+
+        let molecule =
+            ChemDoodle.readSMILES(SMILES);
+
+        viewer.loadMolecule(molecule);
+
+        document.getElementById("chem-status")
+            .innerText =
+            "✓ ChemDoodle działa";
+
+    } else {
+
+        document.getElementById("chem-status")
+            .innerHTML =
+            '<span class="error">✗ ChemDoodle nie został załadowany</span>';
+
+    }
+
+}
+catch (error) {
+
+    document.getElementById("chem-status")
+        .innerHTML =
+        '<span class="error">✗ Błąd ChemDoodle: ' +
+        error +
+        '</span>';
+
+}
+
+
+// ======================================================
+// 2. JSMOL
+// ======================================================
+
+// Na razie celowo bez automatycznego ładowania.
+// JSmol jest bardziej rozbudowany i najlepiej testować
+// go osobno, szczególnie pod kątem 3D.
+
+
+// ======================================================
+// 3. KEKULE.JS
+// ======================================================
+
+try {
+
+    if (typeof Kekule !== "undefined") {
+
+        let mol =
+            Kekule.IO.loadFormatData(
+                SMILES,
+                "smi"
+            );
+
+        let viewer =
+            new Kekule.ChemWidget.Viewer(
+                document.getElementById("kekule")
+            );
+
+        viewer.setChemObj(mol);
+
+        document.getElementById("kekule-status")
+            .innerText =
+            "✓ Kekule.js działa";
+
+    } else {
+
+        document.getElementById("kekule-status")
+            .innerHTML =
+            '<span class="error">✗ Kekule.js nie został załadowany</span>';
+
+    }
+
+}
+catch (error) {
+
+    document.getElementById("kekule-status")
+        .innerHTML =
+        '<span class="error">✗ Błąd Kekule.js: ' +
+        error +
+        '</span>';
+
+}
+
+
+// ======================================================
+// 4. RDKIT
+// ======================================================
+
+window
+    .initRDKitModule()
+    .then(function(RDKit) {
+
+        try {
+
+            let mol =
+                RDKit.get_mol(SMILES);
+
+            if (!mol) {
+
+                throw new Error(
+                    "Nie udało się odczytać SMILES"
+                );
+
+            }
+
+            let svg =
+                mol.get_svg();
+
+            document.getElementById("rdkit")
+                .innerHTML = svg;
+
+            mol.delete();
+
+        }
+        catch (error) {
+
+            document.getElementById("rdkit")
+                .innerHTML =
+                '<span class="error">✗ Błąd RDKit: ' +
+                error +
+                '</span>';
+
+        }
+
+    })
+    .catch(function(error) {
+
+        document.getElementById("rdkit")
+            .innerHTML =
+            '<span class="error">✗ Nie udało się załadować RDKit: ' +
+            error +
+            '</span>';
+
+    });
+
+
+</script>
+
+</body>
+</html>
