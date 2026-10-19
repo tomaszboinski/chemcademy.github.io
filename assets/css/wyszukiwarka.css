@@ -983,3 +983,64 @@
         padding:4px 8px;
     }
 }
+
+/* FIX TABLETÓW */
+@media (min-width: 601px) and (max-width: 1000px) {
+
+    .layout {
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.5fr);
+        gap: 15px;
+        padding: 25px 12px;
+        align-items: start;
+    }
+
+    /* Filtry nie mogą być ucięte przez sticky */
+    .filters {
+        position: static;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .filter-card {
+        min-width: 0;
+        padding: 12px;
+    }
+
+    .filter-card h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Edycje i tematy w dwóch kolumnach */
+    .bottom-filters {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    #editions {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    #editions label,
+    #topics label {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .results-section {
+        min-width: 0;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .results,
+    .task-card {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .task-header {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
