@@ -498,3 +498,99 @@ body {
     justify-content: flex-start;
   }
 }
+
+/* === HERO — responsywny układ === */
+.hero {
+  background-color: transparent;
+  padding: clamp(30px, 5vw, 60px) 20px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: clamp(20px, 4vw, 40px);
+}
+
+.hero-logo {
+  flex: 0 1 35%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo img {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  max-height: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-content {
+  flex: 1 1 65%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.25;
+  font-style: italic;
+  color: #003366;
+  margin: 0 0 20px;
+  overflow-wrap: break-word;
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.6;
+  font-style: italic;
+  color: #444;
+  margin: 0;
+}
+
+/* === TABLETY I TELEFONY === */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .hero-logo {
+    flex: 0 1 auto;
+    width: 100%;
+  }
+
+  .hero-logo img {
+    width: auto;
+    max-width: min(70%, 250px);
+    max-height: 180px;
+    height: auto;
+  }
+
+  .hero-content {
+    flex: 1 1 auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 15px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
