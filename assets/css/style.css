@@ -560,37 +560,57 @@ body {
 }
 
 /* === TABLETY I TELEFONY === */
+
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
+    align-items: center;
     gap: 25px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
   }
 
   .hero-logo {
     flex: 0 1 auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
   }
 
   .hero-logo img {
-    width: auto;
-    max-width: min(70%, 250px);
+    display: block;
+    width: 100%;
+    max-width: 250px;
     max-height: 180px;
     height: auto;
+    object-fit: contain;
   }
 
   .hero-content {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     width: 100%;
+    max-width: 600px;
+    min-width: 0;
+    box-sizing: border-box;
     text-align: center;
     align-items: center;
   }
 
   .hero-content h1 {
     font-size: clamp(1.5rem, 5vw, 2rem);
-    margin-bottom: 15px;
+    line-height: 1.2;
+    margin: 0 0 15px;
+    overflow-wrap: break-word;
   }
 
   .hero-content p {
     font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 0;
+    overflow-wrap: break-word;
   }
 }
